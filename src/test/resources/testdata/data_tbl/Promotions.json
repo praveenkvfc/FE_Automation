@@ -1,0 +1,127 @@
+{
+  "ORDER": [
+    {
+      "discountType": "fixed",
+      "couponId": "10percent_off",
+      "discount": "5",
+      "promotionId": "10percent_off",
+      "campaignId": "10percent_off"
+    },
+    {
+      "discountType": "percentage",
+      "couponId": "AUT_COUPON_TEN_PERCENT_ORDER",
+      "discount": "10%",
+      "promotionId": "AUT_PROMO_TEN_PERCENT_ORDER",
+      "campaignId": "AUT_CAMP_TEN_PERCENT_ORDER"
+    }
+  ],
+  "PRODUCT": [
+    {
+      "discountType": "fixed",
+      "couponId": "AUT_COUPON_FIVE_FIXED_PRODUCT",
+      "discount": "5",
+      "promotionId": "AUT_PROMO_FIVE_FIXED_PRODUCT",
+      "campaignId": "AUT_CAMP_FIVE_FIXED_PRODUCT"
+    },
+    {
+      "discountType": "percentage",
+      "couponId": "AUT_COUPON_TEN_PERCENT_PRODUCT",
+      "discount": "10%",
+      "promotionId": "AUT_PROMO_TEN_PERCENT_PRODUCT",
+      "campaignId": "AUT_CAMP_TEN_PERCENT_PRODUCT"
+    },
+    {
+      "discountType": "BOGO",
+      "couponId": "AUT_COUPON_BOGO_50",
+      "discount": "50%",
+      "promotionId": "AUT_PROMO_BOGO_50",
+      "campaignId": "AUT_CAMP_BOGO_50"
+    },
+    {
+      "discountType": "MULTIPLE_PERCENT",
+      "couponId": "AUT_COUPON_TEN_PERCENT_MULTIPLE",
+      "discount": "10%",
+      "promotionId": "AUT_PROMO_TEN_PERCENT_MULTIPLE",
+      "campaignId": "AUT_CAMP_TEN_PERCENT_MULTIPLE"
+    }
+  ],
+  "SHIPPING": [
+    {
+      "discountType": "fixed",
+      "couponId": "AUT_COUPON_FIVE_FIXED_SHIPPING",
+      "discount": "5",
+      "promotionId": "AUT_PROMO_FIVE_FIXED_SHIPPING",
+      "campaignId": "AUT_CAMP_FIVE_FIXED_SHIPPING"
+    },
+    {
+      "discountType": "percentage",
+      "couponId": "AUT_COUPON_TEN_PERCENT_SHIPPING",
+      "discount": "10%",
+      "promotionId": "AUT_PROMO_TEN_PERCENT_SHIPPING",
+      "campaignId": "AUT_CAMP_TEN_PERCENT_SHIPPING"
+    }
+  ],
+  "PRODUCT_OTW": [
+    {
+      "discountType": "fixed",
+      "couponId": "otw-product-$5off",
+      "discount": "5",
+      "promotionId": "promotion-otw-product-$5off",
+      "campaignId": "campaign_otw_uat"
+    }
+  ],
+  "ORDER_OTW": [
+    {
+      "discountType": "percentage",
+      "couponId": "otw-order-5perc",
+      "discount": "5%",
+      "promotionId": "promotion-otw-order-5perc",
+      "campaignId": "campaign_otw_uat"
+    }
+  ],
+  "PROMO_TNF_CA": [
+    {
+      "discountType": "PERCENTAGE",
+      "couponId": "10percent_off",
+      "discount": "10",
+      "promotionId": "10percent_off",
+      "campaignId": "10percent_off"
+    }
+  ],
+  "PROMO_TNF_US": [
+    {
+      "discountType": "PERCENTAGE",
+      "couponId": "tau-coupon-product",
+      "discount": "",
+      "promotionId": "tau-coupon-product",
+      "campaignId": "tau-coupon-product"
+    }
+  ],
+  "INVALID_PROMO_TNF_CA": [
+    {
+      "discountType": "PERCENTAGE",
+      "couponId": "invalid_promo",
+      "discount": "",
+      "promotionId": "invalid_promo",
+      "campaignId": "invalid_promo"
+    }
+  ],
+  "INVALID_PROMO_TNF_US": [
+    {
+      "discountType": "PERCENTAGE",
+      "couponId": "invalid_promo",
+      "discount": "",
+      "promotionId": "invalid_promo",
+      "campaignId": "invalid_promo"
+    }
+  ],
+  "INVALID_PROMO": [
+    {
+      "discountType": "PERCENTAGE",
+      "couponId": "invalid_promo",
+      "discount": "",
+      "promotionId": "invalid_promo",
+      "campaignId": "invalid_promo"
+    }
+  ]
+}

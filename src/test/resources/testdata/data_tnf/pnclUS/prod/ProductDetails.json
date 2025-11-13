@@ -1,0 +1,124 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Premium Sk8-Mid 83",
+      "code": "VN000CQQDWR",
+      "price": "$95.00",
+      "category": "SHOP",
+      "color": "STV Navy & White",
+      "size": "9.0 Men = 10.5 Women",
+      "pdpsize": "M9 / W10.5",
+      "omsid": "VN:000CQQ:DWR:090:M:1:",
+      "oos": false
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT": [
+    {
+      "name": "Premium Slip-On 98",
+      "code": "VN000CSE2BO",
+      "price": "$80.00",
+      "category": "SHOP",
+      "color": "Checkerboard Black & White",
+      "size": "9.0 Men = 10.5 Women",
+      "pdpsize": "M9 / W10.5",
+      "omsid": "VN:000CSE:2BO:090:M:1:",
+      "oos": false
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT_ALTERNATIVE_SIZE": [
+    {
+      "name": "Premium Slip-On 98",
+      "code": "VN000CSE2BO",
+      "price": "$80.00",
+      "category": "SHOP",
+      "color": "Checkerboard Black & White",
+      "size": "12.0 Men = 13.5 Women",
+      "pdpsize": "M12 / W13.5",
+      "omsid": "VN:000CSE:2BO:120:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_SHOE_SIZE": [
+    {
+      "name": "Premium Slip-On 98",
+      "code": "VN000CSE2BO",
+      "price": "$80.00",
+      "category": "SHOP",
+      "color": "Checkerboard Black & White",
+      "size": "9.0 Men = 10.5 Women",
+      "pdpsize": "M9 / W10.5",
+      "omsid": "VN:000CSE:2BO:090:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_SHOE_SIZE_CHANGE": [
+    {
+      "name": "Premium Slip-On 98",
+      "code": "VN000CSE2BO",
+      "price": "$80.00",
+      "category": "SHOP",
+      "color": "Checkerboard Black & White",
+      "size": "12.0 Men = 13.5 Women",
+      "pdpsize": "M12 / W13.5",
+      "omsid": "VN:000CSE:2BO:120:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_NAME_COLOR_IMAGE_CHECK": [
+    {
+      "name": "Premium Slip-On 98",
+      "name2": "Premium Slip-On 98",
+      "code": "VN000CSECIB",
+      "code2": "VN000CSEOFW",
+      "price": "$80.00",
+      "price2": "$75.00",
+      "category": "SHOP",
+      "color": "Pesto Green",
+      "color2": "Off White",
+      "size": "8.5 Men = 10.0 Women",
+      "pdpsize": "M8.5 / W10",
+      "omsid": "VN:000CSE:CIB:085:M:1:",
+      "omsid2": "VN:000CSE:OFW:085:M:1:",
+      "oos": false
+    }
+  ],
+  "MASTER_PLP_SEARCH_PRODUCT": [
+    {
+      "name": "Premium Rowley XLT",
+      "code": "VN000CQF4MG",
+      "price": "$150.00",
+      "category": "SHOP",
+      "color": "Incense Tan & White",
+      "size": "8.5 Men = 10.0 Women",
+      "pdpsize": "M8.5 / W10",
+      "omsid": "VN:000CQF:4MG:085:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_MEN_CLOTHING": [
+    {
+      "name": "Premium Logo Short Sleeve T-Shirt",
+      "code": "VN000GBYBLK",
+      "price": "$50.00",
+      "category": "SHOP",
+      "color": "Black",
+      "size": "Large",
+      "pdpsize": "L",
+      "omsid": "VN:000GBY:BLK:L::1",
+      "oos": false
+    }
+  ],
+  "PRODUCT_WITH_LONG_NAME": [
+    {
+      "name": "PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE",
+      "code": "VN000GZ19Q6",
+      "price": "$110.00",
+      "category": "SHOP",
+      "color": "Silver Pine Green",
+      "size": "Medium",
+      "pdpsize": "M",
+      "omsid": "VN:000GZ1:9Q6:M::1:",
+      "oos": false
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationallpreprod_ch01@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "testguestuser1preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "testguestuser2preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "testguestuser3preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "testguestuser4preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationallprod_ch01@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

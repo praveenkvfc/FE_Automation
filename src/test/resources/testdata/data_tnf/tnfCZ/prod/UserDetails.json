@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Hybernská",
+      "building": "100",
+      "postalCode": "110 00",
+      "city": "New Town",
+      "email": "automationallpreprod_cz01@yopmail.com",
+      "phone": "123-4567-90",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Hybernská",
+      "building": "100",
+      "postalCode": "110 00",
+      "city": "New Town",
+      "email": "testguestuserprodcz01@yopmail.com",
+      "phone": "123-4567-90",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Hybernská",
+      "building": "100",
+      "postalCode": "110 00",
+      "city": "New Town",
+      "email": "testguestuserprodcz02@yopmail.com",
+      "phone": "123-4567-90",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Hybernská",
+      "building": "100",
+      "postalCode": "110 00",
+      "city": "New Town",
+      "email": "testguestuserprodcz03@yopmail.com",
+      "phone": "123-4567-90",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Hybernská",
+      "building": "100",
+      "postalCode": "110 00",
+      "city": "New Town",
+      "email": "testguestuserprodcz04@yopmail.com",
+      "phone": "123-4567-90",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

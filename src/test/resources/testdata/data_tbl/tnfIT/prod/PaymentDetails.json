@@ -1,0 +1,56 @@
+{
+  "VISA": [
+    {
+      "CARD_NUMBER": "4444333322221111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5555444433331111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "VALID_GIFT_CARDS_DYNAMIC_VALUES": [
+    [
+      {
+        "CARD_NUMBER": "1110040019B0G6PeaBS",
+        "PIN": "5596"
+      },
+      {
+        "CARD_NUMBER": "1110040019LbRNXNzaO",
+        "PIN": "6922"
+      },
+      {
+        "CARD_NUMBER": "11100400195UuKik7us",
+        "PIN": "4109"
+      },
+      {
+        "CARD_NUMBER": "1110040019cbeV6Ssir",
+        "PIN": "4025"
+      }
+    ],
+    [
+      {
+        "CARD_NUMBER": "1110040019ylrgOeMyy",
+        "PIN": "3189"
+      },
+      {
+        "CARD_NUMBER": "1110040019nMPbeUOFQ",
+        "PIN": "4103"
+      },
+      {
+        "CARD_NUMBER": "1110040019I1ZQBivyR",
+        "PIN": "9910"
+      },
+      {
+        "CARD_NUMBER": "11100400193FMXDBV6k",
+        "PIN": "5633"
+      }
+    ]
+  ]
+}

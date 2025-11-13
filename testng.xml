@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="VF Corp Test Suite" verbose="1"  parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="listeners.TestListeners"/>
+    </listeners>
+    <test name="FE_Automation Runner" >
+        <classes>
+            <class name="runners.TestRunner" />
+        </classes>
+    </test>
+</suite>

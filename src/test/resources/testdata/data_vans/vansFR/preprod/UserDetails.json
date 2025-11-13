@@ -1,0 +1,406 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationallpreprod_fr01@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationmyaccountpreprod_fr01@yopmail.com",
+      "phone": "2255550002",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationcheckoutpreprod_fr01@yopmail.com",
+      "phone": "2255550003",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationplppdpsearchpreprod_fr01@yopmail.com",
+      "phone": "2255550004",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationcanvascorepreprod_fr01@yopmail.com",
+      "phone": "2255550005",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationcontentpersonalizationpreprod_fr01@yopmail.com",
+      "phone": "2255550006",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationmyaccount_mobilepreprodfr01@yopmail.com",
+      "phone": "2255550007",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationcheckout_mobilepreprodfr01@yopmail.com",
+      "phone": "2255550008",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationcontentpersonalization_mobilepreprodfr01@yopmail.com",
+      "phone": "2255550009",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationplppdpsearch_mobilepreprodfr01@yopmail.com",
+      "phone": "2255550010",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationcanvascore_mobilepreprodfr01@yopmail.com",
+      "phone": "2255550011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "testguestuserpreprod_fr01@yopmail.com",
+      "phone": "2255550012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationallpreprod_pt01@yopmail.com",
+      "phone": "255-555-200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationchangepassworduserpreprod_fr01@yopmail.com",
+      "phone": "2255550014",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser01preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser02preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser03preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser04preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser05preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser06preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser07preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "75012",
+      "city": "Copenhagen",
+      "email": "empuser08preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationklarnauserpreprod_fr01@yopmail.com",
+      "phone": "2255550017",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationnewuserpreprod_fr01@yopmail.com",
+      "phone": "2255550018",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUserNonLoyalty_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationloyaltyuserpreprod_fr01@yopmail.com",
+      "phone": "2255550019",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "orderNumber": "P0034160",
+      "email": "automationshippedorderpreprodfr1@yopmail.com",
+      "phone": "2255500020",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "orderNumber": "P0034160",
+      "email": "sangam@yopmail.com",
+      "phone": "2255500021",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "city": "Paris",
+      "phone": "2255500022",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034161",
+      "email": "automationreturninitiatedorderpreprodfr1@yopmail.com",
+      "postalCode": "75012",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "city": "Paris",
+      "phone": "2255500023",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034161",
+      "email": "sangam@yopmail.com",
+      "postalCode": "75012",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ]
+}

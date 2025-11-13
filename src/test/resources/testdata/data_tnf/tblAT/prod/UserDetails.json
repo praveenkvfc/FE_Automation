@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Troststraße 100",
+      "building": "",
+      "postalCode": "1100",
+      "city": "Wien",
+      "email": "automationallpreprod_at01@yopmail.com",
+      "phone": "085 - 05550141s",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Troststraße 100",
+      "building": "",
+      "postalCode": "1100",
+      "city": "Wien",
+      "email": "testguestuser1preprodat@yopmail.com",
+      "phone": "225-44001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Troststraße 100",
+      "building": "",
+      "postalCode": "1100",
+      "city": "Wien",
+      "email": "testguestuser2preprodat@yopmail.com",
+      "phone": "225-44001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Troststraße 100",
+      "building": "",
+      "postalCode": "1100",
+      "city": "Wien",
+      "email": "testguestuser3preprodat@yopmail.com",
+      "phone": "225-44001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Troststraße 100",
+      "building": "",
+      "postalCode": "1100",
+      "city": "Wien",
+      "email": "testguestuser4preprodat@yopmail.com",
+      "phone": "225-44001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

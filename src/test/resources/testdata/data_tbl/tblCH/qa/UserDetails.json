@@ -1,0 +1,272 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationallqa_ch01@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationmyaccountqa_ch01@yopmail.com",
+      "phone": "22-440-50-11",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationcheckoutqa_ch01@yopmail.com",
+      "phone": "22-440-50-12",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationplppdpsearchqa_ch01@yopmail.com",
+      "phone": "22-440-50-13",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationcanvascoreqa_ch01@yopmail.com",
+      "phone": "22-440-50-14",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationcontentpersonalizationqa_ch01@yopmail.com",
+      "phone": "22-440-50-15",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationmyaccount_mobileqach01@yopmail.com",
+      "phone": "22-440-50-16",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationcheckout_mobileqach01@yopmail.com",
+      "phone": "22-440-50-17",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationcontentpersonalization_mobileqach01@yopmail.com",
+      "phone": "22-440-50-18",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationplppdpsearch_mobileqach01@yopmail.com",
+      "phone": "22-440-50-19",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationcanvascore_mobileqach01@yopmail.com",
+      "phone": "22-440-50-20",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "testguestuserqa_ch01@yopmail.com",
+      "phone": "22-440-50-21",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationchangepassworduserqach01@yopmail.com",
+      "phone": "22-440-50-23",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationklarnauserqa_ch01@yopmail.com",
+      "phone": "22-440-50-24",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationnewuserqa_ch01@yopmail.com",
+      "phone": "22-440-50-25",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "registereduserreturnorder_qach01@yopmail.com",
+      "phone": "22-440-50-26",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "guestuserreturnorder_qach01@yopmail.com",
+      "phone": "22-440-50-27",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "city": "Lausanne",
+      "phone": "22-440-50-28",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "1004",
+      "returnTrackingNumber": ""
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "city": "Lausanne",
+      "phone": "22-440-50-29",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "1004",
+      "returnTrackingNumber": ""
+    }
+  ]
+}

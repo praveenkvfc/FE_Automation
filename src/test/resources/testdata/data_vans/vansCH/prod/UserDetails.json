@@ -1,0 +1,118 @@
+{
+<<<<<<< HEAD
+=======
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+      "email": "automationallpreprod_ch01@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+>>>>>>> 5290853a7a4487a24991b3b9525b24e3d78eeff6
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+<<<<<<< HEAD
+      "streetAddress": "Lausanne",
+      "building": "100",
+      "postalCode": "1920",
+      "city": "Martigny",
+=======
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+>>>>>>> 5290853a7a4487a24991b3b9525b24e3d78eeff6
+      "email": "testguestuser1preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+<<<<<<< HEAD
+      "streetAddress": "Lausanne",
+      "building": "100",
+      "postalCode": "1920",
+      "city": "Martigny",
+=======
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+>>>>>>> 5290853a7a4487a24991b3b9525b24e3d78eeff6
+      "email": "testguestuser2preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+<<<<<<< HEAD
+      "streetAddress": "Lausanne",
+      "building": "100",
+      "postalCode": "1920",
+      "city": "Martigny",
+=======
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+>>>>>>> 5290853a7a4487a24991b3b9525b24e3d78eeff6
+      "email": "testguestuser3preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+<<<<<<< HEAD
+      "streetAddress": "Lausanne",
+      "building": "100",
+      "postalCode": "1920",
+      "city": "Martigny",
+=======
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+>>>>>>> 5290853a7a4487a24991b3b9525b24e3d78eeff6
+      "email": "testguestuser4preprodch@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+<<<<<<< HEAD
+      "streetAddress": "Lausanne",
+      "building": "100",
+      "postalCode": "1920",
+      "city": "Martigny",
+=======
+      "streetAddress": "100 Rue de Genève",
+      "building": "",
+      "postalCode": "1004",
+      "city": "Lausanne",
+>>>>>>> 5290853a7a4487a24991b3b9525b24e3d78eeff6
+      "email": "automationallprod_ch01@yopmail.com",
+      "phone": "22-440-50-10",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

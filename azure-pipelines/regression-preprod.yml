@@ -1,0 +1,61 @@
+parameters:
+  - name: tag
+    type: string
+    default: '@regression'
+    values: ['@regression']
+
+  - name: brand
+    type: string
+    default: ''
+    values: ['vans', 'tbl', 'tnf', '']
+
+jobs:
+  - job: RegressionPreprodJob
+    displayName: "Regression Tests - Preprod"
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - task: JavaToolInstaller@0
+        inputs:
+          versionSpec: '17'
+          jdkArchitecture: 'x64'
+
+      - checkout: self
+
+      - ${{ if eq(parameters.brand, '') }}:
+          - ${{ each b in ['vans', 'tbl', 'tnf'] }}:
+              - task: Maven@3
+                displayName: "Run Regression - Preprod - ${{ b }}"
+                inputs:
+                  mavenPomFile: 'pom.xml'
+                  goals: 'clean test'
+                  options: >
+                    -Denv=preprod -Dbrand=${{ b }} -Dtag=${{ parameters.tag }}
+
+              - task: PublishPipelineArtifact@1
+                displayName: "Report - ${{ b }}"
+                inputs:
+                  targetPath: '$(System.DefaultWorkingDirectory)/test-output/reports/preprod'
+                  artifact: 'RegressionPreprodReport_${{ b }}'
+
+      - ${{ if ne(parameters.brand, '') }}:
+          - task: Maven@3
+            displayName: "Run Regression - Preprod - ${{ parameters.brand }}"
+            inputs:
+              mavenPomFile: 'pom.xml'
+              goals: 'clean test'
+              options: >
+                -Denv=preprod -Dbrand=${{ parameters.brand }} -Dtag=${{ parameters.tag }}
+
+          - task: PublishPipelineArtifact@1
+            displayName: "Report - ${{ parameters.brand }}"
+            inputs:
+              targetPath: '$(System.DefaultWorkingDirectory)/test-output/reports/preprod'
+              artifact: 'RegressionPreprodReport_${{ parameters.brand }}'
+
+          - task: PublishHtmlReport@1
+            displayName: "Publish Regression Preprod HTML Report - ${{ brand }}"
+            inputs:
+              reportDir: '$(System.DefaultWorkingDirectory)/test-output/reports/preprod'
+              reportTitle: 'Extent Report - Preprod'
+              tabName: 'Test Report'

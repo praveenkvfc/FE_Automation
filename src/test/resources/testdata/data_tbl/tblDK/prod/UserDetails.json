@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "automationcheckoutmyaccountpreproddk1@yopmail.com",
+      "phone": "25-55-55-01",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "testguestuserpreproddk@yopmail.com",
+      "phone": "255-555-2137",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "testguestuser2preproddk@yopmail.com",
+      "phone": "255-555-3137",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "testguestuser3preproddk@yopmail.com",
+      "phone": "255-555-4137",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "testguestuser4preproddk@yopmail.com",
+      "phone": "255-555-5137",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "SEARCH_TERM_LESS_THAN_48": [
+    {
+      "name": "Cobre"
+    }
+  ],
+  "SEARCH_TERM_MORE_THAN_48": [
+    {
+      "name": "Hombre"
+    }
+  ],
+  "SEARCH_TERM_WITH_TWO_LETTERS": [
+    {
+      "name": "Ho"
+    }
+  ],
+  "SEARCH_TERM_WITH_THREE_LETTERS": [
+    {
+      "name": "Hom"
+    }
+  ],
+  "SEARCH_TERM_WITH_PRODUCT_TYPE": [
+    {
+      "name": "Zapatos"
+    }
+  ],
+  "SEARCH_TERM_WITH_NO_RESULTS": [
+    {
+      "name": "NOMBREALEATORIO"
+    }
+  ],
+  "SEARCH_TERM_WITH_MORETHAN_THREE_LETTERS": [
+    {
+      "name": "Hombre"
+    }
+  ]
+}

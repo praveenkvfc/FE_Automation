@@ -1,0 +1,78 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Męska kurtka polarowa Polar Sun",
+      "code": "NF0A88XP",
+      "price": "799,00 zł",
+      "category": "MENS",
+      "color": "TNF Black Liquid Print-TNF Black",
+      "size": "XS",
+      "omsid": "NF:0A88XP:5OO:XS::1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "Męska kurtka polarowa Polar Sun",
+      "code": "NF0A88XP",
+      "price": "799,00 zł",
+      "category": "MENS",
+      "color": "TNF Black Liquid Print-TNF Black",
+      "size": "XS",
+      "omsid": "NF:0A88XP:5OO:XS::1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Mylo Bay Sneaker voor heren in grijs",
+      "code": "TB0A6629ER9",
+      "price": "€ 80,00",
+      "category": "MENS",
+      "color": "grijs",
+      "color_de": "grijs",
+      "color_nl": "grijs",
+      "size": "40",
+      "unavailableSize": "50",
+      "omsid": "TB:0A6629:ER9:070:W:1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Field Trekker Hiker voor heren in zwart",
+      "code": "TB0A2A58015",
+      "price": "€ 80,00",
+      "category": "MENS",
+      "color": "Navy blue",
+      "color_de": "Schwarz",
+      "color_nl": "zwart",
+      "color_fr": "noir",
+      "size": "40",
+      "omsid": "TB:0A2A58:015:070:M:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Field Trekker Hiker voor heren in zwart",
+      "code": "TB0A2A58015",
+      "price": "€ 80,00",
+      "color": "Navy blue",
+      "color_de": "Schwarz",
+      "color_nl": "zwart",
+      "color_fr": "noir",
+      "size": "40",
+      "omsid": "TB:0A2A58:015:070:M:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "€ 25,00",
+      "color": "tb0gftcd214",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ]
+}

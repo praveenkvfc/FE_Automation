@@ -1,0 +1,71 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Lace-Up Shoe for Men in Dark Grey",
+      "code": "TB0A6DZ5EEP",
+      "price": "€210.00",
+      "category": "MENS",
+      "color": "Grey",
+      "size": "40",
+      "omsid": "TB:0A6DZ5:EEP:070:W:1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "Lace-Up Shoe for Men in Dark Grey",
+      "code": "TB0A6DZ5EEP",
+      "price": "€210.00",
+      "category": "MENS",
+      "color": "Grey",
+      "size": "41",
+      "omsid": "TB:0A6DZ5:EEP:075:W:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Mylo Bay Trainer for Men in Grey",
+      "code": "TB0A6629ER9",
+      "price": "€80.00",
+      "category": "MENS",
+      "color": "Grey",
+      "size": "40",
+      "unavailableSize": "50",
+      "omsid": "TB:0A6629:ER9:070:W:1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Field Trekker Hiker for Men in Black",
+      "code": "TB0A2A58015",
+      "price": "€120.00",
+      "category": "MENS",
+      "color": "Black",
+      "size": "40",
+      "omsid": "TB:0A2A58:015:070:M:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Field Trekker Hiker for Men in Black",
+      "code": "TB0A2A58015",
+      "price": "€120.00",
+      "category": "MENS",
+      "color": "Black",
+      "size": "40",
+      "omsid": "TB:0A2A58:015:070:M:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "tb0gftcd214",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ]
+}

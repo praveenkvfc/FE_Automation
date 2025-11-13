@@ -1,0 +1,32 @@
+{
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "2222420000001113",
+      "MONTH": "01",
+      "YEAR": "26",
+      "SECURITY_CODE": "600"
+    }
+  ],
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111111111111",
+      "MONTH": "01",
+      "YEAR": "26",
+      "SECURITY_CODE": "600"
+    }
+  ],
+  "VISA_SECONDARY": [
+    {
+      "CARD_NUMBER": "4622943127013705",
+      "MONTH": "12",
+      "YEAR": "27",
+      "SECURITY_CODE": "838"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "tnfus_buyer@vfc.com",
+      "PASSWORD": "Marvel@123"
+    }
+  ]
+}

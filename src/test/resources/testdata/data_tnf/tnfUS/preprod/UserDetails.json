@@ -1,0 +1,320 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Centre St",
+      "building": "100",
+      "postalCode": "10013-4308",
+      "city": "New York",
+      "province": "New York",
+      "email": "testautomationatnfus@yopmail.com",
+      "phone": "2506 - 550 - 299",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "athleteUser_registered": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "tnf_us_athlete01@yopmail.com",
+      "phone": "850-465-0190",
+      "province": "Massachusetts",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "postalCode": "02111",
+      "city": "Boston",
+      "province": "Massachusetts",
+      "email": "testautomationall9@yopmail.com",
+      "phone": "2506 - 550 - 299",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Troststraße 100",
+      "building": "",
+      "postalCode": "1100",
+      "city": "Wien",
+      "email": "empvansuk@yopmail.com",
+      "phone": "2506 - 550 - 299",
+      "password": "Thevans@007",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser1_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "116 St 85 Ave",
+      "building": "",
+      "postalCode": "T6G 2R3",
+      "city": "Edmonton",
+      "email": "testautomationallca@yopmail.com",
+      "phone": "250-155-9012",
+      "province": "Alberta",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"    
+    }
+  ],
+  "registeredUser2_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "1234 Rue Principale",
+      "building": "",
+      "postalCode": "G1R 4P5",
+      "city": "Quebec",
+      "email": "testautomationallca@yopmail.com",
+      "phone": "250-525-2525",
+      "province": "Quebec",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser05tbluspreprod@yopmail.com",
+      "phone": "250-555-0025",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser06tbluspreprod@yopmail.com",
+      "phone": "250-555-0026",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser07tbluspreprod@yopmail.com",
+      "phone": "250-555-0027",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser08tbluspreprod@yopmail.com",
+      "phone": "250-555-0028",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser1": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "4 King St W",
+      "building": "",
+      "postalCode": "M5H 1B6",
+      "city": "Toronto",
+      "email": "tnf_emp_pp3_ca@yopmail.com",
+      "phone": "450-520-0080",
+      "province": "Ontario",
+      "countryAbbreviation": "US",
+      "password": "Password@1",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser2": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "1234 Rue Principale",
+      "building": "",
+      "postalCode": "G1R 4P5",
+      "city": "Quebec",
+      "email": "tnf_emp_pp3_ca@yopmail.com",
+      "phone": "250-525-2525",
+      "province": "Quebec",
+      "countryAbbreviation": "US",
+      "password": "Password@1"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Ash",
+      "lastName": "Smith",
+      "streetAddress": "5399 W Genesee St",
+      "building": "",
+      "postalCode": "13031",
+      "city": "Camillus",
+      "province": "New York",
+      "countryAbbreviation": "US",
+      "email": "ash6@yopmail.com",
+      "phone": "250-555-0199"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "860 Washington St",
+      "building": "Medical Center",
+      "city": "Boston",
+      "province": "Massachusetts",
+      "postalCode": "02132",
+      "email": "testautonewuser@yopmail.com",
+      "password": "VFCorp@1234",
+      "confirmPassword": "VFCorp@1234",
+      "phone": "250-555-9910",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "NewUser_With_No_Data": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "testautomationuser713355@yopmail.com",
+      "phone": "250-555-9001",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "athleteUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Centre St",
+      "building": "100",
+      "postalCode": "10013-4308",
+      "city": "New York",
+      "province": "New York",
+      "email": "tnf_us_athlete01@yopmail.com",
+      "phone": "2506 - 550 - 299",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUserNew_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 King St W",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "NewregisterUser@yopmail.com",
+      "phone": "250-555-9001",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    
+    }
+  ],
+  "registeredLoyaltyUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "123 William St",
+      "building": "100",
+      "postalCode": "10038-3804",
+      "city": "New York",
+      "province": "New York",
+      "email": "tnf_us_loyalty12@yopmail.com",
+      "phone": "987 896 - 8588",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "loyaltyuser": [
+    {
+      "firstName": "Magi",
+      "lastName": "test",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "postalCode": "02111",
+      "city": "Boston",
+      "province": "Massachusetts",
+      "email": "tnf_us_loyalty12@yopmail.com",
+      "phone": "2506 - 550 - 299",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "Minnesota_guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "205 2nd Ave NW",
+      "building": "100",
+      "postalCode": "56347",
+      "city": "Bertha",
+      "province": "Minnesota",
+      "email": "testautomationatnfus@yopmail.com",
+      "phone": "8779 - 879 - 799",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "Colorado_guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "7601 Potomac Dr",
+      "building": "100",
+      "postalCode": "80920-8027",
+      "city": "Colorado Springs",
+      "province": "Colorado",
+      "email": "testautomationatnfus@yopmail.com",
+      "phone": "8779 - 879 - 799",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

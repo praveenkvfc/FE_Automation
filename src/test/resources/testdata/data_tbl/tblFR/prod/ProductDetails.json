@@ -1,0 +1,76 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "6-inch Boot imperméable à lacets Timberland® Premium pour homme en jaune",
+      "code": "TB110061713",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "YELLOW",
+      "color_fr": "jaune",
+      "size": "40",
+      "omsid": "TB:110061:713:070:W:1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "6-inch Boot imperméable Timberland® Premium pour homme en noir",
+      "code": "TB010073001",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "black",
+      "color_fr": "noir",
+      "size": "41",
+      "omsid": "TB:010073:001:075:W:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Chaussure bateau classique pour homme en marron",
+      "code": "TB025077214",
+      "price": "150,00 €",
+      "category": "MENS",
+      "color": "brown",
+      "color_fr": "marron",
+      "size": "40",
+      "unavailableSize": "38",
+      "omsid": "TB:025077:214:065:W:1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Bottine de randonnée Sprint Trekker pour homme en noir monochrome",
+      "code": "TB0A1YN5015",
+      "price": "145,00 €",
+      "category": "MENS",
+      "color": "black",
+      "color_fr": "noir",
+      "size": "41",
+      "omsid": "TB:0A1YN5:015:075:W:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "6-Inch Boot Kinsley pour femme en jaune",
+      "code": "TB0A25BS231",
+      "price": "160,00 €",
+      "category": "WOMENS",
+      "color": "Yellow",
+      "color_fr": "jaune",
+      "size": "38",
+      "omsid": "TB:0A25BS:231:070:W:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "Lime Punch",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ]
+}

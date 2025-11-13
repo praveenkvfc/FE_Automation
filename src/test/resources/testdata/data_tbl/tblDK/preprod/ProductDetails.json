@@ -1,0 +1,802 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "All Gender Bowden 3-Pack No Show Sock in White",
+      "code": "TB0A2PU5100",  
+      "price": "119,00 kr.",
+      "category": "WOMEN",
+      "color": "White",
+      "size": "M",
+      "omsid": "TB:0A2PU5:100:M::1:"
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT": [
+    {
+      "name": "Kennebec River Logo T-Shirt for Men in White",
+      "code": "TB0A2C2R100",
+      "price": "249,00 kr.",
+      "category": "MENS",
+      "color": "White",
+      "size": "M",
+      "omsid": "TB:0A2C2R:100:M::1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "AUT Adventure 2.0 in Dark Brown for WOMEN MASTER PRODUCT",
+      "code": "TBTTAP01311",
+      "price": "120,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37.5",
+      "omsid": "TB:TAP01:311:065::1:",
+      "info": "This product should be in sync with MASTER_PRODUCT always. The only diff between this and MASTER_PRODUCT is of size"
+    }
+  ],
+  "PRODUCT_WITH_MANY_PRICES": [
+    {
+      "name": "AUT Mens Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH MANY PRICES",
+      "code": "TBTTAP05311",
+      "price": "40,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color2": "Black",
+      "size": "39",
+      "omsid": "TB:TAP05:311:060:W:1:"
+    }
+  ],
+  "PRODUCT_WITH_SALE_PRICE": [
+    {
+      "name": "AUT WOMEN Garrison Trail Webbing-Strap Sandals PRODUCT WITH SALE PRICE",
+      "code": "TBTTAP06311",
+      "price": "5,00 kr.",
+      "erased_price": "10,00 kr.",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_it": "Marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP06:311:060:1:"
+    }
+  ],
+  "PRODUCT_WITH_SALE_PRICE_WITH_IMAGE": [
+    {
+      "name": "Dunstan River Crewneck T-Shirt for Men in Blue",
+      "code": "TB0A2BPRDV7",
+      "price": "174,30 kr.",
+      "erased_price": "249,00 kr.",
+      "category": "Mens",
+      "color": "Blue",
+      "size": "L",
+      "omsid": "TB:0A2BPR:DV7:L::1:"
+    }
+  ],
+  "BADGE_WITH_IMAGE": [
+    {
+      "name": "AUT WOMEN Hypercharge 8\" Composite Toe Waterproof Work Boot BADGE WITH IMAGE",
+      "code": "TBTTAP08311",
+      "price": "35,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP08:311:060::1:"
+    }
+  ],
+  "BADGE_WITH_TEXT": [
+    {
+      "name": "AUT Timberland PRO® Watch Cap BADGE WITH TEXT",
+      "code": "TBTTAP09311",
+      "price": "15,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "60",
+      "omsid": "TB:TAP09:311:060::1:"
+    }
+  ],
+  "BADGE_WITH_IMAGE_TEXT": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Gritman Low-Profile Trucker Hat BADGE WITH IMAGE TEXT",
+      "code": "TBTTAP10311",
+      "price": "15,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "XL",
+      "omsid": "TB:TAP10:311:XL::1:"
+    }
+  ],
+  "NO_BADGE_NO_TEXT": [
+    {
+      "name": "AUT Men's Garrison Trail Slide Sandals NO BADGE NO TEXT",
+      "code": "TBTTAP09311",
+      "price": "1699,00 kr",
+      "color": "Dark Brown",
+      "category": "MENS",
+      "size": "60",
+      "width": "Medium",
+      "omsid": "TB:010061:713:110:W:1:"
+    }
+  ],
+  "PRODUCT_WITH_LIST_ACCORDION": [
+    {
+      "name": "AUT WOMEN Redwood Falls Waterproof Boots PRODUCT WITH LIST ACCORDION",
+      "code": "TBTTAP12311",
+      "price": "100,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP12:311:060::1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "AUT WOMEN Boondock Waterproof Comp-Toe Pull-On Work Boots PRODUCT MAX ADD TO CARD",
+      "code": "TBTTAP14311",
+      "price": "50,00 kr.",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP14:311:060::1:",
+      "note": "This product should change with TBTTAP14311 later on"
+    }
+  ],
+  "PRODUCT_SIGN_IN_TO_BUY": [
+    {
+      "name": "AUT Adventure 2.0 in Dark Brown for WOMEN PRODUCT SIGN IN TO BUY",
+      "code": "TBTTAP59311",
+      "category": "WOMENS",
+      "price": "120,00 kr.",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP59:311:060::1"
+    }
+  ],
+  "PRODUCT_QUICKSHOP_OPTIONS": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT QUICKSHOP OPTIONS",
+      "code": "TBTTAP15311",
+      "price": "100,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP15:311:060::1:"
+    }
+  ],
+  "BOPIS_MASTER": [
+    {
+      "name": "AUT WOMEN Euro Hiker Hiking Boots BOPIS MASTER",
+      "code": "TBTTAP16311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP16:311:060::1:"
+    }
+  ],
+  "BOPIS_STANDARD": [
+    {
+      "name": "AUT WOMEN Benton Water-Resistant Shell BOPIS STANDARD",
+      "code": "TBTTAP17311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP17:311:060::1:"
+    }
+  ],
+  "STS_STANDARD": [
+    {
+      "name": "AUT WOMEN Stack Logo T-Shirt STS STANDARD",
+      "code": "TBTTAP18311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP18:311:060::1:"
+    }
+  ],
+  "PRODUCT_AVAILABLE": [
+    {
+      "name": "AUT WOMEN Maple Grove Knit Oxford PRODUCT AVAILABLE",
+      "code": "TBTTAP19311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP19:311:060::1:"
+    }
+  ],
+  "PRODUCT_AVAILABILITY_CHANGED": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT AVAILABILITY CHANGED",
+      "code": "TBTTAP20311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP20:311:060::1:"
+    }
+  ],
+  "PRODUCT_AVAILABILITY_CHANGED_2ND": [
+    {
+      "name": "AUT WOMEN TBL® LNY Turbo Sneakers PRODUCT AVAILABILITY CHANGED 2ND",
+      "code": "TBTTAP21311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP21:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_KLARNA_PRICE": [
+    {
+      "name": "AUT WOMEN Drivetrain Composite Toe Work Sneaker PRODUCT WITH KLARNA PRICE",
+      "code": "TBTTAP22311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP22:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_BELOW_KLARNA_PRICE": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Gritman Low-Profile Trucker Hat PRODUCT WITH BELOW KLARNA PRICE",
+      "code": "TBTTAP23311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP23:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_WIDTH": [
+    {
+      "name": "AUT WOMEN Mudsill Steel Toe Work Boot PRODUCT WITH WIDTH",
+      "code": "TBTTAP24311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP24:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_WIDTH_OOS": [
+    {
+      "name": "AUT WOMEN Garrison Trail Slide Sandals PRODUCT WITH WIDTH OOS",
+      "code": "TBTTAP25311",
+      "price": "50,00 kr.",
+      "category": "WOMENS FOOTWEAR SANDALS AND SLIDES",
+      "color": "Dark Brown",
+      "size": "37",
+      "unavailableSize": "36",
+      "omsid": "TB:TAP25:311:060::1:",
+      "unavailableWidth": "Wide",
+      "oos": true,
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_WITH_REGULAR_PRICE": [
+    {
+      "name": "AUT WOMEN Timberland® Originals 6-Inch Boots PRODUCT WITH REGULAR PRICE",
+      "code": "TBTTAP26311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP26:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_REGULAR_PRICE_WITH_IMAGE": [
+    {
+      "name": "Dunstan River Slim-Fit T-Shirt for Men in Dark Green",
+      "code": "TB0A2BPRA58",
+      "price": "249,00 kr.",
+      "category": "MENS CLOTHING SHIRTS",
+      "color": "Green",
+      "size": "L",
+      "omsid": "TB:0A2BPR:A58:L::1:",
+      "note": "This product should change with TBTTAP14311 later on"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "AUT WOMEN 6-Inch Waterproof Field Boots PRODUCT WITHOUT SMALL SIZE",
+      "code": "TBTTAP28311",
+      "category": "WOMENS FOOTWEAR",
+      "unavailableSize": "36",
+      "size": "37",
+      "color": "Dark Brown",
+      "price": "50,00 kr. - 60,00 kr.",
+      "width": "Medium",
+      "omsid": "TB:TAP25:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_SIZE_CHART_FITS": [
+    {
+      "name": "AUT WOMEN Boondock 8\" Composite Toe Waterproof Work Boot PRODUCT WITH SIZE CHART FITS",
+      "code": "TBTTAP29311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP29:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIZE_SHOE": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT SIZE SHOE",
+      "code": "TBTTAP30311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP30:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIZE_CHART_MEASUREMENTS": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Gritman Fleece-Lined Hooded Canvas Jacket PRODUCT SIZE CHART MEASUREMENTS",
+      "code": "TBTTAP31311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP31:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIZE_AND_FITS_MODEL": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Hood Honcho Sport Hoodie PRODUCT SIZE AND FITS MODEL",
+      "code": "TBTTAP32311",
+      "price": "50,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP32:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_REVIEWS": [
+    {
+      "name": "3-Eye Lug Handsewn Boat Shoe for Men in Brown",
+      "code": "TB030003214",
+      "price": "1.499,00 kr.",
+      "category": "WOMENS",
+      "color": "Brown",
+      "size": "40",
+      "omsid": "TB:030003:214:070:W:1:"
+    }
+  ],
+  "PRODUCT_FAVORITES": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Hood Honcho Sport Hoodie PRODUCT FAVORITES",
+      "code": "TBTTAP35311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "60",
+      "omsid": "TB:TAP35:311:S::1:"
+    }
+  ],
+  "PRODUCT_REVIEWS": [
+    {
+      "name": "Timberland® Premium 6 Inch Waterproof Boot for Men in Yellow",
+      "code": "TBT10061713",
+      "price": "1.699,00 kr.",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "40",
+      "omsid": "TB:010061:713:070:W:1:"
+    }
+  ],
+  "PRODUCT_REVIEWS_ABOVE_74%": [
+    {
+      "name": "Euro Hiker Leather Boot for Men in Burgundy",
+      "code": "TB0A5ZQ5C60",
+      "price": "779,40 kr.",
+      "category": "MENS",
+      "color": "Burgundy",
+      "size": "40",
+      "omsid": "TB:0A5ZQ5:C60:070:M:1:"
+    }
+  ],
+  "PRODUCT_REVIEWS_WITH_MORE_DETAILS": [
+    {
+      "name": "Timberland® Premium 6 Inch Waterproof Boot for Men in Yellow",
+      "code": "TBT10061713",
+      "price": "1.699,00 kr.",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "40",
+      "omsid": "TB:010061:713:070:W:1:"
+    }
+  ],
+  "PRODUCT_ONLY_ONE_REVIEWS": [
+    {
+      "name": "Timberland® x Suzanne Oude Hengel Future73 Knit Skirt for Women in Blue",
+      "code": "TBTA6PU7288",
+      "price": "2.399,00 kr.",
+      "category": "WOMENS",
+      "color": "Blue",
+      "size": "M",
+      "omsid": "TB:0A6PU7:288:M::1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Timberland® Premium 6 Inch Waterproof Winter Boot for Men in Yellow",
+      "code": "TB0A2E31231",
+      "price": "1.799,00 kr.",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "40",
+      "omsid": "TB:0A2E31:231:070:W:1:"
+    }
+  ],
+  "EYEBROW_WITH_TITLE": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Skim Coat Heavy-Warmth Thermal Bottoms EYEBROW WITH TITLE",
+      "code": "TBTTAP36311",
+      "price": "",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "60",
+      "omsid": "TB:TAP36:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_REG_SALE_PRICE_HIGH_TO_LOW": [
+    {
+      "name": "AUT Junior Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH REG SALE PRICE HIGH TO LOW",
+      "code": "TBTTAP37311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "39",
+      "omsid": "TB:TAP37:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_STATIC_BREADCRUMB": [
+    {
+      "name": "AUT WOMEN Redwood Falls Waterproof Boots PRODUCT WITH STATIC BREADCRUMB",
+      "code": "TBTTAP38311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP38:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_NO_REVIEWS": [
+    {
+      "name": "AUT Men’s Greenstride™ Motion 6 Waterproof Mid Hikers PRODUCT WITH NO REVIEWS",
+      "code": "TBTTAP39311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "39",
+      "omsid": "TB:TAP39:311:060::1:"
+    }
+  ],
+  "PRODUCT_MENS_CLOTHING_SIZE_CHART": [
+    {
+      "name": "AUT WOMEN Lightweight Hiking Jacket PRODUCT MENS CLOTHING SIZE CHART",
+      "code": "TBTTAP40311",
+      "price": "60,00 kr.",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "size": "",
+      "omsid": "TB:TAP40:311:S::1:"
+    }
+  ],
+  "PRODUCT_KIDS_FOOTWEAR": [
+    {
+      "name": "AUT Toddler Mt. Maddsen Waterproof Mid Hiker Boots PRODUCT KIDS FOOTWEAR",
+      "code": "TBTTAP41311",
+      "price": "60,00 kr.",
+      "category": "KIDS",
+      "color": "Dark Brown",
+      "size": "22.5",
+      "omsid": "TB:TAP41:311:060::1:"
+    }
+  ],
+  "PRODUCT_BELT": [
+    {
+      "name": "AUT WOMEN Monadnock 35MM Regenerative Leather Belt PRODUCT BELT",
+      "code": "TBTTAP42311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP42:311:060::1:"
+    }
+  ],
+  "PRODUCT_WOMENS_PROWORKWEAR": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Morphix Athletic Flex Carpenter Bib Overalls PRODUCT WOMEN PROWORKWEAR",
+      "code": "TBTTAP43311",
+      "price": "60,00 kr.",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "length": "W",
+      "omsid": "TB:TAP43:311:060:W:1:"
+    }
+  ],
+  "PRODUCT_PRO_FOOTWEAR": [
+    {
+      "name": "AUT WOMEN Boondock Waterproof Pull-On Comp-Toe Work Boots PRODUCT PRO FOO",
+      "code": "TBTTAP44311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "",
+      "omsid": "TB:TAP44:311:090:W:1:"
+    }
+  ],
+  "PRODUCT_SOCKS": [
+    {
+      "name": "AUT WOMEN 2-Pack Cushioned Boot Socks PRODUCT SOCKS",
+      "code": "TBTTAP45311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "60",
+      "omsid": "TB:TAP45:311:60::1:"
+    }
+  ],
+  "PRODUCT_HAT": [
+    {
+      "name": "AUT Small Logo Baseball Cap PRODUCT HAT",
+      "code": "TBTTAP46311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "ONE",
+      "omsid": "TB:TAP46:311:Z::1:"
+    }
+  ],
+  "PRODUCT_WOMEN_CLOTHING": [
+    {
+      "name": "AUT WOMEN Logo T-Shirt PRODUCT WOMEN CLOTHING",
+      "code": "TBTTAP47311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "XXL",
+      "omsid": "TB:TAP47:311:XXL::1:"
+    }
+  ],
+  "PRODUCT_MEN_CLOTHING": [
+    {
+      "name": "AUT WOMEN Wind, Water, Earth, and Sky T-Shirt PRODUCT MEN CLOTHING",
+      "code": "TBTTAP48311",
+      "price": "60,00 kr.",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "size": "",
+      "omsid": "TB:TAP48:311:S::1:"
+    }
+  ],
+  "PRODUCT_SMARTWOOL_SOCKS": [
+    {
+      "name": "AUT WOMEN SmartWool® Hike Classic Full-Cushion Crew Socks PRODUCT SMARTWOOL SOCKS",
+      "code": "TBTTAP49311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "",
+      "omsid": "TB:TAP49:311:S::1:"
+    }
+  ],
+  "PRODUCT_WITH_4_LINES_OF_NAME": [
+    {
+      "name": "AUT WOMEN London Vibe Ankle Strap Sandals with a very long name for the functional testing purposes and automation script testing purposes PRODUCT WITH 4 LINES OF NAME",
+      "code": "TBTTAP50311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP50:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_UPSELL": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH UPSELL",
+      "code": "TBTTAP51311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP51:311:060::1:"
+    }
+  ],
+  "PRODUCT_OUT_OF_PROMOTION": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT OUT OF PROMOTION",
+      "code": "TBTTAP52311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP52:311:060::1:"
+    }
+  ],
+  "BOPIS_MASTER_LOW_STOCK": [
+    {
+      "name": "AUT WOMEN Garrison Trail Webbing-Strap Sandals BOPIS MASTER LOW STOCK",
+      "code": "TBTTAP53311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP53:311:060::1:"
+    }
+  ],
+  "BOPIS_MASTER_OOS": [
+    {
+      "name": "AUT WOMEN Euro Hiker Hiking Boots BOPIS MASTER OOS",
+      "code": "TBTTAP54311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP54:311:060::1:"
+    }
+  ],
+  "PRODUCT_PROMOCODE": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT PROMOCODE",
+      "code": "TBTTAP55311",
+      "price": "20,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "37",
+      "omsid": "TB:TAP55:311:060::1:",
+      "note": "This product should cost 20 or lower to be under the free shipping threshold on some EMEA countries."
+    }
+  ],
+  "PRODUCT_WITH_ONE_SIZE": [
+    {
+      "name": "AUT WOMEN 3D-Logo Baseball Cap PRODUCT WITH ONE SIZE",
+      "code": "TBTTAP56311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "",
+      "omsid": "TB:TAP56:311:Z::1:"
+    }
+  ],
+  "PRODUCT_UNISEX_SIZE_CHART": [
+    {
+      "name": "AUT Anti-Fatigue Technology Slide PRODUCT UNISEX SIZE CHART",
+      "code": "TBTTAP57311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "39",
+      "omsid": "TB:TAP57:311:060::1:"
+    }
+  ],
+  "PRODUCT_PROMO_TOOLTIP": [
+    {
+      "name": "AUT WOMEN Timberland® x A-COLD-WALL* Future73 6-Inch Zip Boot PRODUCT PROMO TOOLTIP",
+      "code": "TBTTAP58311",
+      "price": "60,00 kr.",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "size": "60",
+      "omsid": "TB:TAP58:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_MANY_IMAGES": [
+    {
+      "name": "Timberland® Authentic Boat Shoe for Men in Brown",
+      "code": "TB030003214",  
+      "price": "1.499,00 kr.",
+      "category": "MENS",
+      "color": "Brown",
+      "size": "40",
+      "omsid": "TB:030003:214:070:W:1"
+    }
+  ],
+  "Accessory": [
+    {
+      "name": "2-Pack Everyday Crew Sock for Men in Dark Grey/Black",
+      "code": "TBTA1EQH010",
+      "price": "149,00 kr.",
+      "category": "MENS",
+      "color": "Grey",
+      "size": "L",
+      "omsid": "TB:0A1EQH:010:L::1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "185,00",
+      "color": "TBTgftcd214",
+      "size": "185",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ],
+  "SECONDARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "750,00",
+      "color": "TBTgftcd214",
+      "size": "750",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ],
+  "PRODUCT_WITH_DISCOUNTED_PRICE": [
+    {
+      "name": "Gulf Beach Ribbed Hat for Men in Yellow",
+      "code": "TB0A1EGW231",
+      "price": "100,00 kr.",
+      "erased_price": "249,00 kr.",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "ONE",
+      "omsid": "TB:0A1EGW:231:OS::1:"
+    }
+  ],
+  "PRODUCT_SIZE_CHART_ICON": [
+    {
+      "name": "Wind, Water, Earth, and Sky™ T-Shirt for Men in White",
+      "code": "TBTA27J8100",
+      "price": "299,00 kr.",
+      "category": "MENS",
+      "color": "White",
+      "size": "M",
+      "omsid": "TB:0A27J8:100:M::1:"
+    }
+  ],
+  "PRODUCT_WITH_IMAGES_SIZES": [
+    {
+      "name": "Dunstan River Slim-Fit T-Shirt for Men in Dark Green",
+      "code": "TB0A2BPRA58",
+      "price": "249,00 kr.",
+      "category": "Mens",
+      "color": "Green",
+      "size": "L",
+      "omsid": "TB:0A2BPR:A58:L::1:",
+      "note": "This product should change with TBTTAP14311 later on"
+    }
+  ],
+  "PRODUCT_WITH_SIZE_OOS": [
+    {
+      "name": "AUT WOMEN Garrison Trail Slide Sandals PRODUCT WITH WIDTH OOS",
+      "code": "TBTTAP25311",
+      "price": "50,00 kr.",
+      "category": "WOMENS FOOTWEAR SANDALS AND SLIDES",
+      "color": "Dark Brown",
+      "size": "37",
+      "unavailableSize": "36",
+      "omsid": "TB:TAP25:311:060::1:",
+      "unavailableWidth": "Wide",
+      "oos": true,
+      "increaseInventory": false
+    }
+  ],
+  "NOTIFY_ME_PRODUCT": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT NOTIFY ME",
+      "code": "TBTTAP65311",
+      "price": "50,00 kr.",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "size": "37.5",
+      "unavailableSize": "37",
+      "oos": true,
+      "omsid": "TB:TAP65:311:065:W:1:",
+      "increaseInventory": false
+    }
+  ]
+}

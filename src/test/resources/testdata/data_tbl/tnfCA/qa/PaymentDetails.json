@@ -1,0 +1,41 @@
+{
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5577000055770004",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+
+    }
+  ],
+  "VISA": [
+    {
+      "CARD_NUMBER": "4988438843884305",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "VISA2": [
+    {
+      "CARD_NUMBER": "4622943127013705",
+      "MONTH": "12",
+      "YEAR": "27",
+      "SECURITY_CODE": "838"
+    }
+  ],
+  "AMEX": [
+    {
+      "CARD_NUMBER": "378282246310005",
+      "MONTH": "11",
+      "YEAR": "24",
+      "SECURITY_CODE": "7000"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "tbl_ca_tester@vfc.com",
+      "PASSWORD": "P1ssw2rd"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111145551142",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5555444433331111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "ADYEN_3DS_CHALLENGE": [
+    {
+      "CARD_NUMBER": "5454545454545454",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "TBLDK_buyer@vfc.com",
+      "PASSWORD": "Canvas1000!!"
+    }
+  ],
+  "INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "1239273939992344",
+      "PIN": "1567"
+    }
+  ],
+  "GCB_PAGE_INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "EFERGSEGGG",
+      "PIN": "157"
+    }
+  ],
+  "INVALID_VISA": [
+    {
+      "CARD_NUMBER": "4444333322221111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "123"
+    }
+  ],
+  "INVALID_ADYEN": [
+    {
+      "CARD_NUMBER": "545454545454",
+      "MONTH": "11",
+      "YEAR": "22",
+      "SECURITY_CODE": "12"
+    }
+  ],
+  "VALID_GIFTCARDS": [
+    {
+      "CARD_NUMBER": "1110040023dPm1Ofaiz",
+      "PIN": "9142",
+      "VALUE": "1,00"
+    },
+    {
+      "CARD_NUMBER": "1110040023MndNjpfpC",
+      "PIN": "0033",
+      "VALUE": "2,00"
+    },
+    {
+      "CARD_NUMBER": "1110040023GJc2JrHR4",
+      "PIN": "1501",
+      "VALUE": "3,00"
+    }
+  ],
+  "VALID_GIFT_CARDS_DYNAMIC_VALUES": [
+    [
+      {
+        "CARD_NUMBER": "1110040023erSgM8pT0",
+        "PIN": "3375"
+      },
+      {
+        "CARD_NUMBER": "11100400230kfBmYZiE",
+        "PIN": "4485"
+      },
+      {
+        "CARD_NUMBER": "1110040023TvRJbfVOD",
+        "PIN": "3629"
+      },
+      {
+        "CARD_NUMBER": "11100400230n9u2oFzI",
+        "PIN": "8493"
+      }
+    ],
+    [
+      {
+        "CARD_NUMBER": "1110040023X0j7KaSRH",
+        "PIN": "0215"
+      },
+      {
+        "CARD_NUMBER": "1110040023crXMIil82",
+        "PIN": "2114"
+      },
+      {
+        "CARD_NUMBER": "1110040023d0G9oR2Rk",
+        "PIN": "0263"
+      },
+      {
+        "CARD_NUMBER": "1110040023bo8BtvWcT",
+        "PIN": "7343"
+      }
+    ]
+  ]
+}

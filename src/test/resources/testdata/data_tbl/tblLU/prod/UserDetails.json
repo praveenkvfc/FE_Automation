@@ -1,0 +1,80 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationallpreprod_lu01@yopmail.com",
+      "phone": "255-500",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "testguestuserprod_lu01@yopmail.com",
+      "phone": "255-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "testguestuserprod_lu02@yopmail.com",
+      "phone": "255-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "testguestuserprod_lu03@yopmail.com",
+      "phone": "255-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "testguestuserprod_lu04@yopmail.com",
+      "phone": "255-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "testautomation_prod1_@yopmail.com",
+      "phone": "255 - 512 - 223",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

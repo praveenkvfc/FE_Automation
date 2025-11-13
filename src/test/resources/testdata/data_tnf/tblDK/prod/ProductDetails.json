@@ -1,0 +1,83 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Timberland® Authentic Boat Shoe for Men in Brown",
+      "code": "TB030003214",
+      "price": "1.499,00 kr.",
+      "category": "MENS",
+      "color": "Brown",
+      "size": "40",
+      "omsid": "TB:030003:214:070:W:1:"
+    }
+  ],
+  "BOPIS_MASTER": [
+    {
+      "name": "Premium 6 Inch Boot for Men in Black",
+      "code": "TB010073001",
+      "price": "1.699,00 kr.",
+      "category": "MENS",
+      "color": "Black",
+      "size": "41",
+      "omsid": "TB:010073:001:075:W:1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "Maple Grove Trainer for Men in White",
+      "code": "TB0A6A2DEM3",
+      "price": "899,00 kr.",
+      "category": "MENS",
+      "color": "White",
+      "size": "41",
+      "omsid": "TB:0A6A2D:EM3:075:M:1:",
+      "info": "This product should be in sync with MASTER_PRODUCT always. The only diff between this and MASTER_PRODUCT is of size"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Premium 6 Inch Boot for Men in Black",
+      "code": "TB010073001",
+      "price": "1.699,00 kr.",
+      "category": "MENS",
+      "color": "Black",
+      "size": "41",
+      "omsid": "TB:010073:001:075:W:1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Maple Grove Sport Mid-Hiker Boot for Men in White",
+      "code": "TB0A66K5EM2",
+      "price": "999,00 kr.",
+      "category": "MENS",
+      "color": "White",
+      "size": "40",
+      "omsid": "TTB:0A66K5:EM2:070:M:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "185,00",
+      "color": "tb0gftcd214",
+      "size": "185",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Timberland® Premium 6 Inch Waterproof Boot for Men in Yellow",
+      "code": "TB110061713",
+      "price": "1.699,00 kr.",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "40",
+      "omsid": "TB:110061:713:070:M:1:",
+      "unavailableSize": "35.5"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationallpreprod_es01@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "testguestuser1preprodes@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "testguestuser2preprodes@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "testguestuser3preprodes@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "testguestuser4preprodes@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationallprod_es01@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

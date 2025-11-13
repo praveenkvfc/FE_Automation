@@ -1,0 +1,272 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationallqa_ge01@yopmail.com",
+      "phone": "225-505-0100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationmyaccountqa_ge01@yopmail.com",
+      "phone": "225-505-0200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationcheckoutqa_ge01@yopmail.com",
+      "phone": "225-505-0300",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationplppdpsearchqa_ge01@yopmail.com",
+      "phone": "225-505-0400",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationcanvascoreqa_ge01@yopmail.com",
+      "phone": "225-505-0500",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationcontentpersonalizationqa_ge01@yopmail.com",
+      "phone": "225-505-0600",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationmyaccount_mobileqage01@yopmail.com",
+      "phone": "225-505-0700",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationcheckout_mobileqage01@yopmail.com",
+      "phone": "225-505-0800",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationcontentpersonalization_mobileqage01@yopmail.com",
+      "phone": "225-505-0900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationplppdpsearch_mobileqage01@yopmail.com",
+      "phone": "225-505-1000",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationcanvascore_mobileqage01@yopmail.com",
+      "phone": "225-505-1100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "testguestuserqa_ge01@yopmail.com",
+      "phone": "225-505-1200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationchangepassworduserqage01@yopmail.com",
+      "phone": "225-505-1300",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationklarnauserqa_ge01@yopmail.com",
+      "phone": "225-505-1400",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "automationnewuserqa_ge01@yopmail.com",
+      "phone": "225-505-1500",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "registereduserreturnorder_qage01@yopmail.com",
+      "phone": "225-505-1600",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "postalCode": "10997",
+      "city": "Berlin",
+      "email": "guestuserreturnorder_qage01@yopmail.com",
+      "phone": "225-505-1700",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "city": "Berlin",
+      "phone": "225-505-1800",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "10997",
+      "returnTrackingNumber": ""
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Skalitzer Str. 100",
+      "building": "",
+      "city": "Berlin",
+      "phone": "225-505-1900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "10997",
+      "returnTrackingNumber": ""
+    }
+  ]
+}

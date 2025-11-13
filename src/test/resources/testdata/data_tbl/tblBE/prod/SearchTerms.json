@@ -1,0 +1,32 @@
+{
+  "SEARCH_TERM_LESS_THAN_48": [
+    {
+      "name": "Cooper"
+    }
+  ],
+  "SEARCH_TERM_MORE_THAN_48": [
+    {
+      "name": "Herren"
+    }
+  ],
+  "SEARCH_TERM_WITH_TWO_LETTERS": [
+    {
+      "name": "He"
+    }
+  ],
+  "SEARCH_TERM_WITH_THREE_LETTERS": [
+    {
+      "name": "Her"
+    }
+  ],
+  "SEARCH_TERM_WITH_PRODUCT_TYPE": [
+    {
+      "name": "Scarpe"
+    }
+  ],
+  "SEARCH_TERM_WITH_NO_RESULTS": [
+    {
+      "name": "RANDOMNAME"
+    }
+  ]
+}

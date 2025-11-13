@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "Street Two",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "automationregallebe1@yopmail.com",
+      "phone": "2-555-55-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "Street Two",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "testguestuserpreprodbe@yopmail.com",
+      "phone": "2555-555-140",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "Street Two",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "testguestuser2preprodbe@yopmail.com",
+      "phone": "2555-555-240",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "Street Two",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "testguestuser3preprodbe@yopmail.com",
+      "phone": "2555-555-340",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "Street Two",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "testguestuser4preprodbe@yopmail.com",
+      "phone": "2555-555-440",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

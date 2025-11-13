@@ -1,0 +1,71 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Timberland® Premium 6-Inch Lace Up Waterproof Boot for Men in Yellow",
+      "code": "TB110061713",
+      "price": "£190.00",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "7",
+      "omsid": "TB:110061:713:075:W:1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+    "name": "Timberland® Premium 6-Inch Lace Up Waterproof Boot for Men in Yellow",
+      "code": "TB110061713",
+      "price": "£190.00",
+      "category": "MENS",
+      "color": "Yellow",
+      "size": "7.5",
+      "omsid": "TB:110061:713:075:W:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Mylo Bay Trainer for Men in Grey",
+      "code": "TB0A664SER9",
+      "price": "£65.00",
+      "category": "MENS",
+      "color": "Grey",
+      "size": "8",
+      "unavailableSize": "13.5",
+      "omsid": "TB:0A664S:ER9:085:M:1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Timberland® Premium 6 Inch Lace-Up Waterproof Boot For Junior in Dark Blue",
+      "code": "TB0A27JAEP2",
+      "price": "£140.00",
+      "category": "MENS",
+      "color": "Blue",
+      "size": "4",
+      "omsid": "TB:0A27JA:EP2:045:M:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Timberland® Premium 6 Inch Lace-Up Waterproof Boot For Junior in Dark Blue",
+      "code": "TB0A27JAEP2",
+      "price": "£140.00",
+      "category": "MENS",
+      "color": "Blue",
+      "size": "4",
+      "omsid": "TB:0A27JA:EP2:045:M:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "tb0gftcd214",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ]
+}
