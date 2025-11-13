@@ -1,0 +1,62 @@
+parameters:
+  - name: tag
+    type: string
+    default: '@smoke'
+    values: ['@smoke']
+
+  - name: brand
+    type: string
+    default: ''
+    values: ['vans', 'tbl', 'tnf', '']
+
+jobs:
+  - job: SmokeProdJob
+    displayName: "Smoke Tests - Prod"
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - task: JavaToolInstaller@0
+        inputs:
+          versionSpec: '17'
+          jdkArchitecture: 'x64'
+
+      - checkout: self
+
+      - ${{ if eq(parameters.brand, '') }}:
+          - ${{ each b in ['vans', 'tbl', 'tnf'] }}:
+              - task: Maven@3
+                displayName: "Run Smoke - Prod - ${{ b }}"
+                inputs:
+                  mavenPomFile: 'pom.xml'
+                  goals: 'clean test'
+                  options: >
+                    -Denv=prod -Dbrand=${{ b }} -Dtag=${{ parameters.tag }}
+
+              - task: PublishPipelineArtifact@1
+                displayName: "Report - ${{ b }}"
+                inputs:
+                  targetPath: '$(System.DefaultWorkingDirectory)/test-output/reports/prod'
+                  artifact: 'SmokeProdReport_${{ b }}'
+
+      - ${{ if ne(parameters.brand, '') }}:
+          - task: Maven@3
+            displayName: "Run Smoke - Prod - ${{ parameters.brand }}"
+            inputs:
+              mavenPomFile: 'pom.xml'
+              goals: 'clean test'
+              options: >
+                -Denv=prod -Dbrand=${{ parameters.brand }} -Dtag=${{ parameters.tag }}
+
+          - task: PublishPipelineArtifact@1
+            displayName: "Report - ${{ parameters.brand }}"
+            inputs:
+              targetPath: '$(System.DefaultWorkingDirectory)/test-output/reports/prod'
+              artifact: 'SmokeProdReport_${{ parameters.brand }}'
+
+          - task: PublishHtmlReport@1
+            displayName: "Publish Smoke Prod HTML Report - ${{ brand }}"
+            inputs:
+              reportDir: '$(System.DefaultWorkingDirectory)/test-output/reports/preprod'
+              reportTitle: 'Extent Report - Prod'
+              tabName: 'Test Report'
+
