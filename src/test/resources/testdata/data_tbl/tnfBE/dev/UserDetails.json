@@ -1,0 +1,28 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "automationalldevbe1@yopmail.com",
+      "phone": "2356-754-444",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "automationalldevbe2@yopmail.com",
+      "phone": "2356-754-445",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

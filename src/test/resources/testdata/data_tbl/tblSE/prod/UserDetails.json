@@ -1,0 +1,80 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationallpreprodse01@yopmail.com",
+      "phone": "255-555-5100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "testguestuserprodse01@yopmail.com",
+      "phone": "255-555-5111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "testguestuserprodse02@yopmail.com",
+      "phone": "255-555-5111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "testguestuserprodse03@yopmail.com",
+      "phone": "255-555-5111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "testguestuserprodse04@yopmail.com",
+      "phone": "255-555-5111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationallprodse01@yopmail.com",
+      "phone": "255-555-5111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

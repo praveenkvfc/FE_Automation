@@ -1,0 +1,65 @@
+{
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5555555555554444",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111145551142",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "VISA2": [
+    {
+      "CARD_NUMBER": "4622943127013705",
+      "MONTH": "12",
+      "YEAR": "27",
+      "SECURITY_CODE": "838"
+    }
+  ],
+  "DISCOVER": [
+    {
+      "CARD_NUMBER": "6011601160116611",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "AMEX": [
+    {
+      "CARD_NUMBER": "370000000000002",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "7373"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "payaltrarunningustest2@vfc.com",
+      "PASSWORD": "[wB5J7u<"
+    }
+  ],
+  "VALID_GIFTCARDS": [
+    {
+      "CARD_NUMBER": "1110040023dPm1Ofaiz",
+      "PIN": "9142",
+      "VALUE": "10,00"
+    },
+    {
+      "CARD_NUMBER": "1110040023MndNjpfpC",
+      "PIN": "0033",
+      "VALUE": "20,00"
+    },
+    {
+      "CARD_NUMBER": "1110040023GJc2JrHR4",
+      "PIN": "1501",
+      "VALUE": "30,00"
+    }
+  ]
+}

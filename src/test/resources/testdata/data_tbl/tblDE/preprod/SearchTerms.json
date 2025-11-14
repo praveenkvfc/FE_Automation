@@ -1,0 +1,37 @@
+{
+  "SEARCH_TERM_LESS_THAN_48": [
+    {
+      "name": "Cooper"
+    }
+  ],
+  "SEARCH_TERM_MORE_THAN_48": [
+    {
+      "name": "DAMEN"
+    }
+  ],
+  "SEARCH_TERM_WITH_TWO_LETTERS": [
+    {
+      "name": "he"
+    }
+  ],
+  "SEARCH_TERM_WITH_THREE_LETTERS": [
+    {
+      "name": "Sch"
+    }
+  ],
+  "SEARCH_TERM_WITH_MORETHAN_THREE_LETTERS": [
+    {
+      "name": "DAMEN"
+    }
+  ],
+  "SEARCH_TERM_WITH_PRODUCT_TYPE": [
+    {
+      "name": "Boots"
+    }
+  ],
+  "SEARCH_TERM_WITH_NO_RESULTS": [
+    {
+      "name": "RANDOMNAME"
+    }
+  ]
+}

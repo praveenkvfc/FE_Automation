@@ -1,0 +1,766 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "2nd Lane",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod@yopmail.com",
+      "phone": "250-555-9001",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod2@yopmail.com",
+      "phone": "250-555-9012",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod3@yopmail.com",
+      "phone": "250-555-9013",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod4@yopmail.com",
+      "phone": "250-555-9015",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationPlpPdpSearch01@yopmail.com",
+      "phone": "250-555-9110",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredAthleteUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "123 William St",
+      "building": "100",
+      "postalCode": "10038-3804",
+      "city": "New York",
+      "province": "New York",
+      "email": "tnf_ca_athlete01@yopmail.com",
+      "phone": "987 896 - 8588",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredLoyaltyUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "123 William St",
+      "building": "100",
+      "postalCode": "10038-3804",
+      "city": "New York",
+      "province": "New York",
+      "email": "tnf_ca_loyaltyFeb@yopmail.com",
+      "phone": "987 896 - 8588",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod@yopmail.com",
+      "phone": "250-555-9001",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod2@yopmail.com",
+      "phone": "250-555-9012",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod3@yopmail.com",
+      "phone": "250-555-9013",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutmyaccountprepod4@yopmail.com",
+      "phone": "250-555-9015",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Multiple_address_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutprepod1@yopmail.com",
+      "phone": "250-155-9012",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutprepod1@yopmail.com",
+      "phone": "250-155-9012",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutprepod2@yopmail.com",
+      "phone": "250-255-9012",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutprepod3@yopmail.com",
+      "phone": "250-355-9013",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutprepod4@yopmail.com",
+      "phone": "250-455-9015",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationmyaccountppmobile@yopmail.com",
+      "phone": "250-655-0221",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationmyaccountpp2mobile@yopmail.com",
+      "phone": "250-755-0222",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationmyaccountpp3mobile@yopmail.com",
+      "phone": "250-855-0223",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationmyaccountpp4mobile@yopmail.com",
+      "phone": "250-955-0224",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutpp1mobile@yopmail.com",
+      "phone": "250-516-0221",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutpp2mobile@yopmail.com",
+      "phone": "250-527-0222",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutpp3mobile@yopmail.com",
+      "phone": "250-538-0223",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcheckoutpp4mobile@yopmail.com",
+      "phone": "250-549-0224",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "automationcorepreprod@yopmail.com",
+      "phone": "250-555-1126",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationPlpPdpSearch01@yopmail.com",
+      "phone": "250-555-9110",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationPlpPdpSearch02@yopmail.com",
+      "phone": "250-555-9120",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationPlpPdpSearch03@yopmail.com",
+      "phone": "250-555-9130",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationPlpPdpSearch04@yopmail.com",
+      "phone": "250-555-9140",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "testautomationtbluspreprod@yopmail.com",
+      "phone": "250-555-9005",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "changepasswordtestingtblcapreprod@yopmail.com",
+      "phone": "250-555-9006",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "athleteUser_registered": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 King St W",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "tnf_ca_athlete01@yopmail.com",
+      "phone": "250-555-1000",
+      "province": "Ontario",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 City Centre Dr2",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testguestuser@yopmail.com",
+      "phone": "250-555-0495",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "500 Granville St",
+      "building": "",
+      "postalCode": "V6C 1W6",
+      "city": "Vancouver",
+      "email": "tnf_emp_pp3_ca@yopmail.com",
+      "phone": "450-520-0080",
+      "province": "British Columbia",
+      "countryAbbreviation": "CA",
+      "password": "Password@1",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Ave",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empuser02tblcapreprod@yopmail.com",
+      "phone": "450-520-0081",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Ave",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empuser03tblcapreprod@yopmail.com",
+      "phone": "450-520-0082",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Ave",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empuser04tblcapreprod@yopmail.com",
+      "phone": "450-520-0083",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empnuser07tblcapreprod@yopmail.com",
+      "phone": "450-520-0085",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empnuser07tblcapreprod@yopmail.com",
+      "phone": "450-520-0086",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empnuser07tblcapreprod@yopmail.com",
+      "phone": "450-520-0087",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "empnuser08tblcapreprod@yopmail.com",
+      "phone": "450-520-0088",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "860 Washington St",
+      "building": "Medical Center",
+      "city": "Toronto",
+      "province": "Ontario",
+      "postalCode": "M5J 1V6",
+      "email": "test11automationnew@yopmail.com",
+      "password": "VFCorp@1234",
+      "confirmPassword": "VFCorp@1234",
+      "phone": "250-555-0399",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "NewUser_With_No_Data": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationuser519739@yopmail.com",
+      "phone": "250-555-9001",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser1_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "116 St 85 Ave",
+      "building": "",
+      "postalCode": "T6G 2R3",
+      "city": "Edmonton",
+      "email": "testautomationallca@yopmail.com",
+      "phone": "250-155-9012",
+      "province": "Alberta",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"    
+    }
+  ],
+  "registeredUser2_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "1234 Rue Principale",
+      "building": "",
+      "postalCode": "G1R 4P5",
+      "city": "Quebec",
+      "email": "testautomationallca@yopmail.com",
+      "phone": "250-525-2525",
+      "province": "Quebec",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser3_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "PO BOX 4001",
+      "building": "STN CENTRAL",
+      "postalCode": "V8W 0E6",
+      "city": "VICTORIA",
+      "email": "testautomationallca@yopmail.com",
+      "phone": "250-525-2525",
+      "province": "British Columbia",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser1": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "4 King St W",
+      "building": "",
+      "postalCode": "M5H 1B6",
+      "city": "Toronto",
+      "email": "tnf_emp_pp3_ca@yopmail.com",
+      "phone": "450-520-0080",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "Password@1",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser2": [
+    {
+
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "1234 Rue Principale",
+      "building": "",
+      "postalCode": "G1R 4P5",
+      "city": "Quebec",
+      "email": "tnf_emp_pp3_ca@yopmail.com",
+      "phone": "250-525-2525",
+      "province": "Quebec",
+      "countryAbbreviation": "CA",
+      "password": "Password@1",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "loyaltyuser": [
+    {
+      "firstName": "Magi",
+      "lastName": "test",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "postalCode": "02111",
+      "city": "Boston",
+      "province": "Massachusetts",
+      "email": "tnf_us_loyalty12@yopmail.com",
+      "phone": "2506 - 550 - 299",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "athleteUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "1234 Rue Principale",
+      "building": "",
+      "postalCode": "G1R 4P5",
+      "city": "Quebec",
+      "email": "tnf_ca_athlete01@yopmail.com",
+      "phone": "250-525-2525",
+      "province": "Quebec",
+      "countryAbbreviation": "CA",
+      "password": "Welcome@123",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUserNew_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 King St W",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "NewregisterUser@yopmail.com",
+      "phone": "250-555-9001",
+      "province": "Ontario",
+      "countryAbbreviation": "CA",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    
+    }
+  ]
+}

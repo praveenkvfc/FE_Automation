@@ -1,0 +1,18 @@
+{
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111111111111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5555555555554444",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ]
+}

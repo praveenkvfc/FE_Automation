@@ -1,0 +1,115 @@
+{
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111145551142",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5555555555554444",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "TNFUK_buyer@vfc.com",
+      "PASSWORD": "P1ssw2rd"
+    }
+  ],
+  "INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "1239273939992344",
+      "PIN": "1567"
+    }
+  ],
+  "GCB_PAGE_INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "EFERGSEGGG",
+      "PIN": "157"
+    }
+  ],
+  "INVALID_VISA": [
+    {
+      "CARD_NUMBER": "4444333322221111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "123"
+    }
+  ],
+  "INVALID_ADYEN": [
+    {
+      "CARD_NUMBER": "545454545454",
+      "MONTH": "11",
+      "YEAR": "22",
+      "SECURITY_CODE": "12"
+    }
+  ],
+  "VALID_GIFTCARDS": [
+    {
+      "CARD_NUMBER": "1110040031Hjy6gJ6XJ",
+      "PIN": "8708",
+      "VALUE": "1,00"
+    },
+    {
+      "CARD_NUMBER": "1110040031u67P6fyHX",
+      "PIN": "0633",
+      "VALUE": "2,00"
+    },
+    {
+      "CARD_NUMBER": "11100400315gT0wXk0C",
+      "PIN": "0321",
+      "VALUE": "3,00"
+    }
+  ],
+  "ADYEN_3DS_CHALLENGE": [
+    {
+      "CARD_NUMBER": "5454545454545454",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "VALID_GIFT_CARDS_DYNAMIC_VALUES": [
+    [
+      {
+        "CARD_NUMBER": "1110040031DZf2mjr0E",
+        "PIN": "0156"
+      },
+      {
+        "CARD_NUMBER": "1110040031sO2aCbGjn",
+        "PIN": "4511"
+      },
+      {
+        "CARD_NUMBER": "1110040031831rPyxyM",
+        "PIN": "4983"
+      },
+      {
+        "CARD_NUMBER": "1110040031iECQ0AXyv",
+        "PIN": "3545"
+      }
+    ],
+    [
+      {
+        "CARD_NUMBER": "1110040031NFfVHuPbw",
+        "PIN": "3347"
+      },
+      {
+        "CARD_NUMBER": "1110040031zqtFFrPIG",
+        "PIN": "2753"
+      },
+      {
+        "CARD_NUMBER": "11100400317eJqUCNqO",
+        "PIN": "0107"
+      },
+      {
+        "CARD_NUMBER": "1110040031l6tbPFjl7",
+        "PIN": "8697"
+      }
+    ]
+  ]
+}

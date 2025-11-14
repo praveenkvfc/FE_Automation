@@ -1,0 +1,78 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "vansotwprod1@yopmail.com",
+      "phone": "250-555-0011",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "vansotwprod2@yopmail.com",
+      "phone": "250-555-0014",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "vansotwprod3@yopmail.com",
+      "phone": "250-555-0018",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "guestuserotwprod@yopmail.com",
+      "phone": "250-555-0495",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "vansotwnewuserprod@yopmail.com",
+      "phone": "250-555-0495",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

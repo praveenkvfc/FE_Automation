@@ -1,0 +1,138 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Premium Rowley XLT Year of the Dragon",
+      "code": "VN000CQFBLA",
+      "price": "$150.00",
+      "category": "SHOP",
+      "color": "Black",
+      "size": "9.0 Men = 10.5 Women",
+      "pdpsize": "M9 / W10.5",
+      "omsid": "VN:000CQF:BLA:090:M:1:",
+      "oos": false
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT": [
+    {
+      "name": "Premium Old Skool 36",
+      "code": "VN000CNGD3W",
+      "price": "$90.00",
+      "category": "SHOP",
+      "color": "Black & Woodthrush Brown",
+      "size": "9.0 Men = 10.5 Women",
+      "pdpsize": "M9 / W10.5",
+      "omsid": "VN:000CNG:D3W:090:M:1:",
+      "oos": false
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT_ALTERNATIVE_SIZE": [
+    {
+      "name": "Premium Old Skool 36",
+      "code": "VN000CNGD3W",
+      "price": "$90.00",
+      "category": "SHOP",
+      "color": "Black & Woodthrush Brown",
+      "size": "12.0 Men = 13.5 Women",
+      "pdpsize": "M12 / W13.5",
+      "omsid": "VN:000CNG:D3W:120:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_SHOE_SIZE": [
+    {
+      "name": "Premium Sport 73",
+      "code": "VN000CR1WWW",
+      "price": "$95.00",
+      "category": "SHOP",
+      "color": "White",
+      "size": "12.0 Men = 13.5 Women",
+      "pdpsize": "M12 / W13.5",
+      "omsid": "VN:000CR1:WWW:120:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_SHOE_SIZE_CHANGE": [
+    {
+      "name": "Premium Sport 73",
+      "code": "VN000CR1WWW",
+      "price": "$95.00",
+      "category": "SHOP",
+      "color": "White",
+      "size": "8.5 Men = 10.0 Women",
+      "pdpsize": "M8.5 / W10",
+      "omsid": "VN:000CR1:WWW:085:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_NAME_COLOR_IMAGE_CHECK": [
+    {
+      "name": "Premium Old Skool 36",
+      "name2": "Premium Old Skool 36",
+      "code": "VN000CQDCPG",
+      "code2": "VN000CQDCHZ",
+      "price": "$100.00",
+      "price2": "$100.00",
+      "category": "SHOP",
+      "color": "Iceberg Blue",
+      "color2": "Sea Turtle Brown",
+      "size": "8.5 Men = 10.0 Women",
+      "pdpsize": "M8.5 / W10",
+      "omsid": "VN:000CQD:CPG:085:M:1:",
+      "omsid2": "VN:000CQD:CHZ:085:M:1:",
+      "oos": false
+    }
+  ],
+  "MASTER_PLP_SEARCH_PRODUCT": [
+    {
+      "name": "Premium Sk8-Hi 38 Reissue",
+      "code": "VN000CR02BO",
+      "price": "$115.00",
+      "category": "SHOP",
+      "color": "Checkerboard Black & White",
+      "size": "8.5 Men = 10.0 Women",
+      "pdpsize": "M8.5 / W10",
+      "omsid": "VN:000CR0:2BO:085:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_MEN_CLOTHING": [
+    {
+      "name": "Premium Surplus Pullover Hoodie",
+      "code": "VN000GVQ1OU",
+      "price": "$100.00",
+      "category": "SHOP",
+      "color": "Brown Sugar",
+      "size": "X Small",
+      "pdpsize": "XS",
+      "omsid": "VN:000GVQ:1OU:XS::1",
+      "oos": false
+    }
+  ],
+  "PRODUCT_NOTIFY_ME": [
+    {
+      "name": "Premium Old Skool 36",
+      "code": "VN000CNG1M7",
+      "price": "$100.00",
+      "category": "SHOP",
+      "color": "Golden Brown",
+      "size": "4.0 Men = 5.5 Women",
+      "unavailableSize": "B5 / W6.5",
+      "pdpsize": "B4 / W5.5",
+      "omsid": "VN:000CNG:1M7:040:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_WITH_LONG_NAME": [
+    {
+      "name": "Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie Premium Surplus Pullover Hoodie",
+      "code": "VN000GVQ1OU",
+      "price": "$100.00",
+      "category": "SHOP",
+      "color": "Brown Sugar",
+      "pdpsize": "M",
+      "size": "Medium",
+      "omsid": "VN:000GVQ:1OU:M::1:",
+      "oos": false
+    }
+  ]
+}
