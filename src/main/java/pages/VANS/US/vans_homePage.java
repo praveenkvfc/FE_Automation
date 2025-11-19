@@ -4,7 +4,6 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
-import utils.SortUtility;
 
 import static utils.Constants.DEFAULT_WAIT;
 
@@ -41,7 +40,7 @@ public class vans_homePage {
 
     private Locator vans_searchField()
     {
-        return page.locator("#dialogs > div > div.vf-ajvdco.\\[\\.nested-enter-from_\\&\\,\\.nested-leave-to_\\&\\]\\:translate-x-20.lg\\:w-full > div > div.grow.overflow-y-auto.p-6.\\!p-0 > div > div.w-full.flex.center.gap-6.px-4.py-6.between.lg\\:px-6.lg\\:pt-8 > form > div > div > label > input");
+       return page.locator("[data-test-id=\"base-input\"]");
     }
 
     public void enter_searchInputField(String searchInput)

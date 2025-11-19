@@ -7,7 +7,7 @@ Feature: Create a new user account and elect pick up store in cart successfully
   Background:
     Given the user is on the "Create an Account" page
 
-  @Vans_Smoke
+  @Vans_Smoke1
   Scenario: Account creation and select pick up store in cart Successfully
     When the user enters the email for vans
     And the user provides the password for vans to Signup or SignIn

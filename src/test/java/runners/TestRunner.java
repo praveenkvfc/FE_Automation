@@ -80,7 +80,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return testNGCucumberRunner.provideScenarios();
     }

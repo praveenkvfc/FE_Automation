@@ -7,7 +7,7 @@ Feature: Create a new user account and place order successfully
   Background:
     Given the user is on the "Create an Account" page
 
-  @Vans_Smoke @payments
+  @Vans_Smokepaypal @payments
   Scenario: Account creation and place order using express checkout paypal Successfully
     When the user enters the email for vans
     And the user provides the password for vans to Signup or SignIn
