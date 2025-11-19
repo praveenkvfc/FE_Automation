@@ -3,11 +3,16 @@ package pages.VANS.US;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import com.microsoft.playwright.options.ElementState;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import utils.RetryUtility;
+import utils.ScreenshotUtil;
 import utils.UserDetailsReader;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static utils.Constants.*;
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Locator;
 
 
 public class vans_cartPage {
@@ -26,7 +31,7 @@ public class vans_cartPage {
 
     public void Click_CheckoutButton_vans() {
         RetryUtility.gradualScrollToBottomUntilLocator(page, vans_checkoutButton_cartPage(), "CLICK");
-        page.waitForTimeout(2000);
+        page.waitForTimeout(SHORT_WAIT);
     }
 
     private Locator vans_PickupInStore_CartPage() {
@@ -41,7 +46,7 @@ public class vans_cartPage {
     }
 
     private Locator vans_PickupInStore_Window_CartPage() {
-        page.waitForTimeout(5000);
+        page.waitForTimeout(SHORT_WAIT);
         return page.getByText("getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName(\"Pickup in Store\")");
     }
 
