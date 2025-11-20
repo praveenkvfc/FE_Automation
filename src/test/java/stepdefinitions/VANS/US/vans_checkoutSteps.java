@@ -2,17 +2,23 @@ package stepdefinitions.VANS.US;
 
 import com.microsoft.playwright.Page;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.VANS.US.*;
 import utils.PlaywrightFactory;
+import utils.RandomDataGenerator;
 import utils.RetryUtility;
+import utils.PaymentDataReader;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-
+import static org.testng.Assert.assertEquals;
 public class vans_checkoutSteps {
     private Page page;
     private vans_checkoutPage getVansCheckoutPage;
     private vans_paypal_paymentPage getVansPaypalPaymentPage;
+    private vans_addressPage getVansAddressPage;
+    private vans_HeaderPage getVansHeaderPage;
+    private vans_OrderHistorypage getVansOrderHistoryPage;
     private vans_Klarna_paymentPage getvansKlarnaPaymentPage;
 
     private Page getPage() {
@@ -23,6 +29,13 @@ public class vans_checkoutSteps {
             }
         }
         return page;
+    }
+
+    private vans_addressPage getVansAddressPage() {
+        if (getVansAddressPage == null) {
+            getVansAddressPage = new vans_addressPage(getPage());
+        }
+        return getVansAddressPage;
     }
 
     private vans_checkoutPage getGetVansCheckoutPage() {
@@ -46,12 +59,28 @@ public class vans_checkoutSteps {
         }
         return getVansPaypalPaymentPage;
     }
+    private vans_HeaderPage getVansHeaderPage() {
+        if (getVansHeaderPage == null) {
+            getVansHeaderPage = new vans_HeaderPage(getPage());
+        }
+        return getVansHeaderPage;
+    }
+    private vans_OrderHistorypage getVansOrderHistoryPage() {
+        if (getVansOrderHistoryPage == null) {
+            getVansOrderHistoryPage = new vans_OrderHistorypage(getPage());
+        }
+        return getVansOrderHistoryPage;
 
     @And("select default the shipping method")
     public void selectDefaultTheShippingMethod() {
 
 
     }
+//    @And("select default the shipping method")
+//    public void selectDefaultTheShippingMethod() {
+//
+//        getGetVansCheckoutPage().check_standardShippingMethod();
+//    }
 
     @And("select {string} the shipping method")
     public void selectTheShippingMethod(String method) {
@@ -72,11 +101,91 @@ public class vans_checkoutSteps {
         getGetVansCheckoutPage().click_payNow();
     }
 
-    @When("User places the order by clicking pay now using {string}")
-    public void userPlacesTheOrderByClickingPayNowUsing(String input) {
-        if (input.equals("paypal") || input.equals("express paypal")) {
+    @When("User selects the payment method using {string}")
+    public void userSelectsThePaymentMethodUsing(String input) {
+        if (input.equalsIgnoreCase("paypal") || input.equalsIgnoreCase("express paypal")) {
             getGetVans_paypal_Page().complete_paypal_payment(input);
+        } else if (input.equalsIgnoreCase("credit card")) {
+            // No action needed if credit card is default
+            System.out.println("Credit card is selected by default.");
+        } else if (input.equalsIgnoreCase("gift card")) {
+            userAppliesAGiftCard(); // Reuse existing method
         }
+    }
+
+//
+//        if (input.equalsIgnoreCase("gift card")) {
+//            // Click Gift Card button
+//            getGetVansCheckoutPage().giftCardButton_CheckoutPage_Click(getPage());
+//
+//            // Load gift card details from JSON using correct key
+//            int giftCardIndex = 1; // Change to 1 or 2 if needed
+//            PaymentDataReader reader = PaymentDataReader.getInstance("VALID_GIFTCARDS_FULL_PAYMENT", giftCardIndex);
+//
+//            // Fill gift card number
+//            getGetVansCheckoutPage().giftCardNumberInputFill_CheckoutPage(getPage(), reader.getCardNumber());
+//
+//            // Fill PIN
+//            getGetVansCheckoutPage().giftCardPinFill_CheckoutPage(getPage(), reader.getPin());
+//
+//            // Click Apply Gift Card
+//            getGetVansCheckoutPage().applyGiftCardButton_Click_CheckoutPage(getPage());
+//
+//      }
+
+
+    @And("User enters mandatory details for who is picking up the order")
+    public void userEnterMandatoryDetailsForWhoIsPickingUpTheOrder() {
+        // Generate random data
+        String firstName = RandomDataGenerator.generateRandomName();
+        String lastName = RandomDataGenerator.generateRandomName();
+        // Fill into form using checkout page methods
+        getGetVansCheckoutPage().vans_PickingUpTheOrder_FirstName_Fill(firstName);
+        getGetVansCheckoutPage().vans_PickingUpTheOrder_LastName_Fill(lastName);
+
+    }
+
+    @And("User enters mandatory inputs for billing address")
+    public void userEntersMandatoryInputsForBillingAddress() {
+        getGetVansCheckoutPage().fillBillingAddressFields();
+    }
+
+    @Then("User enters CC details after selecting the {string}")
+    public void userEntersCCDetailsAfterSelectingThe(String input) {
+        String cardKey = input.equalsIgnoreCase("credit card") ? "VISA" : input;
+        getGetVansCheckoutPage().enterCreditCardDetails_CheckoutPage(cardKey);
+    }
+
+
+
+    @When("User applies a gift card")
+    public void userAppliesAGiftCard() {
+        getGetVansCheckoutPage().giftCardButton_CheckoutPage_Click(getPage());
+
+        PaymentDataReader reader = PaymentDataReader.getInstance("VALID_GIFTCARDS_FULL_PAYMENT", 0);
+        getGetVansCheckoutPage().giftCardNumberInputFill_CheckoutPage(getPage(), reader.getCardNumber());
+        getGetVansCheckoutPage().giftCardPinFill_CheckoutPage(getPage(), reader.getPin());
+        getGetVansCheckoutPage().applyGiftCardButton_Click_CheckoutPage(getPage());
+    }
+
+    @And("User confirms and submits the order")
+    public void userConfirmsAndSubmitsTheOrder() {
+        getGetVansCheckoutPage().click_payNow_creditCard();
+
+    }
+
+    @And("User should be able to see the order in Order history page")
+    public void userShouldBeAbleToSeeTheOrderInOrderHistoryPage() {
+        getVansHeaderPage().navigateFromProfileTo("order history");
+        getVansOrderHistoryPage().vansorderhistorytextisvisible();
+        String headingText = getVansOrderHistoryPage().getOrderHistoryHeadingText();
+        System.out.println("Order History Heading: " + headingText);
+        //assert it matches expected value
+        assertEquals(headingText, "Order History", "Heading text does not match!");
+        getVansOrderHistoryPage().vansordernumberisvisible();
+        //to capture and print the order number
+        String orderNumber = getVansOrderHistoryPage().getOrderNumber();
+        System.out.println("Order Number: " + orderNumber);
         if (input.equals("credit card")) {
             getGetVansCheckoutPage().click_payNow();
         }
@@ -101,3 +210,5 @@ public class vans_checkoutSteps {
         getGetVansCheckoutPage().click_changePaymentButton();
     }
 }
+
+

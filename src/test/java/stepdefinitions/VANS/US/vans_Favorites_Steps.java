@@ -48,6 +48,15 @@ private vans_FavoritesPage vansFavoritesPage;
         getFavoritesPage().vans_removeProductNotification_FavoritesPage_Visible();
         getFavoritesPage().vans_NoItem_FavoritesPage_Visible();
     }
+
+    @And("User add product to cart from favourites page")
+    public void userAddProductToCartFromFavouritesPage() {
+        getFavoritesPage().vans_AddToQuickShop_FavoritesPage_Click();
+        getFavoritesPage().vans_QuickShopSizeOptions_FavoritesPage_Click();
+        getFavoritesPage().vans_QuickShopAddToCartButton_FavoritesPage_Click();
+        getFavoritesPage().vans_QuickShopIncQuantity_FavoritesPage_Click();
+        getFavoritesPage().vans_QuickShopViewCartButton_FavoritesPage_Click();
+    }
 }
 
 

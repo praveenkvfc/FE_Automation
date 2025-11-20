@@ -6,6 +6,7 @@ import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
 import java.util.Random;
+import java.util.regex.Pattern;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static utils.Constants.DEFAULT_WAIT;
@@ -38,6 +39,44 @@ public class vans_FavoritesPage {
     public void vans_ProductCount_FavoritesPage_Visible() {
         assertThat(vans_MyFavoritesHeading_FavoritesPage()).isVisible();
     }
+    private Locator vans_AddToQuickShop_FavoritesPage() {
+        return page.locator("[data-test-id=\"product-card-add\"]");
+    }
+    public void vans_AddToQuickShop_FavoritesPage_Click() {
+        page.waitForTimeout(3000);
+        vans_AddToQuickShop_FavoritesPage().click();
+    }
+    private Locator vans_QuickShopSizeOptions_FavoritesPage() {
+        return page.locator("xpath=//*[@id=\"dialogs\"]/div/div[2]/div/div[2]/div/section/fieldset/label/span");
+    }
+    public void vans_QuickShopSizeOptions_FavoritesPage_Click() {
+        vans_QuickShopSizeOptions_FavoritesPage().first().click();
+
+    }
+    private Locator vans_QuickShopAddToCartButton_FavoritesPage() {
+        return page.locator("[data-test-id=\"vf-button\"]"); // Final Add to Cart button
+    }
+    public void vans_QuickShopAddToCartButton_FavoritesPage_Click() {
+        page.waitForTimeout(DEFAULT_WAIT);
+        vans_QuickShopAddToCartButton_FavoritesPage().click();
+    }
+    private Locator vans_QuickShopIncQuantity_FavoritesPage() {
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("^Increase")));
+    }
+    public void vans_QuickShopIncQuantity_FavoritesPage_Click() {
+
+        vans_QuickShopIncQuantity_FavoritesPage().click();
+        page.waitForTimeout(DEFAULT_WAIT);
+    }
+
+    private Locator vans_QuickShopViewCartButton_FavoritesPage() {
+        return page.locator("[data-test-id=\"mini-cart-view-cart-button\"]");
+    }
+    public void vans_QuickShopViewCartButton_FavoritesPage_Click() {
+        page.waitForTimeout(DEFAULT_WAIT);
+        vans_QuickShopViewCartButton_FavoritesPage().click();
+    }
+
     private Locator vans_removeProduct_FavoritesPage() {
         return page.locator("[data-test-id=\"base-grid\"] [data-test-id=\"base-button\"]");
     }
