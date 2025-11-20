@@ -39,6 +39,7 @@ public class vans_cartPage {
         RetryUtility.gradualScrollToBottomUntilLocator(page, vans_checkoutButton_cartPage(), "CLICK");
         page.waitForTimeout(2000);
 
+        page.waitForTimeout(SHORT_WAIT);
     }
 
     private Locator vans_PickupInStore_CartPage() {
@@ -53,7 +54,7 @@ public class vans_cartPage {
     }
 
     private Locator vans_PickupInStore_Window_CartPage() {
-        page.waitForTimeout(5000);
+        page.waitForTimeout(SHORT_WAIT);
         return page.getByText("getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName(\"Pickup in Store\")");
     }
 

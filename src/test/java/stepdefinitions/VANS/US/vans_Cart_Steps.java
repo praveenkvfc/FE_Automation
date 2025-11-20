@@ -4,7 +4,9 @@ import com.microsoft.playwright.Page;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.VANS.US.vans_FavoritesPage;
+import io.cucumber.java.en.When;
 import pages.VANS.US.vans_cartPage;
+import pages.VANS.US.vans_checkoutPage;
 import pages.VANS.US.vans_productDetailsPage;
 import utils.PlaywrightFactory;
 import pages.VANS.US.vans_HeaderPage;
@@ -12,6 +14,7 @@ public class vans_Cart_Steps {
 
     private Page page;
     private vans_cartPage getVansCartPage;
+    private vans_checkoutPage getVansCheckoutPage;
 
     private Page getPage() {
         if (page == null) {
@@ -45,6 +48,13 @@ public class vans_Cart_Steps {
             vansFavoritesPage = new vans_FavoritesPage(getPage());
         }
         return vansFavoritesPage;
+    }
+
+    private vans_checkoutPage getvansCheckoutPage() {
+        if (getVansCheckoutPage == null) {
+            getVansCheckoutPage = new vans_checkoutPage(getPage());
+        }
+        return getVansCheckoutPage;
     }
 
     @Then("User proceeds to checkout")
@@ -89,5 +99,21 @@ public class vans_Cart_Steps {
     public void userShouldBeAbleToIncreaseTheQuantityInCartPage() {
         getVansCartPage().vans_increaseItemFromCartPage_Click();
         //getVansCartPage().vans_IncItemToastMessage_CartPage_Visible();
+    @When("User able to select save for later option")
+    public void userAbleToSelectSaveForLaterOption() {
+    }
+
+    @And("User able to move product to cart from save for later page")
+    public void userAbleToMoveProductToCartFromSaveForLaterPage() {
+    }
+
+    @And("User should be able to {string} the quantity in {string} page")
+    public void userShouldBeAbleToTheQuantityInPage(String arg0, String arg1) {
+    }
+
+    @And("User apply promo code in the cart page")
+    public void userApplyPromoCodeInTheCartPage() {
+        getvansCheckoutPage().check_GotAPromoCodeinput();
+        getvansCheckoutPage().check_GotAPromoCodeaply();
     }
 }
