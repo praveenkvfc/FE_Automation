@@ -68,7 +68,8 @@ public class vans_productDetailsPage {
     }
 
     private Locator vans_AddToCartButton_PDP() {
-        return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
+       // return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
+       return page.locator("[data-test-id=\"vf-button\"]").filter(new Locator.FilterOptions().setHasText("Add to Cart"));
     }
 
     private Locator vans_ViewCartButton_PDP() {
@@ -143,6 +144,11 @@ public class vans_productDetailsPage {
     public void vans_FavProductName_PDP_Visible() {
         assertThat(vans_FavProductName_PDP()).isVisible();
     }
+    //User clicks on favorite icon
+    public void clickFavoriteIcon_FavoritesPage() {
+        vans_FavoriteIcon_PDP_Click();
+    }
+
         // ✅ Combined flow: Favorite → Toaster → Navigate
         public void clickFavoriteAndGoToFavoritesPage() {
             vans_FavoriteIcon_PDP_Click();

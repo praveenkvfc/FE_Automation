@@ -61,9 +61,14 @@ public class Vans_PDP_Steps {
 
             @And("User adds {string} product to cart")
         public void userAddsProductToCart(String searchItem) {
-            getVansProductDetialsPage().click_SizeDropDownOption_PDP();
-            getVansProductDetialsPage().click_SelectSize_PDP(searchItem);
+//            getVansProductDetialsPage().click_SizeDropDownOption_PDP();
+//            getVansProductDetialsPage().click_SelectSize_PDP(searchItem);
             getVansProductDetialsPage().click_addTocartButton_PDP();
         }
+
+    @And("User clicks on favorite icon")
+    public void userClicksOnFavoriteIcon() {
+        getVansProductDetialsPage().clickFavoriteIcon_FavoritesPage();
     }
+}
 
