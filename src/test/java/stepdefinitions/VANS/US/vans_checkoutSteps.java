@@ -70,7 +70,7 @@ public class vans_checkoutSteps {
             getVansOrderHistoryPage = new vans_OrderHistorypage(getPage());
         }
         return getVansOrderHistoryPage;
-
+    }
     @And("select default the shipping method")
     public void selectDefaultTheShippingMethod() {
 
@@ -161,8 +161,8 @@ public class vans_checkoutSteps {
     @When("User applies a gift card")
     public void userAppliesAGiftCard() {
         getGetVansCheckoutPage().giftCardButton_CheckoutPage_Click(getPage());
-
-        PaymentDataReader reader = PaymentDataReader.getInstance("VALID_GIFTCARDS_FULL_PAYMENT", 0);
+        //PaymentDataReader reader = PaymentDataReader.getInstance("VALID_GIFTCARDS_FULL_PAYMENT", 0);
+        PaymentDataReader reader = PaymentDataReader.getInstance("VALID_GIFTCARDS_FULL_PAYMENT");
         getGetVansCheckoutPage().giftCardNumberInputFill_CheckoutPage(getPage(), reader.getCardNumber());
         getGetVansCheckoutPage().giftCardPinFill_CheckoutPage(getPage(), reader.getPin());
         getGetVansCheckoutPage().applyGiftCardButton_Click_CheckoutPage(getPage());
@@ -186,7 +186,7 @@ public class vans_checkoutSteps {
         //to capture and print the order number
         String orderNumber = getVansOrderHistoryPage().getOrderNumber();
         System.out.println("Order Number: " + orderNumber);
-        if (input.equals("credit card")) {
+        if (orderNumber.equals("credit card")) {
             getGetVansCheckoutPage().click_payNow();
         }
     }

@@ -99,6 +99,7 @@ public class vans_Cart_Steps {
     public void userShouldBeAbleToIncreaseTheQuantityInCartPage() {
         getVansCartPage().vans_increaseItemFromCartPage_Click();
         //getVansCartPage().vans_IncItemToastMessage_CartPage_Visible();
+    }
     @When("User able to select save for later option")
     public void userAbleToSelectSaveForLaterOption() {
     }
