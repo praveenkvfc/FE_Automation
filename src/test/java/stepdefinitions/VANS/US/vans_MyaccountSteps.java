@@ -53,7 +53,13 @@ public class vans_MyaccountSteps {
     public void userNavigatesToTheMyAccountPageAs(String userType) {
 //        vansSignInSignUpPagePage.click_vans_close_successMessage_MyAccount();
         if((userType).equals("registeredUser")) {
-            getSignupSignInPage().click_vans_MayBeLater_Button();
+            if (ConfigReader.get("brand").equals("vans")) {
+                if (ConfigReader.get("region").equals("us")) {
+                    getSignupSignInPage().click_vans_MayBeLater_Button();
+                } else if (ConfigReader.get("region").equals("ca")) {
+                    getSignupSignInPage().click_SkipForNow_Button();
+                }
+            }
         }else if(userType.equals("ExistingUser"))
         {
 
