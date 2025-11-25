@@ -62,9 +62,11 @@ public class vans_MyaccountSteps {
 
     @And("User opens the Credit Cards page")
     public void userOpensTheCreditCardsPage() {
+        if (ConfigReader.get("region").equals("ca")) {
+            getSignupSignInPage().click_GoToMyAccount_Button();
+        }
         getMyaccountPage().setVans_creditCards();
     }
-
     @And("User adds a default {string} credit card for {string}")
     public void userAddsADefaultCreditCardFor(String arg0, String arg1) {
         getCreditCardPage().click_addCreditCard();

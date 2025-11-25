@@ -1,10 +1,14 @@
 package stepdefinitions.VANS.US;
 
 import com.microsoft.playwright.Page;
+import config.ConfigReader;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.VANS.US.vans_SignInSignUp_Page;
 import utils.PlaywrightFactory;
+
+import static org.testng.Assert.assertTrue;
 import static utils.RandomDataGenerator.generateRandomEmail;
 import static utils.RandomDataGenerator.generateRandomName;
 
@@ -43,10 +47,22 @@ public class vans_AccountCreationSteps {
         System.out.println("Clicked Continue after entering email.");
     }
 
+    //QA-Kajal kabade
     @And("the user agrees Vans Terms and Conditions")
     public void theUserAgreesVansTermsAndConditions() {
-        getVansSignInSignUpPage().click_vans_agree_Vans_TnC_checkbox();
+        if (ConfigReader.get("brand").equals("vans")) {
+            if (ConfigReader.get("region").equals("ca")) {
+                System.out.println("clicking on Terms and condition checkbox for CA");
+                getVansSignInSignUpPage().click_ca_agree_TnC_checkbox();
+
+            } else if (ConfigReader.get("region").equals("us")) {
+                System.out.println("clicking on Terms and condition checkbox for US");
+                getVansSignInSignUpPage().click_vans_agree_Vans_TnC_checkbox();
+            }
+        }
     }
+
+
 
     @And("the user agree privacy policy")
     public void theUserAgreePrivacyPolicy() {

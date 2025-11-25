@@ -5,6 +5,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
+import io.cucumber.java.en.Then;
 
 import static utils.Constants.DEFAULT_WAIT;
 import static utils.Constants.SHORT_WAIT;
@@ -234,4 +235,46 @@ public class vans_SignInSignUp_Page {
                     Locator.ClickOptions().setForce(true));
         }
     }
+    //QA-Kajal kabade
+    private Locator ca_agree_TnC_checkbox() {
+        return page.locator("[data-test-id=\"vf-form-field-brandTerms\"] i");
+
+    }
+    //QA-Kajal kabade
+    public void click_ca_agree_TnC_checkbox() {
+        ca_agree_TnC_checkbox().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        ca_agree_TnC_checkbox().click();
+    }
+
+    //QA-Kajal kabade
+    private Locator CA_successMessage() {
+        return page.locator("xpath=//h2[text()='Your account has been created!']");
+    }
+    //QA-Kajal kabade
+    public String getCA_successMessage() {
+        CA_successMessage().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        return CA_successMessage().textContent().trim();
+    }
+
+    //QA- Kajal kabade
+    private Locator Ca_GoToMyAccount_icon() {
+        return page.locator("xpath=(//a[text()='Go to My Account'])[1]");
+    }
+    //QA- Kajal kabade
+    public void click_GoToMyAccount_Button() {
+        Ca_GoToMyAccount_icon().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        Ca_GoToMyAccount_icon().click();
+        System.out.println("Clicked Go To My Account button in home");
+        page.waitForTimeout(DEFAULT_WAIT);
+    }
+
+
+
 }

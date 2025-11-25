@@ -1,5 +1,5 @@
 
-package stepdefinitions.TBL.US;
+package stepdefinitions.VANS.US;
 
 import com.microsoft.playwright.Page;
 import config.ConfigReader;
@@ -96,16 +96,21 @@ public class AccountCreationSteps {
         createAccountPage.acceptLatestTblOffers();
     }
 
+    //QA-Kajal kabade
     @Then("account created successfully with confirmation message {string}")
     public void accountCreatedSuccessfullyWithConfirmationMessage(String expectedMessage) {
         String actualMessage = null;
         if (ConfigReader.get("brand").equals("tbl")) {
             actualMessage = createAccountPage.getCreateAccountSuccessMessage();
         } else if (ConfigReader.get("brand").equals("vans")) {
-            actualMessage = vansSignInSignUpPage.getVans_successMessage();
+            if (ConfigReader.get("region").equals("us")) {
+                actualMessage = vansSignInSignUpPage.getVans_successMessage();
+            } else if (ConfigReader.get("region").equals("ca")) {
+                actualMessage = vansSignInSignUpPage.getCA_successMessage();
+            }
+            System.out.println("Actual message: " + actualMessage);
+            assertTrue(actualMessage.contains(expectedMessage), "Expected: " + expectedMessage + ", but got: " + actualMessage);
         }
-        System.out.println("Actual message: " + actualMessage);
-        assertTrue(actualMessage.contains(expectedMessage), "Expected: " + expectedMessage + ", but got: " + actualMessage);
     }
 
 
