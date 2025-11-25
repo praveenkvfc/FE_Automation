@@ -46,10 +46,10 @@ public class vans_SignInSignUp_Page {
     }
 
     public void vans_enter_LastName(String input) {
-        vans__FirstName().waitFor(new Locator.WaitForOptions()
+        vans__LastName().waitFor(new Locator.WaitForOptions()
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
-        vans__FirstName().pressSequentially(input); //pressSequentially or fill we can use but this will enter char by char as real user
+        vans__LastName().pressSequentially(input); //pressSequentially or fill we can use but this will enter char by char as real user
         page.waitForTimeout(500);
     }
 
