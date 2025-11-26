@@ -6,6 +6,7 @@ import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
 import static utils.Constants.DEFAULT_WAIT;
+import static utils.Constants.SHORT_WAIT;
 
 public class vans_homePage {
 
@@ -24,6 +25,7 @@ public class vans_homePage {
     }
     public void click_createAccount()
     {
+        page.waitForTimeout(DEFAULT_WAIT);
         Vans_createAccount().waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT)
