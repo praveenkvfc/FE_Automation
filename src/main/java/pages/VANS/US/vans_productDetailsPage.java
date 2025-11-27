@@ -9,6 +9,7 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static utils.Constants.DEFAULT_WAIT;
+import static utils.Constants.SHORT_WAIT;
 
 public class vans_productDetailsPage {
     private Page page;
@@ -86,6 +87,7 @@ public class vans_productDetailsPage {
     }
 
     public void click_addTocartButton_PDP() {
+        page.waitForTimeout(SHORT_WAIT);
         vans_AddToCartButton_PDP().waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT));

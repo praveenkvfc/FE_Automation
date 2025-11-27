@@ -7,15 +7,15 @@ Feature: Create a new user account and place order successfully
   Background:
     Given the user is on the "Create an Account" page
 
-  @Vans_Smoke2
+  @Vans_CA_Smoke2
   Scenario Outline: Account creation and place order using "<paymentType>" Successfully
     When the user enters the email for vans
     And the user provides the password for vans to Signup or SignIn
-    And the user agrees Vans Terms and Conditions
     And the user agree privacy policy
+    And the user agrees Vans Terms and Conditions
     And the user agrees to receive mails
     And the user clicks the Create an Account button
-    Then account created successfully with confirmation message "Welcome to the Vans Family"
+    Then account created successfully with confirmation message "Your account has been created!"
 
     When User navigates to the MyAccount page as "registeredUser"
     And user closes the my account window
