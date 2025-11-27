@@ -39,7 +39,6 @@ public class vans_productListpage {
     }
     public void click_SelectProductinPLP(boolean isFilterApplied) {
         if(isFilterApplied) {
-
             vans_product_in_PLP().waitFor(new Locator.WaitForOptions()
                     .setState(WaitForSelectorState.VISIBLE)
                     .setTimeout(DEFAULT_WAIT)

@@ -83,6 +83,12 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.1</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- (Optional) Selenium - Comment or remove if fully migrated to Playwright -->
         <!--
