@@ -41,7 +41,7 @@ public class vans_homePage {
 
     private Locator vans_searchField()
     {
-        return page.locator("#dialogs > div > div.vf-ajvdco.\\[\\.nested-enter-from_\\&\\,\\.nested-leave-to_\\&\\]\\:translate-x-20.lg\\:w-full > div > div.grow.overflow-y-auto.p-6.\\!p-0 > div > div.w-full.flex.center.gap-6.px-4.py-6.between.lg\\:px-6.lg\\:pt-8 > form > div > div > label > input");
+        return page.locator("xpath=//input[@placeholder='Search']");
     }
 
     public void enter_searchInputField(String searchInput)

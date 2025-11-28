@@ -1,0 +1,392 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationallpreprod_lu11@yopmail.com",
+      "phone": "255-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationmyaccountpreprod_lu01@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationcheckoutpreprod_lu01@yopmail.com",
+      "phone": "255-502",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationplppdpsearchpreprod_lu01@yopmail.com",
+      "phone": "255-503",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationcanvascorepreprod_lu01@yopmail.com",
+      "phone": "255-504",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationcontentpersonalizationpreprod_lu01@yopmail.com",
+      "phone": "255-505",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationmyaccount_mobilepreprodlu01@yopmail.com",
+      "phone": "255-506",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationcheckout_mobilepreprodlu01@yopmail.com",
+      "phone": "255-507",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationcontentpersonalization_mobilepreprodlu01@yopmail.com",
+      "phone": "255-508",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationplppdpsearch_mobilepreprodlu01@yopmail.com",
+      "phone": "255-509",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationcanvascore_mobilepreprodlu01@yopmail.com",
+      "phone": "255-510",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "testguestuserpreprod_lu01@yopmail.com",
+      "phone": "255-511",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationchangepassworduserpreprodlu01@yopmail.com",
+      "phone": "255-512",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationklarnauserpreprod_lu01@yopmail.com",
+      "phone": "255-513",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "email": "automationnewuserpreprod_lu01@yopmail.com",
+      "phone": "255-514",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "orderNumber": "P0034273",
+      "email": "automationshippedorderpreprodlu1@yopmail.com",
+      "phone": "255-515",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "postalCode": "1115",
+      "city": "Luxemburg",
+      "orderNumber": "P0034273",
+      "email": "sangam@yopmail.com",
+      "phone": "255-516",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "city": "Luxemburg",
+      "phone": "255-517",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034176",
+      "email": "automationreturninitiatedorderpreprodlu1@yopmail.com",
+      "postalCode": "1115",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Boulevard Konrad Adenauer",
+      "building": "",
+      "city": "Luxemburg",
+      "phone": "255-518",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034176",
+      "email": "sangam@yopmail.com",
+      "postalCode": "1115",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser01preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser02preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser03preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser04preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser05preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser06preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser07preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser08preprodlu@yopmail.com",
+      "phone": "255-501",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationallpreprod_pt01@yopmail.com",
+      "phone": "255-555-200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

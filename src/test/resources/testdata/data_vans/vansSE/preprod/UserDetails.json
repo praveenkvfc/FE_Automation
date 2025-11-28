@@ -1,0 +1,392 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationallse010_preprod@yopmail.com",
+      "phone": "255-555-5222",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationmyaccountpreprodse01@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationcheckoutpreprodse01@yopmail.com",
+      "phone": "255-555-5102",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationplppdpsearchpreprodse01@yopmail.com",
+      "phone": "255-555-5103",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationcanvascorepreprodse01@yopmail.com",
+      "phone": "255-555-5104",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationcanvascontentpersonalizationpreprodse01@yopmail.com",
+      "phone": "255-555-5105",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationmyaccount_mobilepreprodse01@yopmail.com",
+      "phone": "255-555-5106",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationcheckout_mobilepreprodse01@yopmail.com",
+      "phone": "255-555-5107",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationcontentpersonalization_mobilepreprodse01@yopmail.com",
+      "phone": "255-555-5108",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationplppdpsearch_mobilepreprodse01@yopmail.com",
+      "phone": "255-555-5109",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationcanvascore_mobilepreprodse01@yopmail.com",
+      "phone": "255-555-5110",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "testguestuserpreprodse01@yopmail.com",
+      "phone": "255-555-5111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationchangepassworduserpreprod_se01@yopmail.com",
+      "phone": "255-555-5112",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationklarnauserpreprod_se01@yopmail.com",
+      "phone": "255-555-5115",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "email": "automationnewuserpreprod_se01@yopmail.com",
+      "phone": "255-555-5116",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "orderNumber": "P0034173",
+      "email": "automationshippedorderpreprodse1@yopmail.com",
+      "phone": "255-555-5117",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "postalCode": "115 26",
+      "city": "Östermalm",
+      "orderNumber": "P0034173",
+      "email": "sangam@yopmail.com",
+      "phone": "255-555-5118",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "city": "Östermalm",
+      "phone": "255-555-5119",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034271",
+      "email": "automationreturninitiatedorderpreprodse1@yopmail.com",
+      "postalCode": "115 26",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Karlavägen 100",
+      "building": "",
+      "city": "Östermalm",
+      "phone": "255-555-5120",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034271",
+      "email": "sangam@yopmail.com",
+      "postalCode": "115 26",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser01preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser02preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser03preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser04preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "115 26",
+      "city": "Copenhagen",
+      "email": "empuser05preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser06preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser07preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser08preprodse@yopmail.com",
+      "phone": "255-555-5101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationallpreprod_pt01@yopmail.com",
+      "phone": "255-555-200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

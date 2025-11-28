@@ -1,6 +1,5 @@
 package utils;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,7 +10,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class PaymentDataReader {
     private static Path FILE_PATH;
@@ -19,7 +17,7 @@ public class PaymentDataReader {
     private static List<PaymentDetails> paymentDetailsList;
 
     // Load payment details from JSON by payment type
-    public static PaymentDataReader getInstance(String paymentType) {
+    public static PaymentDataReader getInstance(String paymentType, int i) {
         String env = System.getProperty("env");
         String brand = System.getProperty("brand");
         String region = System.getProperty("region");

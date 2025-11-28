@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Huvilakatu",
+      "building": "100",
+      "postalCode": "00150",
+      "city": "Helsinki",
+      "email": "automationallpreprod_fi01@yopmail.com",
+      "phone": "2-5555-1001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Huvilakatu",
+      "building": "100",
+      "postalCode": "00150",
+      "city": "Helsinki",
+      "email": "testguestuserprodfi01@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Huvilakatu",
+      "building": "100",
+      "postalCode": "00150",
+      "city": "Helsinki",
+      "email": "testguestuserprodfi02@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Huvilakatu",
+      "building": "100",
+      "postalCode": "00150",
+      "city": "Helsinki",
+      "email": "testguestuserprodfi03@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Huvilakatu",
+      "building": "100",
+      "postalCode": "00150",
+      "city": "Helsinki",
+      "email": "testguestuserprodfi04@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

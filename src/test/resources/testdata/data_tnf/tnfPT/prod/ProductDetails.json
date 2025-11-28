@@ -1,0 +1,76 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "T-shirt Never Stop Exploring para homem",
+      "code": "NF0A87NS",
+      "price": "40,00 €",
+      "category": "MENS",
+      "color": "TNF White",
+      "color_pt": "TNF White",
+      "size": "S",
+      "omsid": "NF:0A87NS:FN4:S::1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "Bota Impermeável Timberland® Premium 6 Inch para Homem em preto",
+      "code": "TB010073001",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "black",
+      "color_pt": "preto",
+      "size": "41",
+      "omsid": "TB:010073:001:075:W:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Calças Elásticas Motion para Homem em bege",
+      "code": "TB0A6VBTDH4",
+      "price": "140,00 €",
+      "category": "MENS",
+      "color": "Beige",
+      "color_pt": "Beige",
+      "size": "S",
+      "unavailableSize": "3XL",
+      "omsid": "TB:0A6VBT:DH4:S::1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Bota Impermeável Timberland® Premium 6-Inch para Homem em amarelo-escuro",
+      "code": "TB072066EBL",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "yellow",
+      "color_pt": "amarelo",
+      "size": "41",
+      "omsid": "TB:072066:EBL:075:W:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Bota Impermeável Timberland® Premium 6 Inch para Homem em preto",
+      "code": "TB010073001",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "black",
+      "color_pt": "preto",
+      "size": "40",
+      "omsid": "TB:010073:001:070:W:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "Lime Punch",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ]
+}

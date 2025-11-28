@@ -1,0 +1,207 @@
+[
+  {
+    "key": "MEN",
+    "name": "MEN",
+    "children": [
+      {
+        "key": "FEATURED",
+        "name": "FEATURED",
+        "children": [
+          {
+            "key": "New Arrivals",
+            "name": "New Arrivals",
+            "children": [{}]
+          },
+          {
+            "key": "Best Sellers",
+            "name": "Best Sellers",
+            "children": [{}]
+          },
+          {
+            "key": "Hip Hop Royalty Collection",
+            "name": "Hip Hop Royalty Collection",
+            "children": [{}]
+          },
+          {
+            "key": "Lunar New Year Collection",
+            "name": "Lunar New Year Collection",
+            "children": [{}]
+          },
+          {
+            "key": "Jimmy Choo x Timberland",
+            "name": "Jimmy Choo x Timberland",
+            "children": [{}]
+          },
+          {
+            "key": "All Gender Collection",
+            "name": "All Gender Collection",
+            "children": [{}]
+          }
+        ]
+      },
+      {
+        "key": "FOOTWEAR",
+        "name": "FOOTWEAR",
+        "children": [
+          {
+            "key": "NEW ARRIVALS",
+            "name": "NEW ARRIVALS",
+            "children": [{}]
+          },
+          {
+            "key": "Boots",
+            "name": "Boots",
+            "children": [{}]
+          },
+          {
+            "key": "Hiking Boots & Shoes",
+            "name": "Hiking Boots & Shoes",
+            "children": [{}]
+          },
+          {
+            "key": "6 Inch Boots",
+            "name": "6 Inch Boots",
+            "children": [{}]
+          },
+          {
+            "key": "Field Boots & Euro Hikers",
+            "name": "Field Boots & Euro Hikers",
+            "children": [{}]
+          },
+          {
+            "key": "Sneakers & Sneaker Boots",
+            "name": "Sneakers & Sneaker Boots",
+            "children": [{}]
+          },
+          {
+            "key": "Shoes",
+            "name": "Shoes",
+            "children": [{}]
+          },
+          {
+            "key": "Boat Shoes",
+            "name": "Boat Shoes",
+            "children": [{}]
+          },
+          {
+            "key": "Waterproof Footwear",
+            "name": "Waterproof Footwear",
+            "children": [{}]
+          },
+          {
+            "key": "Chukkas",
+            "name": "Chukkas",
+            "children": [{}]
+          },
+          {
+            "key": "Sale Footwear",
+            "name": "Sale Footwear",
+            "children": [{}]
+          }
+        ]
+      },
+      {
+        "key": "PRO WORKER",
+        "name": "PRO WORKER",
+        "children": [
+          {
+            "key": "NEW ARRIVALS",
+            "name": "NEW ARRIVALS",
+            "children": [{}]
+          },
+          {
+            "key": "T-Shirts & Tanks",
+            "name": "T-Shirts & Tanks",
+            "children": [{}]
+          },
+          {
+            "key": "Shirts & Flannels",
+            "name": "Shirts & Flannels",
+            "children": [{}]
+          },
+          {
+            "key": "Hoodies & Jackets",
+            "name": "Hoodies & Jackets",
+            "children": [{}]
+          },
+          {
+            "key": "Shorts & Boardshorts",
+            "name": "Shorts & Boardshorts",
+            "children": [{}]
+          },
+          {
+            "key": "Pants & Sweatpants",
+            "name": "Pants & Sweatpants",
+            "children": [{}]
+          },
+          {
+            "key": "Sale",
+            "name": "Sale",
+            "children": [{}]
+          },
+          {
+            "key": "SHOP ALL CLOTHING",
+            "name": "SHOP ALL CLOTHING",
+            "children": [{}]
+          }
+        ]
+      },
+      {
+        "key": "ACCESSORIES",
+        "name": "ACCESSORIES",
+        "children": [
+          {
+            "key": "NEW ARRIVALS",
+            "name": "NEW ARRIVALS",
+            "children": [{}]
+          },
+          {
+            "key": "Hats & Beanies",
+            "name": "Hats & Beanies",
+            "children": [{}]
+          },
+          {
+            "key": "Bags & Backpacks",
+            "name": "Bags & Backpacks",
+            "children": [{}]
+          },
+          {
+            "key": "Socks",
+            "name": "Socks",
+            "children": [{}]
+          },
+          {
+            "key": "Sunglasses",
+            "name": "Sunglasses",
+            "children": [{}]
+          },
+          {
+            "key": "Keychains & Stickers",
+            "name": "Keychains & Stickers",
+            "children": [{}]
+          },
+          {
+            "key": "Wallets & Belts",
+            "name": "Wallets & Belts",
+            "children": [{}]
+          },
+          {
+            "key": "Laces & Shoecare",
+            "name": "Laces & Shoecare",
+            "children": [{}]
+          },
+          {
+            "key": "Sale",
+            "name": "Sale",
+            "children": [{}]
+          },
+          {
+            "key": "SHOP ALL ACCESSORIES",
+            "name": "SHOP ALL ACCESSORIES",
+            "children": [{}]
+          }
+        ]
+      }
+    ]
+  }
+]

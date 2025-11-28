@@ -1,0 +1,571 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viaduktvej",
+      "building": "Street Two",
+      "postalCode": "9400",
+      "city": "Nørresundby",
+      "email": "automationvansdk@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viaduktvej",
+      "building": "Street Two",
+      "postalCode": "9400",
+      "city": "Nørresundby",
+      "email": "automationvansdk@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationregallit3@yopmail.com",
+      "phone": "2555-555-113",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationregallit4@yopmail.com",
+      "phone": "2555-555-114",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcheckoutmyaccountpreprodit01@yopmail.com",
+      "phone": "2555-555-115",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcheckoutmyaccountpreprodit02@yopmail.com",
+      "phone": "2555-555-116",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcheckoutmyaccountpreprodit03@yopmail.com",
+      "phone": "2555-555-117",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcheckoutmyaccountpreprodit04@yopmail.com",
+      "phone": "2555-555-118",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Milan",
+      "email": "automationcanvascheckoutpreprodit01@yopmail.com",
+      "phone": "2555-555-119",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Milan",
+      "email": "automationcanvascheckoutpreprodit02@yopmail.com",
+      "phone": "2555-555-121",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Milan",
+      "email": "automationcanvascheckoutpreprodit03@yopmail.com",
+      "phone": "2555-555-122",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Milan",
+      "email": "automationcanvascheckoutpreprodit04@yopmail.com",
+      "phone": "2555-555-123",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcanvasmyaccountpreprodit01mobile@yopmail.com",
+      "phone": "2555-555-124",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcanvasmyaccountpreprodit02mobile@yopmail.com",
+      "phone": "2555-555-125",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcanvasmyaccountpreprodit03mobile@yopmail.com",
+      "phone": "2555-555-126",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcanvasmyaccountpreprodit04mobile@yopmail.com",
+      "phone": "2555-555-127",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Roma",
+      "email": "automationcanvascheckoutpreprodit01mobile@yopmail.com",
+      "phone": "2555-555-128",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Roma",
+      "email": "automationcanvascheckoutpreprodit02mobile@yopmail.com",
+      "phone": "2555-555-129",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Roma",
+      "email": "automationcanvascheckoutpreprodit03mobile@yopmail.com",
+      "phone": "2555-555-133",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Roma",
+      "email": "automationcanvascheckoutpreprodit04mobile@yopmail.com",
+      "phone": "2555-555-132",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcataloguePlpPdppreprodit01@yopmail.com",
+      "phone": "2555-555-134",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcataloguePlpPdppreprodit02@yopmail.com",
+      "phone": "2555-555-135",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcataloguePlpPdppreprodit03@yopmail.com",
+      "phone": "2555-555-136",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcataloguePlpPdppreprodit04@yopmail.com",
+      "phone": "2555-555-137",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationcanvascorepreprodit01@yopmail.com",
+      "phone": "2555-555-138",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Kempenstraat 100",
+      "building": "Street Two",
+      "postalCode": "2030",
+      "city": "Antwerpen",
+      "email": "automationregallbe1@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "changepasswordtestingpreprodit01@yopmail.com",
+      "phone": "2555-555-139",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Milan",
+      "email": "testguestuserpreprodit@yopmail.com",
+      "phone": "2555-555-140",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "empuser01preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "empuser02preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser03preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser04preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "empuser05preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "empuser06preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser07preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "60 Baker St",
+      "building": "",
+      "postalCode": "02132",
+      "city": "Boston",
+      "email": "empuser08preprodit@yopmail.com",
+      "phone": "2555-555-111",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "klarnaqadk@yopmail.com",
+      "phone": "255-555-1247",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationnewuserpreprodit@yopmail.com",
+      "phone": "2555-555-145",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUserNonLoyalty_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "automationcheckoutmyaccountpreproddk1@yopmail.com",
+      "phone": "255-555-2111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "Note": "Non Loyalty User for TBLIT can be any user registered in TBLBE"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "city": "Copenhagen",
+      "phone": "255-555-2143",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0003086",
+      "email": "automationreturnorderpreprodit1@yopmail.com",
+      "postalCode": "02111"
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "city": "Copenhagen",
+      "phone": "255-555-2143",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0003086",
+      "email": "sangam@yopmail.com",
+      "postalCode": "02111"
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "city": "Copenhagen",
+      "phone": "255-555-2143",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0005863",
+      "email": "automationreturnorderpreprodit1@yopmail.com",
+      "postalCode": "02111",
+      "returnTrackingNumber": "1ZV771449139926270"
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 University Avenue",
+      "building": "",
+      "city": "Copenhagen",
+      "phone": "255-555-2143",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0005863",
+      "email": "sangam@yopmail.com",
+      "postalCode": "02111",
+      "returnTrackingNumber": "1ZV771449139926270"
+    }
+  ]
+}

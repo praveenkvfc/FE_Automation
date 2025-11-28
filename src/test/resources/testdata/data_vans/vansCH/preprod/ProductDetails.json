@@ -1,0 +1,1034 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "UltraRange Neo VR3 Schuhe",
+      "code": "VN000BCEBKA",
+      "price": "CHF 145.00",
+      "category": "MENS",
+      "color": "Black/Black",
+      "size": "38",
+      "omsid": "VN:000BCE:BKA:055:M:1:"
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT": [
+    {
+      "name": "AUT Adventure 2.0 in Dark Brown for WOMEN SECONDARY MASTER PRODUCT",
+      "code": "TBTTAP02311",
+      "price": "CHF 20.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "39",
+      "omsid": "TB:TAP02:311:060::1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "UltraRange Neo VR3 Schuhe",
+      "code": "VN000BCEBKA",
+      "price": "CHF 145.00",
+      "category": "MENS",
+      "color": "Black/Black",
+      "size": "36.5",
+      "omsid": "VN:000BCE:BKA:055:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_MANY_PRICES": [
+    {
+      "name": "AUT Mens Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH MANY PRICES",
+      "code": "TBTTAP05311",
+      "price": "CHF 40.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "color2": "Black",
+      "color2_de": "Schwarz",
+      "color2_fr": "Noire",
+      "color2_it": "Nera",
+      "size": "39",
+      "omsid": "TB:TAP05:311:060:W:1:"
+    }
+  ],
+  "PRODUCT_WITH_SALE_PRICE": [
+    {
+      "name": "AUT WOMEN Garrison Trail Webbing-Strap Sandals PRODUCT WITH SALE PRICE",
+      "code": "TBTTAP06311",
+      "price": "CHF 5.00",
+      "erased_price": "CHF 10.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP06:311:060:1:"
+    }
+  ],
+  "PRODUCT_WITH_SALE_PRICE_WITH_IMAGE": [
+    {
+      "name": "Timberland® Premium 6 Inch Waterproof Boot for Men in Yellow",
+      "code": "TBT10061713",
+      "price": "30,00 €",
+      "erased_price": "50,00 €",
+      "category": "MENS BOOTS",
+      "color": "Yellow",
+      "color_it": "giallo",
+      "size": "40",
+      "omsid": "TB:010061:713:070:W:1:"
+    }
+  ],
+  "BADGE_WITH_IMAGE": [
+    {
+      "name": "AUT WOMEN Hypercharge 8\\\" Composite Toe Waterproof Work Boot BADGE WITH IMAGE",
+      "code": "TBTTAP08311",
+      "price": "CHF 35.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP08:311:060::1:"
+    }
+  ],
+  "BADGE_WITH_TEXT": [
+    {
+      "name": "AUT Timberland PRO® Watch Cap BADGE WITH TEXT",
+      "code": "TBTTAP09311",
+      "price": "CHF 15.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "60",
+      "omsid": "TB:TAP09:311:060::1:"
+    }
+  ],
+  "BADGE_WITH_IMAGE_TEXT": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Gritman Low-Profile Trucker Hat BADGE WITH IMAGE TEXT",
+      "code": "TBTTAP10311",
+      "price": "CHF 15.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "XL",
+      "omsid": "TB:TAP10:311:XL::1:"
+    }
+  ],
+  "NO_BADGE_NO_TEXT": [
+    {
+      "name": "Maple Grove Leather Oxford for Men in Brown",
+      "code": "TB0A5Z1S358",
+      "price": "CHF 150.00",
+      "category": "MENS",
+      "color": "Brown",
+      "color_it": "Blu Marino",
+      "size": "40",
+      "omsid": "TB:0A5Z1S:358:070:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_LIST_ACCORDION": [
+    {
+      "name": "AUT WOMEN Redwood Falls Waterproof Boots PRODUCT WITH LIST ACCORDION",
+      "code": "TBTTAP12311",
+      "price": "CHF 100.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP12:311:060::1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "AUT WOMEN Boondock Waterproof Comp-Toe Pull-On Work Boots PRODUCT MAX ADD TO CARD",
+      "code": "TBTTAP14311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP14:311:060::1:"
+    }
+  ],
+  "PRODUCT_QUICKSHOP_OPTIONS": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT QUICKSHOP OPTIONS",
+      "code": "TBTTAP15311",
+      "price": "CHF 100.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP15:311:060::1:"
+    }
+  ],
+  "BOPIS_MASTER": [
+    {
+      "name": "AUT WOMEN Euro Hiker Hiking Boots BOPIS MASTER",
+      "code": "TBTTAP16311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP16:311:060::1:"
+    }
+  ],
+  "BOPIS_STANDARD": [
+    {
+      "name": "AUT WOMEN Benton Water-Resistant Shell BOPIS STANDARD",
+      "code": "TBTTAP17311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP17:311:060::1:"
+    }
+  ],
+  "STS_STANDARD": [
+    {
+      "name": "AUT WOMEN Stack Logo T-Shirt STS STANDARD",
+      "code": "TBTTAP18311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP18:311:060::1:"
+    }
+  ],
+  "PRODUCT_AVAILABLE": [
+    {
+      "name": "AUT WOMEN Maple Grove Knit Oxford PRODUCT AVAILABLE",
+      "code": "TBTTAP19311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP19:311:060::1:"
+    }
+  ],
+  "PRODUCT_AVAILABILITY_CHANGED": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT AVAILABILITY CHANGED",
+      "code": "TBTTAP20311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP20:311:060::1:"
+    }
+  ],
+  "PRODUCT_AVAILABILITY_CHANGED_2ND": [
+    {
+      "name": "AUT WOMEN TBL® LNY Turbo Sneakers PRODUCT AVAILABILITY CHANGED 2ND",
+      "code": "TBTTAP21311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP21:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_KLARNA_PRICE": [
+    {
+      "name": "AUT WOMEN Drivetrain Composite Toe Work Sneaker PRODUCT WITH KLARNA PRICE",
+      "code": "TBTTAP22311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP22:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_BELOW_KLARNA_PRICE": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Gritman Low-Profile Trucker Hat PRODUCT WITH BELOW KLARNA PRICE",
+      "code": "TBTTAP23311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP23:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_WIDTH": [
+    {
+      "name": "AUT WOMEN Mudsill Steel Toe Work Boot PRODUCT WITH WIDTH",
+      "code": "TBTTAP24311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR BOOTS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP24:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_WIDTH_OOS": [
+    {
+      "name": "Alden Brook Waterproof Boot for Men in Dark Grey",
+      "code": "TB0A66AF060",
+      "price": "CHF 220.00",
+      "category": "MENS",
+      "color": "Grey",
+      "size": "40",
+      "omsid": "TB:0A66AF:060:070:M:1:",
+      "unavailableSize": "49",
+      "oos": true,
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_WITH_REGULAR_PRICE": [
+    {
+      "name": "AUT WOMEN Timberland® Originals 6-Inch Boots PRODUCT WITH REGULAR PRICE",
+      "code": "TBTTAP26311",
+      "price": "CHF 50.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP26:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_REGULAR_PRICE_WITH_IMAGE": [
+    {
+      "name": "Alden Brook Waterproof Boot for Men in Brown",
+      "code": "TB0A66B3R98",
+      "price": "CHF 220.00",
+      "category": "MENS",
+      "color": "Brown",
+      "size": "40",
+      "omsid": "TB:0A66B3:R98:070:M:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Timberland® x Suzanne Oude Hengel Future73 SS Knit Tee for Women in Green",
+      "code": "TB0A6SWPEB5",
+      "price": "CHF 289.90",
+      "category": "WOMENS",
+      "color": "Green",
+      "size": "S",
+      "omsid": "TB:0A6SWP:EB5:S::1:",
+      "unavailableSize": "XS",
+      "oos": true,
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_WITH_SIZE_CHART_FITS": [
+    {
+      "name": "AUT WOMEN Boondock 8\" Composite Toe Waterproof Work Boot PRODUCT WITH SIZE CHART FITS",
+      "code": "TBTTAP29311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP29:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIZE_SHOE": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT SIZE SHOE",
+      "code": "TBTTAP30311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP30:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIZE_CHART_MEASUREMENTS": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Gritman Fleece-Lined Hooded Canvas Jacket PRODUCT SIZE CHART MEASUREMENTS",
+      "code": "TBTTAP31311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP31:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIZE_AND_FITS_MODEL": [
+    {
+      "name": "Recycled Down Puffer Jacket for Women in Black",
+      "code": "TB0A6HG9001",
+      "price": "CHF 480.00",
+      "category": "WOMENS",
+      "color": "Black",
+      "size": "XS",
+      "omsid": "TB:0A6HG9:001:XS::1:"
+    }
+  ],
+  "PRODUCT_WITH_REVIEWS": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 9-Inch Waterproof Boot PRODUCT WITH REVIEWS",
+      "code": "TBTTAP33311",
+      "price": "CHF 50,00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP33:311:060::1:"
+    }
+  ],
+  "PRODUCT_FAVORITES": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Hood Honcho Sport Hoodie PRODUCT FAVORITES",
+      "code": "TBTTAP35311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "S",
+      "omsid": "TB:TAP35:311:S::1:"
+    }
+  ],
+  "PRODUCT_REVIEWS": [
+    {
+      "name": "Timberland® Premium 6 Inch Boot for Men in Brown",
+      "code": "TB072066827",
+      "price": "CHF 250,00",
+      "color": "Brown",
+      "size": "40",
+      "length": "W",
+      "omsid": "TB:072066:827:070:W:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "PRODUCT_REVIEWS_ABOVE_74%": [
+    {
+      "name": "Euro Hiker Leather Boot for Men in Grey",
+      "code": "TB0A64RD033",
+      "price": "CHF 200,00",
+      "category": "MENS",
+      "color": "Grey",
+      "color_it": "grigio",
+      "size": "40",
+      "omsid": "TB:0A64RD:033:070:M:1:"
+    }
+  ],
+  "PRODUCT_REVIEWS_WITH_MORE_DETAILS": [
+    {
+      "name": "Timberland® Premium 6 Inch Boot for Men in Brown",
+      "code": "TB072066827",
+      "price": "CHF 250,00",
+      "color": "Brown",
+      "size": "40",
+      "length": "W",
+      "omsid": "TB:072066:827:070:W:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "PRODUCT_ONLY_ONE_REVIEWS": [
+    {
+      "name": "Seneca Bay Chukka Boot for Men in Dark Brown",
+      "code": "TB0A5UVN201",
+      "price": "CHF 140,00",
+      "category": "MENS",
+      "color": "Brown",
+      "size": "40",
+      "omsid": "TB:0A5UVN:201:070:M:1:",
+      "oos": true
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Timberland® Premium 6 Inch Boot for Men in Brown",
+      "code": "TB072066827",
+      "price": "CHF 250,00",
+      "color": "Brown",
+      "size": "40",
+      "length": "W",
+      "omsid": "TB:072066:827:070:W:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "EYEBROW_WITH_TITLE": [
+    {
+      "name": "AUT WOMEN Timberland PRO® Skim Coat Heavy-Warmth Thermal Bottoms EYEBROW WITH TITLE",
+      "code": "TBTTAP36311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "S",
+      "omsid": "TB:TAP36:311:S::1:"
+    }
+  ],
+  "PRODUCT_WITH_REG_SALE_PRICE_HIGH_TO_LOW": [
+    {
+      "name": "AUT Junior Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH REG SALE PRICE HIGH TO LOW",
+      "code": "TBTTAP37311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "39",
+      "omsid": "TB:TAP37:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_STATIC_BREADCRUMB": [
+    {
+      "name": "AUT WOMEN Redwood Falls Waterproof Boots PRODUCT WITH STATIC BREADCRUMB",
+      "code": "TBTTAP38311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP38:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_NO_REVIEWS": [
+    {
+      "name": "AUT Men’s Greenstride™ Motion 6 Waterproof Mid Hikers PRODUCT WITH NO REVIEWS",
+      "code": "TBTTAP39311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "39",
+      "omsid": "TB:TAP39:311:060::1:"
+    }
+  ],
+  "PRODUCT_MENS_CLOTHING_SIZE_CHART": [
+    {
+      "name": "AUT WOMEN Lightweight Hiking Jacket PRODUCT CLOTHING SIZE CHART",
+      "code": "TBTTAP40311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "S",
+      "omsid": "TB:TAP40:311:S::1:"
+    }
+  ],
+  "PRODUCT_KIDS_FOOTWEAR": [
+    {
+      "name": "AUT Toddler Mt. Maddsen Waterproof Mid Hiker Boots PRODUCT KIDS FOOTWEAR",
+      "code": "TBTTAP41311",
+      "price": "CHF 60.00",
+      "category": "KIDS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "22.5",
+      "omsid": "TB:TAP41:311:060::1:"
+    }
+  ],
+  "PRODUCT_MENS_PROWORKWEAR": [
+    {
+      "name": "AUT Men's Timberland PRO® Morphix Athletic Flex Carpenter Bib Overalls PRODUCT MENS PROWORKWEAR",
+      "code": "TBTTAP43311",
+      "price": "CHF 60.00",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "length": "W",
+      "omsid": "TB:TAP43:311:060:W:1:"
+    }
+  ],
+  "PRODUCT_BELT": [
+    {
+      "name": "AUT WOMEN Monadnock 35MM Regenerative Leather Belt PRODUCT BELT",
+      "code": "TBTTAP42311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP42:311:060::1:"
+    }
+  ],
+  "PRODUCT_WOMENS_PROWORKWEAR": [
+    {
+      "name": "AUT Men's Timberland PRO® Morphix Athletic Flex Carpenter Bib Overalls PRODUCT MENS PROWORKWEAR",
+      "code": "TBTTAP43311",
+      "price": "CHF 60.00",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "length": "W",
+      "omsid": "TB:TAP43:311:060:W:1:"
+    }
+  ],
+  "PRODUCT_PRO_FOOTWEAR": [
+    {
+      "name": "AUT WOMEN Boondock Waterproof Pull-On Comp-Toe Work Boots PRODUCT PRO FOO",
+      "code": "TBTTAP44311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "40",
+      "omsid": "TB:TAP44:311:090:W:1:"
+    }
+  ],
+  "PRODUCT_SOCKS": [
+    {
+      "name": "AUT WOMEN 2-Pack Cushioned Boot Socks PRODUCT SOCKS",
+      "code": "TBTTAP45311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "60",
+      "omsid": "TB:TAP45:311:60::1:"
+    }
+  ],
+  "PRODUCT_HAT": [
+    {
+      "name": "AUT Small Logo Baseball Cap PRODUCT HAT",
+      "code": "TBTTAP46311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "ONE",
+      "omsid": "TB:TAP46:311:Z::1:"
+    }
+  ],
+  "PRODUCT_WOMEN_CLOTHING": [
+    {
+      "name": "AUT WOMEN Logo T-Shirt PRODUCT WOMEN CLOTHING",
+      "code": "TBTTAP47311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "XXL",
+      "omsid": "TB:TAP47:311:XXL::1:"
+    }
+  ],
+  "PRODUCT_MEN_CLOTHING": [
+    {
+      "name": "AUT WOMEN Wind, Water, Earth, and Sky T-Shirt PRODUCT MEN CLOTHING",
+      "code": "TBTTAP48311",
+      "price": "CHF 60.00",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "S",
+      "omsid": "TB:TAP48:311:S::1:"
+    }
+  ],
+  "PRODUCT_SMARTWOOL_SOCKS": [
+    {
+      "name": "AUT WOMEN SmartWool® Hike Classic Full-Cushion Crew Socks PRODUCT SMARTWOOL SOCKS",
+      "code": "TBTTAP49311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "S",
+      "omsid": "TB:TAP49:311:S::1:"
+    }
+  ],
+  "PRODUCT_WITH_4_LINES_OF_NAME": [
+    {
+      "name": "AUT WOMEN London Vibe Ankle Strap Sandals with a very long name for the functional testing purposes and automation script testing purposes PRODUCT WITH 4 LINES OF NAME",
+      "code": "TBTTAP50311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP50:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_UPSELL": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH UPSELL",
+      "code": "TBTTAP51311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP51:311:060::1:"
+    }
+  ],
+  "PRODUCT_OUT_OF_PROMOTION": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT OUT OF PROMOTION",
+      "code": "TBTTAP52311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP52:311:060::1:"
+    }
+  ],
+  "BOPIS_MASTER_LOW_STOCK": [
+    {
+      "name": "AUT WOMEN Garrison Trail Webbing-Strap Sandals BOPIS MASTER LOW STOCK",
+      "code": "TBTTAP53311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP53:311:060::1:"
+    }
+  ],
+  "BOPIS_MASTER_OOS": [
+    {
+      "name": "AUT WOMEN Euro Hiker Hiking Boots BOPIS MASTER OOS",
+      "code": "TBTTAP54311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP54:311:060::1:"
+    }
+  ],
+  "PRODUCT_PROMOCODE": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT PROMOCODE",
+      "code": "TBTTAP55311",
+      "price": "CHF 20.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP55:311:060::1:",
+      "note": "This product should cost 20 or lower to be under the free shipping threshold on some EMEA countries."
+    }
+  ],
+  "PRODUCT_WITH_ONE_SIZE": [
+    {
+      "name": "AUT 3D-Logo Baseball Hat PRODUCT WITH ONE SIZE",
+      "code": "TBTTAP56311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "OS",
+      "omsid": "TB:TAP56:311:OS::1:"
+    }
+  ],
+  "PRODUCT_UNISEX_SIZE_CHART": [
+    {
+      "name": "AUT Anti-Fatigue Technology Slide PRODUCT UNISEX SIZE CHART",
+      "code": "TBTTAP57311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "39",
+      "omsid": "TB:TAP57:311:060::1:"
+    }
+  ],
+  "PRODUCT_PROMO_TOOLTIP": [
+    {
+      "name": "AUT WOMEN Timberland® x A-COLD-WALL* Future73 6-Inch Zip Boot PRODUCT PROMO TOOLTIP",
+      "code": "TBTTAP58311",
+      "price": "CHF 60.00",
+      "category": "WOMENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "60",
+      "omsid": "TB:TAP58:311:060::1:"
+    }
+  ],
+  "PRODUCT_WITH_MANY_IMAGES": [
+    {
+      "name": "Timberland® 50th Edition Premium 6-Inch Waterproof Boot for Men in Teal",
+      "code": "TB0A5VK9EB9",
+      "price": "CHF 250.00",
+      "color": "Teal",
+      "size": "42",
+      "omsid": "TB:0A5VK9:EB9:085:W:1:",
+      "category": "MENS"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "TBTgftcd214",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ],
+  "SECONDARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "200,00",
+      "color": "TBTgftcd214",
+      "size": "200",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ],
+  "PRODUCT_WITH_DISCOUNTED_PRICE": [
+    {
+      "name": "Gulf Beach Ribbed Hat for Men in Yellow",
+      "code": "TBTA1EGW231",
+      "price": "CHF 35,00",
+      "erased_price": "30,00 €",
+      "category": "MENS",
+      "color": "Yellow",
+      "color_it": "GIALLO",
+      "size": "TAGLIA UNICA",
+      "omsid": "TB:0A1EGW:231:OS::1:"
+    }
+  ],
+  "PRODUCT_SIGN_IN_TO_BUY": [
+    {
+      "name": "AUT Adventure 2.0 in Dark Brown for WOMEN PRODUCT SIGN IN TO BUY",
+      "code": "TBTTAP59311",
+      "price": "CHF 120.00",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP59:311:060::1"
+    }
+  ],
+  "Accessory": [
+    {
+      "name": "All Gender Timberland® Core Backpack in Black",
+      "code": "TB0A6MXW001",
+      "price": "CHF 65.00",
+      "category": "MENS",
+      "color": "Black",
+      "color_it": "grigio",
+      "size": "ONE",
+      "omsid": "TB:0A6MXW:001:OS::1:"
+    }
+  ],
+  "PRODUCT_REVIEWS_BELOW_74%": [
+    {
+      "name": "Stormbucks Chelsea Boot for Men in Green",
+      "code": "TBTA5SN9327",
+      "price": "CHF 190,00",
+      "category": "MENS",
+      "color": "Green",
+      "color_it": "verde",
+      "size": "40",
+      "omsid": "TB:0A5SN9:327:070:M:1:"
+    }
+  ],
+  "IN_STORE_AVAILABLE_PRODUCT": [
+    {
+      "name": "Timberland® Premium 6 Inch Boot for Men in Brown",
+      "code": "TB072066827",
+      "price": "CHF 250,00",
+      "color": "Brown",
+      "size": "39",
+      "length": "W",
+      "omsid": "TB:072066:827:070:W:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "NOT_AVAILABLE_IN_STORE_PRODUCT": [
+    {
+      "name": "Timberland® Premium 6 Inch Boot for Men in Brown",
+      "code": "TB072066827",
+      "price": "CHF 250,00",
+      "color": "Brown",
+      "size": "39",
+      "length": "W",
+      "omsid": "TB:072066:827:070:W:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "NOTIFY_ME_PRODUCT": [
+    {
+      "name": "AUT WOMEN Timberland® Premium 6-Inch Waterproof Boots PRODUCT NOTIFY ME",
+      "code": "TBTTAP65311",
+      "price": "CHF 50.00",
+      "category": "WOMENS",
+      "color": "Dark brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37.5",
+      "unavailableSize": "37",
+      "oos": true,
+      "omsid": "TB:TAP65:311:065:W:1:",
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_SIZE_CHART_ICON": [
+    {
+      "name": "All Gender Timberland® Core Backpack in Black",
+      "code": "TB0A6MXW001",
+      "price": "CHF 65,00",
+      "category": "MENS",
+      "color": "Black",
+      "color_it": "bianco",
+      "size": "ONE",
+      "omsid": "TB:0A6MXW:001:OS::1:"
+    }
+  ],
+  "PRODUCT_WITH_IMAGES_SIZES": [
+    {
+      "name": "Maple Grove Leather Oxford for Men in Brown",
+      "code": "TB0A5Z1S358",
+      "price": "CHF 150.00",
+      "category": "MENS",
+      "color": "Brown",
+      "color_it": "bianco",
+      "size": "40",
+      "omsid": "TB:0A5Z1S:358:070:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_OMNI_PRICE": [
+    {
+      "name": "AUT WOMEN Mt. Maddsen Waterproof Mid Hiking Boot PRODUCT WITH SALE PRICE WITH IMAGE",
+      "code": "TBTTAP07311",
+      "price": "CHF 100.00",
+      "erased_price": "CHF 120,00",
+      "category": "MENS",
+      "color": "Dark Brown",
+      "color_de": "Dunkelbraun",
+      "color_fr": "marron foncé",
+      "color_it": "marrone scuro",
+      "size": "37",
+      "omsid": "TB:TAP07:311:060::1:"
+    }
+  ],
+  "PRODUCT_SIGN_IN_TO_BUY_WITH_IMAGES": [
+    {
+      "name": "Sprint Trekker Chukka for Men in Dark Green",
+      "code": "TBTA61R4327",
+      "price": "CHF 170.00",
+      "category": "MENS",
+      "color": "Green",
+      "color_it": "verde",
+      "size": "40",
+      "omsid": "TB:0A61R4:327:070:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_SIZE_OOS": [
+    {
+      "name": "Timberland® 50th Edition Premium 6-Inch Waterproof Boot for Women in Grey",
+      "code": "TB0A4326EA3",
+      "price": "CHF 250,00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Grey",
+      "size": "36",
+      "omsid": "TB:0A4326:EA3:055:W:1:",
+      "unavailableSize": "35",
+      "oos": true,
+      "increaseInventory": false
+    }
+  ]
+
+}

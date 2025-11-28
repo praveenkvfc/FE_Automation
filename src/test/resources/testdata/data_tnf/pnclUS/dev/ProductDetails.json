@@ -1,0 +1,122 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "PREMIUM SK8-MID 83",
+      "code": "VN000CQQBA2",
+      "price": "$95.00",
+      "category": "SHOP",
+      "color": "BLACK/WHITE",
+      "pdpsize": "9.0 Men = 10.5 Women",
+      "size": "M9 / W10.5",
+      "omsid": "VN:0A5LMA:WHT:090:M:1:",
+      "oos": false
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT": [
+    {
+      "name": "PREMIUM SLIP-ON 98",
+      "code": "VN000CSE2BO",
+      "price": "$80.00",
+      "category": "SHOP",
+      "color": "BLACK/OFF WHITE",
+      "pdpsize": "9.0 Men = 10.5 Women",
+      "size": "M9 / W10.5",
+      "omsid": "VN:000CSE:2BO:090:M:1:",
+      "oos": false
+    }
+  ],
+  "SECONDARY_MASTER_PRODUCT_ALTERNATIVE_SIZE": [
+    {
+      "name": "PREMIUM SLIP-ON 98",
+      "code": "VN000CSE2BO",
+      "price": "$80.00",
+      "category": "SHOP",
+      "color": "BLACK/OFF WHITE",
+      "pdpsize": "12.0 Men = 13.5 Women",
+      "size": "M12 / W13.5",
+      "omsid": "VN:000CSE:2BO:120:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_SHOE_SIZE": [
+    {
+      "name": "PREMIUM SPORT 73",
+      "code": "VN000CR1WWW",
+      "price": "$95.00",
+      "category": "SHOP",
+      "color": "WHITE/WHITE",
+      "pdpsize": "12.0 Men = 13.5 Women",
+      "size": "M12 / W13.5",
+      "omsid": "VN:000CR1:WWW:120:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_SHOE_SIZE_CHANGE": [
+    {
+      "name": "PREMIUM SPORT 73",
+      "code": "VN000CR1WWW",
+      "price": "$95.00",
+      "category": "SHOP",
+      "color": "WHITE/WHITE",
+      "pdpsize": "8.5 Men = 10.0 Women",
+      "size": "M8.5 / W10.0",
+      "omsid": "VN:000CR1:WWW:085:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_NAME_COLOR_IMAGE_CHECK": [
+    {
+      "name": "PREMIUM SLIP-ON 98",
+      "name2": "PREMIUM SLIP-ON 98",
+      "code": "VN000CSECIB",
+      "code2": "VN000CSEOFW",
+      "price": "$80.00",
+      "price2": "$75.00",
+      "category": "SHOP",
+      "color": "PESTO",
+      "color2": "OFF WHITE",
+      "pdpsize": "8.5 Men = 10.0 Women",
+      "size": "M8.5 / W10.0",
+      "omsid": "VN:000CSE:CIB:085:M:1:",
+      "omsid2": "VN:000CS:OFW:085:M:1:",
+      "oos": false
+    }
+  ],
+  "MASTER_PLP_SEARCH_PRODUCT": [
+    {
+      "name": "PREMIUM SK8-HI REISSUE",
+      "code": "VN000CR02BO",
+      "price": "$115.00",
+      "category": "SHOP",
+      "color": "BLACK/OFF WHITE",
+      "pdpsize": "8.5 Men = 10.0 Women",
+      "size": "M8.5 / W10.0",
+      "omsid": "VN:000CR0:2BO:085:M:1:",
+      "oos": false
+    }
+  ],
+  "PRODUCT_MEN_CLOTHING": [
+    {
+      "name": "OTW DOUBLE HEM SHORT SLEEVE WOVEN SHIRT",
+      "code": "VN000GBV3KS",
+      "price": "$120.00",
+      "category": "SHOP",
+      "color": "ANTIQUE WHITE",
+      "size": "Large",
+      "omsid": "VN:000GBV:3KS:L::1",
+      "oos": false
+    }
+  ],
+  "PRODUCT_WITH_LONG_NAME": [
+    {
+      "name": "PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE PREMIUM LOGO HOODIE",
+      "code": "VN000GZ19Q6",
+      "price": "$110.00",
+      "category": "SHOP",
+      "color": "SILVER PINE GREEN",
+      "size": "Medium",
+      "omsid": "VN:000GZ1:9Q6:M::1:",
+      "oos": false
+    }
+  ]
+}

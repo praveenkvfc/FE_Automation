@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Nieuwe Achtergracht 100",
+      "building": "",
+      "postalCode": "1018 WT",
+      "city": "Amsterdam",
+      "email": "automationallpreprod_nl01@yopmail.com",
+      "phone": "2-5555-1001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Nieuwe Achtergracht 100",
+      "building": "",
+      "postalCode": "1018 WT",
+      "city": "Amsterdam",
+      "email": "testguestuserprodnl01@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Nieuwe Achtergracht 100",
+      "building": "",
+      "postalCode": "1018 WT",
+      "city": "Amsterdam",
+      "email": "testguestuserprodnl02@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Nieuwe Achtergracht 100",
+      "building": "",
+      "postalCode": "1018 WT",
+      "city": "Amsterdam",
+      "email": "testguestuserprodnl03@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Nieuwe Achtergracht 100",
+      "building": "",
+      "postalCode": "1018 WT",
+      "city": "Amsterdam",
+      "email": "testguestuserprodnl04@yopmail.com",
+      "phone": "2-5555-1012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

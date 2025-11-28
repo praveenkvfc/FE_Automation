@@ -1,0 +1,36 @@
+{
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "2222420000001113",
+      "MONTH": "01",
+      "YEAR": "26",
+      "SECURITY_CODE": "600"
+    }
+  ],
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111111111111",
+      "MONTH": "01",
+      "YEAR": "26",
+      "SECURITY_CODE": "600"
+    }
+  ],
+  "PAYPAL": [
+    {
+       "EMAIL_ID": "tnfus_buyer@vfc.com",
+      "PASSWORD": "Marvel@123"
+    }
+  ],
+  "INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "1239273939992344",
+      "PIN": "1567"
+    }
+  ],
+  "GCB_PAGE_INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "EFERGSEGGG",
+      "PIN": "157"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationallqa_pt01@yopmail.com",
+      "phone": "255-555-200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationmyaccountqa_pt01@yopmail.com",
+      "phone": "255-555-201",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationcheckoutqa_pt01@yopmail.com",
+      "phone": "255-555-202",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationplppdpsearchqa_pt01@yopmail.com",
+      "phone": "255-555-203",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationcanvascoreqa_pt01@yopmail.com",
+      "phone": "255-555-204",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationcontentpersonalizationqa_pt01@yopmail.com",
+      "phone": "255-555-205",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationmyaccount_mobileqapt01@yopmail.com",
+      "phone": "255-555-206",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationcheckout_mobileqapt01@yopmail.com",
+      "phone": "255-555-207",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationcontentpersonalization_mobileqapt01@yopmail.com",
+      "phone": "255-555-208",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationplppdpsearch_mobileqapt01@yopmail.com",
+      "phone": "255-555-209",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationcanvascore_mobileqapt01@yopmail.com",
+      "phone": "255-555-210",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "testguestuserqa_pt1@yopmail.com",
+      "phone": "255-555-211",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationchangepassworduserqapt01@yopmail.com",
+      "phone": "255-555-212",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationklarnauserqa_pt01@yopmail.com",
+      "phone": "255-555-215",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationnewuserqa_pt01@yopmail.com",
+      "phone": "255-555-216",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "registereduserreturnorder_qapt01@yopmail.com",
+      "phone": "255-555-217",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "guestuserreturnorder_qapt01@yopmail.com",
+      "phone": "255-555-218",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "city": "Lisboa",
+      "phone": "255-555-219",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "1500-650",
+      "returnTrackingNumber": ""
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "city": "Lisboa",
+      "phone": "255-555-220",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "1500-650",
+      "returnTrackingNumber": ""
+    }
+  ]
+}

@@ -1,0 +1,791 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Men's Anti-UV Printed T-Shirt",
+      "code": "TB0A5SFXCM9",
+      "price": "$24.99",
+      "category": "MENS",
+      "color": "Vintage White",
+      "size": "S",
+      "omsid": "TB:0A5SFX:CM9:S::1"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "AUT Men's Timberland® Premium 6-Inch Waterproof Boot MASTER PRODUCT",
+      "code": "TBTAP051713",
+      "price": "$220.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Wheat Nubuck",
+      "size": "10.5",
+      "width": "Medium",
+      "omsid": "TB:TAP051:713:105:M:1:",
+      "info": "This product should be in sync with MASTER_PRODUCT always. The only diff between this and MASTER_PRODUCT is of size"
+    }
+  ],
+  "PRODUCT_WITH_MANY_PRICES": [
+    {
+      "name": "AUT Junior Timberland® Premium 6-Inch Waterproof Boots PRODUCT WITH MANY PRICES",
+      "code": "TBTAP053231",
+      "category": "MENS FOOTWEAR",
+      "price": "$200.00",
+      "second_price": "$165.79",
+      "color": "Wheat Nubuck/Blue",
+      "color2": "Black Nubuck/Blue",
+      "size": "5",
+      "width": "Medium",
+      "omsid": "TB:TAP053:231:050:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_SALE_PRICE": [
+    {
+      "name": "Men’s Timberland® Authentic 7-Eye Chukka",
+      "code": "TB0A5P6V991",
+      "price": "$119.99",
+      "color": "Dark Green Nubuck",
+      "erased_price": "$170.00",
+      "category": "FOOTWEAR",
+      "size": "9.5",
+      "width": "Medium",
+      "omsid": "TB:0A5P6V:991:095:M:1:",
+      "oos": true
+    }
+  ],
+  "PRODUCT_WITH_SALE_PRICE_WITH_IMAGE": [
+    {
+      "name": "Men's Waterproof Mt. Lincoln Mid Hiker Boot",
+      "code": "TB0A61NM015",
+      "price": "$129.99",
+      "color": "Blackout Full-Grain",
+      "erased_price": "$180.00",
+      "category": "MENS FOOTWEAR",
+      "size": "8.5",
+      "width": "Medium",
+      "omsid": "TB:0A61NM:015:085:M:1:"
+    }
+  ],
+  "BADGE_WITH_IMAGE": [
+    {
+      "name": "MEN'S HYPERCHARGE 8\" COMPOSITE TOE WATERPROOF WORK BOOT",
+      "code": "TBTAP064214",
+      "price": "$270.00",
+      "size": "14",
+      "color": "Brown Distressed Full-Grain Leather",
+      "width": "Medium",
+      "omsid": "TB:TAP064:214:140:M:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "BADGE_WITH_TEXT": [
+    {
+      "name": "AUT Timberland PRO® Watch Cap BADGE WITH TEXT",
+      "code": "TBTAP065013",
+      "price": "$18.00",
+      "color": "Dark Charcoal Heather",
+      "size": "One Size",
+      "omsid": "TB:TAP065:013:OS::1:",
+      "category": "MENS CLOTHING PRO"
+    }
+  ],
+  "BADGE_WITH_IMAGE_TEXT": [
+    {
+      "name": "AUT Men's Timberland PRO® Gritman Low-Profile Trucker Hat BADGE WITH IMAGE TEXT",
+      "code": "TBTAP066001",
+      "price": "$20.00",
+      "color": "Black",
+      "size": "One Size",
+      "omsid": "TB:TAP066:001:OS::1:",
+      "category": "MEN'S PRO WORKWEAR"
+    }
+  ],
+  "NO_BADGE_NO_TEXT": [
+    {
+      "name": "AUT Men's Garrison Trail Slide Sandals NO BADGE NO TEXT",
+      "code": "TBTAP055110",
+      "price": "$80.00",
+      "color": "Brindle",
+      "category": "MENS FOOTWEAR",
+      "size": "9",
+      "width": "Medium",
+      "omsid": "TB:TAP055:110:090:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_LIST_ACCORDION": [
+    {
+      "name": "AUT Men's Redwood Falls Waterproof Boots PRODUCT WITH LIST ACCORDION",
+      "code": "TBTAP056015",
+      "color": "Jet Black",
+      "price": "$139.49",
+      "category": "MENS",
+      "size": "12",
+      "width": "Medium",
+      "omsid": "TB:TAP056:015:120:M:1:",
+      "oss": true,
+      "staticBreadCrumbName": "AUT Men's Redwood Falls Waterproof Boots PRODUCT WITH LIST ACCORDION"
+    }
+  ],
+  "PRODUCT_WITH_MANY_IMAGES": [
+    {
+      "name": "Men's Short Sleeve Seasonal Camo Linear Logo T-Shirt",
+      "code": "TB0A6NJW001",
+      "price": "$32.00",
+      "category": "MENS CLOTHING",
+      "color": "Black",
+      "size": "XL",
+      "omsid": "TB:0A6NJW:001:XL::1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Men's 3-Eye Lug Handsewn Boat Shoe",
+      "code": "TB050009648",
+      "price": "$150.00",
+      "category": "FOOTWEAR",
+      "color": "Burgundy Full-Grain",
+      "size": "8.5",
+      "width": "Medium",
+      "omsid": "TB:050009:648:085:M:1:"
+    }
+  ],
+  "PRODUCT_SIGN_IN_TO_BUY": [
+    {
+      "name": "Men's Timberland® Premium 6-Inch Waterproof Boot",
+      "code": "TB010061713",
+      "category": "MENS",
+      "price": "$198.00",
+      "color": "Wheat Nubuck",
+      "size": "10",
+      "width": "Medium",
+      "omsid": "TB:010061:713:100:M:1:"
+    }
+  ],
+  "PRODUCT_QUICKSHOP_OPTIONS": [
+    {
+      "name": "AUT Men's Timberland® Premium 6-Inch Waterproof Boots PRODUCT QUICKSHOP OPTIONS",
+      "code": "TBTAP002W08",
+      "price": "$145.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Dark Grey Nubuck",
+      "color2": "Wheat Nubuck",
+      "size": "7",
+      "unavailableSize": "9",
+      "width": "Medium",
+      "omsid": "TB:TAP002:W08:070:M:1:"
+    }
+  ],
+  "BOPIS_MASTER": [
+    {
+      "name": "Women's Timberland® Premium 6-Inch Waterproof Boot",
+      "code": "TB0A5SRF662",
+      "price": "$170.00",
+      "category": "FOOTWEAR",
+      "color": "Light Pink Nubuck",
+      "size": "6.5",
+      "width": "Medium",
+      "omsid": "TB:0A5SRF:662:065:M:1:",
+      "fullFilmentType": "BOPIS",
+      "storeId": "TBLUS00166"
+    }
+  ],
+  "BOPIS_STANDARD": [
+    {
+      "name": "Men's Euro Hiker Leather Boot",
+      "code": "TB095100214",
+      "price": "$140.00",
+      "category": "FOOTWEAR",
+      "color": "Medium Brown Full-Grain",
+      "size": "13",
+      "omsid": "TB:095100:214:130:M:1:",
+      "fullFilmentType": "BOPIS",
+      "storeId": "TBLUS00166"
+    }
+  ],
+  "STS_MASTER": [
+    {
+      "name": "Men's 3-Eye Lug Handsewn Boat Shoe",
+      "code": "TB050009648",
+      "price": "$150.00",
+      "category": "FOOTWEAR",
+      "color": "Burgundy Full-Grain",
+      "size": "11.5",
+      "width": "Medium",
+      "omsid": "TB:050009:648:115:M:1:",
+      "fullFilmentType": "STS",
+      "storeId": "TBLUS00328"
+    }
+  ],
+  "STS_STANDARD": [
+    {
+      "name": "AUT Women's Stack Logo T-Shirt STS STANDARD",
+      "code": "TBTAP005001",
+      "price": "$29.99",
+      "category": "WOMEN",
+      "color": "Black",
+      "size": "S",
+      "omsid": "TB:TAP005:001:S::1:",
+      "fullFilmentType": "STS",
+      "storeId": "TBLUS00328"
+    }
+  ],
+  "PRODUCT_AVAILABLE": [
+    {
+      "name": "Youth Adventure Seeker 2-Strap Sandals",
+      "code": "TB03471A001",
+      "price": "$50.00",
+      "category": "KIDS",
+      "color": "Black",
+      "size": "13",
+      "width": "Medium",
+      "omsid": "TB:03471A:001:130:M:1:"
+    }
+  ],
+  "PRODUCT_AVAILABILITY_CHANGED": [
+    {
+      "name": "Men's Maple Grove Leather Chukka",
+      "code": "TB0A5PRV231",
+      "price": "$125.00",
+      "color": "Wheat Nubuck",
+      "category": "MENS FOOTWEAR",
+      "size": "15",
+      "width": "Medium",
+      "omsid": "TB:0A5PRV:231:150:M:1:"
+    }
+  ],
+  "PRODUCT_AVAILABILITY_CHANGED_2ND": [
+    {
+      "name": "Women's Greyfield Chelsea Boot",
+      "code": "TB0A5ZCG001",
+      "price": "$120.00",
+      "color": "Black Full-Grain",
+      "category": "FOOTWEAR",
+      "size": "9",
+      "width": "Medium",
+      "omsid": "TB:0A5ZCG:001:090:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_KLARNA_PRICE": [
+    {
+      "name": "Men's Timberland® Premium 6-Inch Waterproof Boots",
+      "code": "TB072066EBL",
+      "price": "$198.00",
+      "category": "MENS FOOTWEAR",
+      "color": "DARK WHEAT NUBUCK",
+      "size": "7",
+      "unavailableSize": "6",
+      "width": "Medium",
+      "omsid": "TB:072066:EBL:070:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_BELOW_KLARNA_PRICE": [
+    {
+      "name": "AUT Men's Timberland PRO® Gritman Low-Profile Trucker Hat PRODUCT WITH BELOW KLARNA PRICE",
+      "code": "TBTAP010060",
+      "price": "$11.99",
+      "category": "MENS",
+      "color": "Pewter",
+      "size": "One Size",
+      "omsid": "TB:TAP010:060:OS::1:"
+    }
+  ],
+  "PRODUCT_WITH_WIDTH": [
+    {
+      "name": "Men's Maple Grove Leather Chukka",
+      "code": "TB0A5PRV231",
+      "price": "$125.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Wheat Nubuck",
+      "size": "10.5",
+      "width": "Wide",
+      "omsid": "TB:0A5PRV:231:105:W:1:"
+    }
+  ],
+  "PRODUCT_WITH_WIDTH_OOS": [
+    {
+      "name": "Men's Maple Grove Sneaker",
+      "code": "TB0A28SY015",
+      "price": "$110.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Jet Black",
+      "color2QuickShop": "Mens-Maple-Grove-Sneaker",
+      "size": "10",
+      "width": "Medium",
+      "unavailableSize": "14",
+      "unavailableWidth": "Wide",
+      "oos": true,
+      "omsid": "TB:0A28SY:015:100:M:1:",
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_WITH_REGULAR_PRICE": [
+    {
+      "name": "Men's Timberland® 1973 Newman Waterproof Chukka Boot",
+      "code": "TB0A5WJH358",
+      "price": "$150.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Medium Brown Full-Grain",
+      "size": "7.5",
+      "width": "Medium",
+      "omsid": "TB:0A5WJH:358:075:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_REGULAR_PRICE_WITH_IMAGE": [
+    {
+      "name": "Men's Timberland® Premium 6-Inch Waterproof Boots",
+      "code": "TB072066EBL",
+      "price": "$198.00",
+      "category": "MENS FOOTWEAR",
+      "color": "DARK WHEAT NUBUCK",
+      "size": "7",
+      "unavailableSize": "6",
+      "width": "Medium",
+      "omsid": "TB:072066:EBL:070:M:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Men's Euro Hiker Leather Boot",
+      "code": "TB095100214",
+      "category": "MENS FOOTWEAR",
+      "unavailableSize": "6.5",
+      "size": "9",
+      "color": "Medium Brown Full-Grain",
+      "price": "$140.00",
+      "width": "Medium",
+      "omsid": "TB:095100:214:090:M:1:"
+    }
+  ],
+  "PRODUCT_SIZE_CHART_FITS": [
+    {
+      "name": "Men's Boondock 8\" Composite Toe Waterproof Work Boot",
+      "code": "TBTAP015214",
+      "price": "$155.79",
+      "color": "Brown Tumbled Leather",
+      "size": "13",
+      "omsid": "TB:TAP015:214:130:M:1:"
+    }
+  ],
+  "PRODUCT_SIZE_SHOE": [
+    {
+      "name": "Men's 3-Eye Lug Handsewn Boat Shoe",
+      "code": "TB050009648",
+      "price": "$150.00",
+      "category": "FOOTWEAR",
+      "color": "Burgundy Full-Grain",
+      "size": "8",
+      "width": "Medium",
+      "omsid": "TB:050009:648:080:M:1:"
+    }
+  ],
+  "PRODUCT_SIZE_CHART_MEASUREMENTS": [
+    {
+      "name": "AUT Men's Timberland PRO® Gritman Fleece-Lined Hooded Canvas Jacket PRODUCT SIZE CHART MEASUREMENTS",
+      "code": "TBTAP016060",
+      "color": "Pewter",
+      "price": "$115.00",
+      "omsid": "TB:TAP016:060:LT::1:"
+    }
+  ],
+  "PRODUCT_SIZE_AND_FITS_MODEL": [
+    {
+      "name": "AUT Men's Lightweight Hiking Jacket PRODUCT MENS CLOTHING SIZE CHART",
+      "code": "TBTAP110433",
+      "price": "$89.49",
+      "category": "MENS CLOTHING",
+      "color": "Dark Sapphire",
+      "size": "L",
+      "length": "",
+      "omsid": "TB:TAP110:433:L::1:"
+    }
+  ],
+  "PRODUCT_REVIEWS": [
+    {
+      "name": "Men's Mt. Maddsen Waterproof Mid Hiking Boot",
+      "code": "TB1A258X033",
+      "category": "MENS",
+      "price": "$99.99",
+      "color": "Medium Grey Nubuck",
+      "size": "8",
+      "width": "Medium",
+      "omsid": "TB:1A258X:033:080:M:1:"
+    }
+  ],
+  "PRODUCT_ONLY_ONE_REVIEWS": [
+    {
+      "name": "Women's Timberland® x Suzanne Oude Hengel Future73 Knit Clog",
+      "code": "TB0A67MYX77",
+      "size": "8.5",
+      "width": "Medium",
+      "price": "$160.00",
+      "color": "Blue Knit",
+      "omsid": "TB:0A67MY:X77:085:M:1:",
+      "oos": true,
+      "category": "WOMENS"
+    }
+  ],
+  "PRODUCT_FAVORITES": [
+    {
+      "name": "AUT Men's Timberland PRO® Hood Honcho Sport Hoodie PRODUCT FAVORITES",
+      "code": "TBTAP117001",
+      "size": "3XL",
+      "width": "Regular",
+      "price": "$45.79",
+      "color": "Black",
+      "omsid": "TB:TAP117:001:3XL:REG:1:",
+      "category": "MENS"
+    }
+  ],
+  "EYEBROW_WITH_TITLE": [
+    {
+      "name": "AUT Men's Timberland PRO® Skim Coat Heavy-Warmth Thermal Bottoms EYEBROW WITH TITLE",
+      "code": "TBTAP115015",
+      "price": "$111.58",
+      "category": "MENS",
+      "color": "Jet Black",
+      "size": "S",
+      "width": "",
+      "omsid": "TB:TAP115:015:S::1:"
+    }
+  ],
+  "PRODUCT_WITH_REG_SALE_PRICE_HIGH_TO_LOW": [
+    {
+      "name": "Men's Maple Grove Chukka",
+      "code": "TB0A29EN231",
+      "price": "$89.99",
+      "color": "Wheat Nubuck",
+      "erased_price": "$130.00",
+      "category": "MENS FOOTWEAR",
+      "size": "8.5",
+      "width": "Medium",
+      "omsid": "TB:0A29EN:231:085:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_STATIC_BREADCRUMB": [
+    {
+      "name": "Men's Maple Grove Chukka",
+      "code": "TB0A29EN231",
+      "price": "$89.99",
+      "category": "FOOTWEAR",
+      "color": "Wheat Nubuck",
+      "size": "8.5",
+      "omsid": "TB:0A29EN:231:085:M:1:",
+      "staticBreadCrumbName": "Men's Maple Grove Chukka"
+    }
+  ],
+  "PRODUCT_WITH_NO_REVIEWS": [
+    {
+      "name": "AUT Men’s Greenstride™ Motion 6 Waterproof Mid Hikers PRODUCT WITH NO REVIEWS",
+      "code": "TBTAP111015",
+      "category": "MENS",
+      "price": "$119.49",
+      "color": "Jet Black",
+      "size": "8",
+      "width": "Medium",
+      "omsid": "TB:TAP111:015:080:M:1:"
+    }
+  ],
+  "PRODUCT_MENS_CLOTHING_SIZE_CHART": [
+    {
+      "name": "AUT Men's Lightweight Hiking Jacket PRODUCT MENS CLOTHING SIZE CHART",
+      "code": "TBTAP110433",
+      "price": "$89.49",
+      "category": "MENS CLOTHING",
+      "color": "Dark Sapphire",
+      "size": "L",
+      "length": "",
+      "omsid": "TB:TAP110:433:L::1:"
+    }
+  ],
+  "PRODUCT_BELT": [
+    {
+      "name": "AUT Men's Monadnock 35MM Regenerative Leather Belt PRODUCT BELT",
+      "code": "TBTAP109140",
+      "price": "$39.49",
+      "category": "MENS",
+      "color": "Saddle Brown",
+      "size": "32",
+      "omsid": "TB:TAP109:140:32::1:"
+    }
+  ],
+  "PRODUCT_KIDS_FOOTWEAR": [
+    {
+      "name": "Youth Adventure Seeker 2-Strap Sandals",
+      "code": "TB0A1O5H431",
+      "price": "$50.00",
+      "color": "Midnight Navy",
+      "size": "1",
+      "width": "Medium",
+      "omsid": "TB:0A1O5H:431:010:M:1:"
+    }
+  ],
+  "PRODUCT_MENS_PROWORKWEAR": [
+    {
+      "name": "AUT Men's Timberland PRO® Morphix Athletic Flex Carpenter Bib Overalls PRODUCT MENS PROWORKWEAR",
+      "code": "TBTAP107BS5",
+      "price": "$115.00",
+      "color": "Asphalt",
+      "size": "L",
+      "length": "Regular",
+      "omsid": "TB:TAP107:BS5:L:REG:1:"
+    }
+  ],
+  "PRODUCT_PRO_FOOTWEAR": [
+    {
+      "name": "AUT Men's Boondock Waterproof Pull-On Comp-Toe Work Boots PRODUCT PRO FOOTWEAR",
+      "code": "TBTAP105214",
+      "price": "$139.49",
+      "category": "MENS",
+      "color": "Brown",
+      "size": "8",
+      "width": "Medium",
+      "omsid": "TB:TAP105:214:080:M:1:"
+    }
+  ],
+  "PRODUCT_SOCKS": [
+    {
+      "name": "AUT Women's 2-Pack Cushioned Boot Socks PRODUCT SOCKS",
+      "code": "TBTAP104001",
+      "color": "Black",
+      "size": "M",
+      "price": "$115.00",
+      "omsid": "TB:TAP104:001:M::1:"
+    }
+  ],
+  "PRODUCT_HAT": [
+    {
+      "name": "AUT Small Logo Baseball Cap PRODUCT HAT",
+      "code": "TBTAP103269",
+      "price": "$9.99",
+      "color": "Wheat",
+      "size": "One Size",
+      "omsid": "TB:TAP103:269:OS::1:"
+    }
+  ],
+  "PRODUCT_WOMEN_CLOTHING": [
+    {
+      "name": "Women's Timberland PRO® Core T-Shirt",
+      "code": "TB0A6D7XDR5",
+      "price": "$18.00",
+      "color": "Smoke Blue",
+      "size": "XXL",
+      "omsid": "TB:0A6D7X:DR5:XXL::1:"
+    }
+  ],
+  "PRODUCT_MEN_CLOTHING": [
+    {
+      "name": "AUT Men's Lightweight Hiking Jacket PRODUCT MENS CLOTHING SIZE CHART",
+      "code": "TBTAP110433",
+      "price": "$89.49",
+      "color": "Dark Sapphire",
+      "size": "L",
+      "category": "MENS CLOTHING",
+      "omsid": "TB:TAP110:433:L::1:"
+    }
+  ],
+  "PRODUCT_SMARTWOOL_SOCKS": [
+    {
+      "name": "AUT Women's SmartWool® Hike Classic Full-Cushion Crew Socks PRODUCT SMARTWOOL SOCKS",
+      "code": "TBTAP058CJ3",
+      "price": "$9.49",
+      "color": "Bordeaux",
+      "size": "M",
+      "omsid": "TB:TAP058:CJ3:M::1:"
+    }
+  ],
+  "PRODUCT_REVIEWS_WITH_MORE_DETAILS": [
+    {
+      "name": "Men's Timberland® Premium 6-Inch Waterproof Boot",
+      "code": "TB010073001",
+      "price": "$198.00",
+      "color": "Black Nubuck",
+      "size": "8.5",
+      "width": "Wide",
+      "omsid": "TB:010073:001:085:W:1:",
+      "category": "MENS FOOTWEAR"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Men's Mt. Maddsen Waterproof Mid Hiking Boot",
+      "code": "TB0A64TV231",
+      "category": "MENS",
+      "color": "Wheat Nubuck",
+      "size": "10",
+      "price": "$99.99",
+      "width": "Medium",
+      "omsid": "TB:0A64TV:231:070:M:1:"
+    }
+  ],
+  "PRODUCT_REVIEWS_ABOVE_74%": [
+    {
+      "name": "Men's Timberland® Premium 6-Inch Waterproof Boot",
+      "code": "TB010061713",
+      "price": "$198.00",
+      "color": "Wheat Nubuck",
+      "size": "8.5",
+      "width": "Wide",
+      "omsid": "TB:010061:713:085:W:1:",
+      "category": "MENS"
+    }
+  ],
+  "PRODUCT_REVIEWS_BELOW_74%": [
+    {
+      "name": "Men's Chocorua Waterproof Mid Hiker Boot",
+      "code": "TB015130210",
+      "category": "MENS FOOTWEAR",
+      "price": "$114.99",
+      "color": "Medium Brown Full-Grain",
+      "size": "10",
+      "width": "Medium",
+      "omsid": "TB:015130:210:100:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_4_LINES_OF_NAME": [
+    {
+      "name": "AUT Women's London Vibe Ankle Strap Sandals with a very long name for the functional testing purposes and automation script testing purposes PRODUCT WITH 4 LINES OF NAME",
+      "code": "TBTAP059015",
+      "price": "$79.89",
+      "color": "Jet Black",
+      "size": "5.5",
+      "width": "Wide",
+      "omsid": "TB:TAP059:015:055:M:1:",
+      "category": "WOMEN"
+    }
+  ],
+  "PRODUCT_WITH_UPSELL": [
+    {
+      "name": "Men's Maple Grove Leather Chukka",
+      "code": "TB0A5PSG015",
+      "category": "MENS FOOTWEAR",
+      "price": "$125.00",
+      "color": "Black Nubuck",
+      "size": "8.5",
+      "width": "Wide",
+      "omsid": "TB:0A5PSG:015:085:W:1:"
+    }
+  ],
+  "PRODUCT_OUT_OF_PROMOTION": [
+    {
+      "name": "AUT Men's Timberland® Premium 6-Inch Waterproof Boots PRODUCT OUT OF PROMOTION",
+      "code": "TBTAP063713",
+      "category": "WOMEN FOOTWARE",
+      "price": "$50.00",
+      "color": "Wheat Nubuck",
+      "size": "6.5",
+      "width": "Medium",
+      "omsid": "TB:TAP063:713:065:M:1:"
+    }
+  ],
+  "BOPIS_MASTER_LOW_STOCK": [
+    {
+      "name": "Men's Waterproof Field Boot",
+      "code": "TB0A18A6D47",
+      "price": "$170.00",
+      "category": "FOOTWEAR",
+      "color": "Dark Brown Nubuck",
+      "size": "12",
+      "width": "Medium",
+      "omsid": "TB:0A18A6:D47:120:M:1:",
+      "fullFilmentType": "BOPIS",
+      "storeId": "TBLUS00507"
+    }
+  ],
+  "BOPIS_MASTER_OOS": [
+    {
+      "name": "AUT Men's Euro Hiker Hiking Boots BOPIS MASTER OOS",
+      "code": "TBTAP068001",
+      "price": "$200.00",
+      "category": "MENS",
+      "color": "Black",
+      "size": "8.5",
+      "width": "Medium",
+      "omsid": "TB:TAP068:001:085:M:1:",
+      "oos": true,
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_PROMOCODE": [
+    {
+      "name": "Women’s Adley Way Backstrap Sandals",
+      "code": "TB0A5URC991",
+      "category": "FOOTWEAR",
+      "price": "$110.00",
+      "color": "Dark Green Nubuck",
+      "size": "8.5",
+      "width": "Medium",
+      "omsid": "TB:0A5URC:991:085:M:1:"
+    }
+  ],
+  "PRODUCT_WITH_ONE_SIZE": [
+    {
+      "name": "Embroidered-Logo Baseball Cap",
+      "code": "TB0A1X2DN88",
+      "price": "$34.00",
+      "category": "MENS ACCESSORIES",
+      "color": "Black/Wheat",
+      "size": "One Size",
+      "omsid": "TB:0A1X2D:N88:OS::1:"
+    }
+  ],
+  "PRODUCT_UNISEX_SIZE_CHART": [
+    {
+      "name": "AUT Anti-Fatigue Technology Slide PRODUCT UNISEX SIZE CHART",
+      "code": "TBTAP207001",
+      "price": "$40.00",
+      "category": "WOMENS FOOTWEAR",
+      "color": "Black/Orange",
+      "size": "3",
+      "omsid": "TB:TAP207:001:030:M:1:"
+    }
+  ],
+  "PRODUCT_PROMO_TOOLTIP": [
+    {
+      "name": "Men's Timberland® x A-COLD-WALL* Future73 6-Inch Zip Boot",
+      "code": "TB0A66UBX19",
+      "price": "$295.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Nature",
+      "size": "7",
+      "width": "Wide",
+      "omsid": "TB:0A66UB:X19:070:W:1:"
+    }
+  ],
+  "PRODUCT_QUESTIONS_ANSWERS": [
+    {
+      "name": "Men's Timberland® Premium 6-Inch Waterproof Boot",
+      "code": "TB010061713",
+      "category": "MENS",
+      "price": "$198.00",
+      "color": "Wheat Nubuck",
+      "size": "10",
+      "width": "Medium",
+      "omsid": "TB:010061:713:100:M:1:"
+    }
+  ],
+  "NOTIFY_ME_PRODUCT": [
+    {
+      "name": "Men’s Timberland® Premium Waterproof Super Boot",
+      "code": "TB0A173H214",
+      "price": "$260.00",
+      "category": "MENS FOOTWEAR",
+      "color": "Brown Full-Grain",
+      "size": "10",
+      "width": "Medium",
+      "unavailableSize": "9",
+      "unavailableWidth": "Wide",
+      "oos": true,
+      "omsid": "TB:0A173H:214:100:M:1:",
+      "increaseInventory": false
+    }
+  ],
+  "PRODUCT_WITH_MORE_COLORS": [
+    {
+      "name": "Men's UV Protection Outdoor Graphic T-Shirt",
+      "code": "TB0A5SFXCM9",
+      "price": "$24.99",
+      "category": "MENS",
+      "color": "Vintage White",
+      "size": "S",
+      "omsid": "TB:0A5SFX:CM9:S::1"
+    }
+  ]
+}

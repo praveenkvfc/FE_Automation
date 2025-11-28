@@ -1,0 +1,37 @@
+{
+  "SEARCH_TERM_LESS_THAN_48": [
+    {
+      "name": "CINTO"
+    }
+  ],
+  "SEARCH_TERM_MORE_THAN_48": [
+    {
+      "name": "HOMEM"
+    }
+  ],
+  "SEARCH_TERM_WITH_TWO_LETTERS": [
+    {
+      "name": "mu"
+    }
+  ],
+  "SEARCH_TERM_WITH_THREE_LETTERS": [
+    {
+      "name": "mul"
+    }
+  ],
+  "SEARCH_TERM_WITH_MORETHAN_THREE_LETTERS": [
+    {
+      "name": "MULHERE"
+    }
+  ],
+  "SEARCH_TERM_WITH_PRODUCT_TYPE": [
+    {
+      "name": "Shoes"
+    }
+  ],
+  "SEARCH_TERM_WITH_NO_RESULTS": [
+    {
+      "name": "RANDOMNAME"
+    }
+  ]
+}

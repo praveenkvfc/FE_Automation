@@ -1,0 +1,45 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationAlldevit1@yopmail.com",
+      "phone": "2356-754-444",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationAlldevit2@yopmail.com",
+      "phone": "2356-754-445",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+    ,
+    "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "20124",
+      "city": "Milan",
+      "email": "testguestuserpreprodit@yopmail.com",
+      "phone": "2555-555-140",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+  
+  
+}

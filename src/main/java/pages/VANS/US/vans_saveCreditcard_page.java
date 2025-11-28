@@ -3,7 +3,6 @@ package pages.VANS.US;
 import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.SelectOption;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import utils.PaymentDataReader;
@@ -24,12 +23,12 @@ public class vans_saveCreditcard_page {
     // Updated constructor to accept cardType
     public vans_saveCreditcard_page(Page page, String cardType) {
         this.page = page;
-        this.paymentDataReader = PaymentDataReader.getInstance(cardType);
+        this.paymentDataReader = PaymentDataReader.getInstance(cardType, 0);
     }
 
     // If you can't change the constructor, use this alternative:
     public void initializePaymentReader(String cardType) {
-        this.paymentDataReader = PaymentDataReader.getInstance(cardType);
+        this.paymentDataReader = PaymentDataReader.getInstance(cardType, 0);
     }
 
 

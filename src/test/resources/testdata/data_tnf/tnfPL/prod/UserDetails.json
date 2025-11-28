@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Odloty",
+      "building": "150",
+      "postalCode": "02-143",
+      "city": "Warszawa",
+      "email": "automationallpreprod_pl01@yopmail.com",
+      "phone": "789-899-900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Odloty",
+      "building": "150",
+      "postalCode": "02-143",
+      "city": "Warszawa",
+      "email": "testguestuserprodpl01@yopmail.com",
+      "phone": "789-899-900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Odloty",
+      "building": "150",
+      "postalCode": "02-143",
+      "city": "Warszawa",
+      "email": "testguestuserprodpl02@yopmail.com",
+      "phone": "789-899-900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Odloty",
+      "building": "150",
+      "postalCode": "02-143",
+      "city": "Warszawa",
+      "email": "testguestuserprodnl03@yopmail.com",
+      "phone": "789-899-900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Odloty",
+      "building": "150",
+      "postalCode": "02-143",
+      "city": "Warszawa",
+      "email": "testguestuserprodnl04@yopmail.com",
+      "phone": "789-899-900",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

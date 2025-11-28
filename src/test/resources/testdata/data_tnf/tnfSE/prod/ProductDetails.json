@@ -1,0 +1,71 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Glenclyffe Urban Boots",
+      "code": "NF0A83NJ",
+      "price": "1549,00 kr",
+      "category": "MENS",
+      "color": "TNF Black-TNF Black",
+      "size": "41",
+      "omsid": "NF:0A83NJ:KX7:085::1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "Glenclyffe Urban Boots",
+      "code": "NF0A83NJ",
+      "price": "1549,00 kr",
+      "category": "MENS",
+      "color": "TNF Black-TNF Black",
+      "size": "42",
+      "omsid": "NF:0A83NJ:KX7:085::1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Motion Stretch Trousers for Men in Beige",
+      "code": "TB0A6VBTDH4",
+      "price": "1 499,00 kr",
+      "category": "MENS",
+      "color": "Beige",
+      "size": "S",
+      "unavailableSize": "3XL",
+      "omsid": "TB:0A6VBT:DH4:S::1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Field Trekker Hiker for Men in Black",
+      "code": "TB0A2A58015",
+      "price": "",
+      "category": "MENS",
+      "color": "Black",
+      "size": "40",
+      "omsid": "TB:0A2A58:015:070:M:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Field Trekker Hiker for Men in Black",
+      "code": "TB0A2A58015",
+      "price": "1 200,00 kr",
+      "category": "MENS",
+      "color": "Black",
+      "size": "40",
+      "omsid": "TB:0A2A58:015:070:M:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "Gift Card",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "tb0gftcd214",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ]
+}

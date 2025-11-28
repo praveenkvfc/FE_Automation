@@ -1,0 +1,272 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationallqa_es01@yopmail.com",
+      "phone": "225-505-100",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationmyaccountqa_es01@yopmail.com",
+      "phone": "225-505-101",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationcheckoutqa_es01@yopmail.com",
+      "phone": "225-505-102",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationplppdpsearchqa_es01@yopmail.com",
+      "phone": "225-505-103",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationcanvascoreqa_es01@yopmail.com",
+      "phone": "225-505-104",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationcontentpersonalizationqa_es01@yopmail.com",
+      "phone": "225-505-105",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationmyaccount_mobileqaes01@yopmail.com",
+      "phone": "225-505-106",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationcheckout_mobileqaes01@yopmail.com",
+      "phone": "225-505-107",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationcontentpersonalization_mobileqaes01@yopmail.com",
+      "phone": "225-505-108",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationplppdpsearch_mobileqaes01@yopmail.com",
+      "phone": "225-505-109",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationcanvascore_mobileqaes01@yopmail.com",
+      "phone": "225-505-110",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "testguestuserqa_es01@yopmail.com",
+      "phone": "225-505-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationchangepassworduserqaes01@yopmail.com",
+      "phone": "225-505-112",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationklarnauserqa_es01@yopmail.com",
+      "phone": "225-505-113",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "automationnewuserqa_es01@yopmail.com",
+      "phone": "225-505-114",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "registereduserreturnorder_qaes01@yopmail.com",
+      "phone": "225-505-115",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "email": "guestuserreturnorder_qaes01@yopmail.com",
+      "phone": "225-505-116",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "city": "Madrid",
+      "phone": "225-505-117",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "28004",
+      "returnTrackingNumber": ""
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Calle de Fuencarral 100",
+      "building": "",
+      "city": "Madrid",
+      "phone": "225-505-118",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "28004",
+      "returnTrackingNumber": ""
+    }
+  ]
+}

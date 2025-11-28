@@ -8,8 +8,6 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 import utils.PaymentDataReader;
 import utils.RetryUtility;
 
-import java.util.concurrent.atomic.LongAccumulator;
-
 import static utils.Constants.*;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
@@ -20,7 +18,7 @@ public class vans_paypal_paymentPage {
 
     public vans_paypal_paymentPage(Page page, String cardType) {
         this.page = page;
-        this.paymentDataReader = PaymentDataReader.getInstance(cardType);
+        this.paymentDataReader = PaymentDataReader.getInstance(cardType, 0);
     }
 
     // Simple PayPal button locators - try different selectors

@@ -1,0 +1,37 @@
+{
+  "SEARCH_TERM_LESS_THAN_48": [
+      {
+          "name": "Cooper"
+      }
+  ],
+  "SEARCH_TERM_MORE_THAN_48": [
+      {
+          "name": "Mens"
+      }
+  ],
+  "SEARCH_TERM_WITH_TWO_LETTERS": [
+      {
+          "name": "Uo"
+      }
+  ],
+  "SEARCH_TERM_WITH_THREE_LETTERS": [
+      {
+          "name": "Wom"
+      }
+  ],
+  "SEARCH_TERM_WITH_PRODUCT_TYPE": [
+      {
+          "name": "Shirts"
+      }
+  ],
+  "SEARCH_TERM_WITH_NO_RESULTS": [
+      {
+          "name": "RANDOMNAME"
+      }
+  ],
+  "SEARCH_TERM_WITH_MORETHAN_THREE_LETTERS": [
+      {
+          "name": "Women"
+      }
+  ]
+}

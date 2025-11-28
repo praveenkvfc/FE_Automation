@@ -1,0 +1,98 @@
+{
+  "MASTER_PRODUCT": [
+    {
+      "name": "Scarpe da alpinismo Verto GORE-TEX® da uomo",
+      "code": "NF0A83ND",
+      "price": "170,00 €",
+      "category": "MENS",
+      "color": "TNF Red-TNF Black",
+      "color_it": "TNF Red-TNF Black",
+      "size": "40",
+      "omsid": "NF:0A4QYX:ZU3:S::1:"
+    }
+  ],
+  "MASTER_PRODUCT_ALTERNATE_SIZE": [
+    {
+      "name": "Stivale Impermeabile Timberland® Premium 6 Inch da Uomo in colore nero",
+      "code": "TB010073001",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "black colour",
+      "color_it": "colore nero",
+      "size": "41",
+      "omsid": "TB:010073:001:075:W:1:"
+    }
+  ],
+  "PRODUCT_WITHOUT_SMALL_SIZE": [
+    {
+      "name": "Scarpa da Barca Classica da Uomo in marrone",
+      "code": "TB025077214",
+      "price": "150,00 €",
+      "category": "MENS",
+      "color": "marrone",
+      "color_it": "colore nero",
+      "size": "40",
+      "unavailableSize": "38",
+      "omsid": "TB:025077:214:065:W:1:"
+    }
+  ],
+  "PRODUCT_REVIEW_SUBMIT": [
+    {
+      "name": "Stivale Impermeabile Timberland® Premium 6 Inch da Uomo in colore nero",
+      "code": "TB010073001",
+      "price": "220,00 €",
+      "category": "MENS",
+      "color": "black colour",
+      "color_it": "colore nero",
+      "size": "40",
+      "omsid": "TB:010073:001:070:W:1:"
+    }
+  ],
+  "PRODUCT_MAX_ADD_TO_CARD": [
+    {
+      "name": "Stivale Kinsley 6 Inch da Donna in giallo",
+      "code": "TB0A25BS231",
+      "price": "160,00 €",
+      "category": "WOMENS",
+      "color": "Yellow",
+      "color_it": "giallo",
+      "size": "38",
+      "omsid": "TB:0A25BS:231:070:W:1:"
+    }
+  ],
+  "PRIMARY_GIFTCARD": [
+    {
+      "name": "CARTA REGALO",
+      "code": "TB0GFTCDEB5",
+      "price": "25,00",
+      "color": "tb0gftcd214",
+      "size": "25",
+      "category": "DIGITAL",
+      "cardName": "Automation Tester",
+      "cardEmail": "AutomationTextingEmail@yopmail.com",
+      "cardMessage": "Additional message to giftcard"
+    }
+  ],
+  "PRODUCT_WITH_MORE_COLORS": [
+    {
+      "name": "Giacca Reign On da donna",
+      "code": "NF0A8BCH",
+      "price": "190,00 €",
+      "category": "WOMENS",
+      "color": "TNF Black",
+      "size": "M",
+      "omsid": "NF:0A8BCH:JK3:M::1:"
+    }
+  ],"SECONDARY_MASTER_PRODUCT": [
+    {
+     "name": "Scarpe da alpinismo Verto GORE-TEX® da uomo",
+      "code": "NF0A83ND",
+      "price": "170,00 €",
+      "category": "MENS",
+      "color": "TNF Red-TNF Black",
+      "color_it": "TNF Red-TNF Black",
+      "size": "40",
+      "omsid": "NF:0A4QYX:ZU3:S::1:"
+    }
+  ]
+}

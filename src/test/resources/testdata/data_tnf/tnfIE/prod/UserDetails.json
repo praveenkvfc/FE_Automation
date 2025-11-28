@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationallpreprod_ie01@yopmail.com",
+      "phone": "2-555-40006",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "testguestuserprod_ie01@yopmail.com",
+      "phone": "2-555-4011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "testguestuserprod_ie02@yopmail.com",
+      "phone": "2-555-4011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "testguestuserprod_ie03@yopmail.com",
+      "phone": "2-555-4011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "testguestuserprod_ie04@yopmail.com",
+      "phone": "2-555-4011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

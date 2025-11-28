@@ -1,0 +1,69 @@
+{
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "2222420000001113",
+      "MONTH": "01",
+      "YEAR": "26",
+      "SECURITY_CODE": "600"
+    }
+  ],
+  "VISA": [
+    {
+      "CARD_NUMBER": "4111111145551142",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "VISA2": [
+    {
+      "CARD_NUMBER": "4622943127013705",
+      "MONTH": "12",
+      "YEAR": "27",
+      "SECURITY_CODE": "838"
+    }
+  ],
+  "AMEX": [
+    {
+      "CARD_NUMBER": "378282246310005",
+      "MONTH": "11",
+      "YEAR": "24",
+      "SECURITY_CODE": "7000"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "tbl_us_tester@vfc.com",
+      "PASSWORD": "P1ssw2rd"
+    }
+  ],
+  "VALID_GIFTCARDS_FULL_PAYMENT": [
+    {
+      "CARD_NUMBER": "7777405410216890",
+      "PIN": "63150211",
+      "VALUE": "1.00"
+    },
+    {
+      "CARD_NUMBER": "11100400185ZtIaq2kV",
+      "PIN": "2303",
+      "VALUE": "2.00"
+    },
+    {
+      "CARD_NUMBER": "1110040018xFdDU41QV",
+      "PIN": "7560",
+      "VALUE": "3.00"
+    }
+  ],
+  "INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "1239273939992344",
+      "PIN": "1567"
+    }
+  ],
+  "GCB_PAGE_INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "EFERGSEGGG",
+      "PIN": "157"
+    }
+  ]
+}

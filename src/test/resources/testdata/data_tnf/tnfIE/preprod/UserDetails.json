@@ -1,0 +1,428 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationallpreprod_ie01@yopmail.com",
+      "phone": "2-555-40006",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationmyaccountpreprod_ie01@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationmyaccountpreprod_ie02@yopmail.com",
+      "phone": "2-554-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationmyaccountpreprod_ie03@yopmail.com",
+      "phone": "2-556-6001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationmyaccountpreprod_ie04@yopmail.com",
+      "phone": "2-557-7001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationcheckoutpreprod_ie01@yopmail.com",
+      "phone": "2-555-4002",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationplppdpsearchpreprod_ie01@yopmail.com",
+      "phone": "2-555-4003",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationcanvascorepreprod_ie01@yopmail.com",
+      "phone": "2-555-4004",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationcontentpersonalizationpreprod_ie01@yopmail.com",
+      "phone": "2-555-4005",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationmyaccount_mobilepreprodie01@yopmail.com",
+      "phone": "2-555-4006",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationcheckout_mobilepreprodie01@yopmail.com",
+      "phone": "2-555-4007",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Content_Personalization_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationcontentpersonalization_mobilepreprodie01@yopmail.com",
+      "phone": "2-555-4008",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationplppdpsearch_mobilepreprodie01@yopmail.com",
+      "phone": "2-555-4009",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationcanvascore_mobilepreprodie01@yopmail.com",
+      "phone": "2-555-4010",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "testguestuserpreprod_ie01@yopmail.com",
+      "phone": "2-555-4011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationchangepassworduserpreprodie01@yopmail.com",
+      "phone": "2-555-4012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationklarnauserpreprod_ie01@yopmail.com",
+      "phone": "2-555-4013",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "email": "automationnewuserpreprod_ie01@yopmail.com",
+      "phone": "2-555-4014",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "orderNumber": "P0034178",
+      "email": "automationshippedorderpreprodie1@yopmail.com",
+      "phone": "2-555-4015",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "postalCode": "D02 X048",
+      "city": "Dublin",
+      "orderNumber": "P0034178",
+      "email": "sangam@yopmail.com",
+      "phone": "2-555-4016",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "note": "This order has not been processed to shipped status yet. Please follow up with OMS team."
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "city": "Dublin",
+      "phone": "2-555-4017",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034179",
+      "email": "automationreturninitiatedorderpreprodie1@yopmail.com",
+      "postalCode": "D02 X048",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Baggot Street Lower",
+      "building": "",
+      "city": "Dublin",
+      "phone": "2-555-4018",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "P0034179",
+      "email": "sangam@yopmail.com",
+      "postalCode": "D02 X048",
+      "returnTrackingNumber": "",
+      "note": "This order has not been processed to shipped status yet. Once shipped, please initiate the return manually and put the returnTrackingNumber value above."
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser01preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser02preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser03preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser04preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser05preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser06preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser07preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Strandgade",
+      "building": "Street Two",
+      "postalCode": "1401",
+      "city": "Copenhagen",
+      "email": "empuser08preprodie@yopmail.com",
+      "phone": "2-555-4001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Av. Lusíada 100",
+      "building": "",
+      "postalCode": "1500-650",
+      "city": "Lisboa",
+      "email": "automationallpreprod_pt01@yopmail.com",
+      "phone": "255-555-200",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

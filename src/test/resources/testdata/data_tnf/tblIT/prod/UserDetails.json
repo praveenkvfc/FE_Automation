@@ -1,0 +1,102 @@
+{
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "testguestuserpreprodit@yopmail.com",
+      "phone": "2555-555-140",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "testguestuser2preprodit@yopmail.com",
+      "phone": "2555-555-240",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "testguestuser3preprodit@yopmail.com",
+      "phone": "2555-555-340",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "testguestuser4preprodit@yopmail.com",
+      "phone": "2555-555-440",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationregallit@yopmail.com",
+      "phone": "2555-555-111",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationregallit2@yopmail.com",
+      "phone": "2555-555-112",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationregallit3@yopmail.com",
+      "phone": "2555-555-113",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "Viale Vaticano 100",
+      "building": "Street Two",
+      "postalCode": "00192",
+      "city": "Roma",
+      "email": "automationregallit4@yopmail.com",
+      "phone": "2555-555-114",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

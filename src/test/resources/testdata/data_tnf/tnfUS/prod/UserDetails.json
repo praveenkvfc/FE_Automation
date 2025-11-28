@@ -1,0 +1,315 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationall1prodlive@yopmail.com",
+      "phone": "250-444-2001",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationall2prodlive@yopmail.com",
+      "phone": "250-444-2102",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationall3prodlive@yopmail.com",
+      "phone": "250-444-2103",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationall4prodlive@yopmail.com",
+      "phone": "250-444-2104",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa@yopmail.com",
+      "phone": "250-555-0121",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa2@yopmail.com",
+      "phone": "250-555-0122",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa3@yopmail.com",
+      "phone": "250-555-0123",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa04@yopmail.com",
+      "phone": "250-555-0125",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa01@yopmail.com",
+      "phone": "250-555-1126",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa02@yopmail.com",
+      "phone": "250-555-2122",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa03@yopmail.com",
+      "phone": "250-555-3123",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcheckoutmyaccountqa05@yopmail.com",
+      "phone": "250-555-4125",
+      "province": "Massachusetts",
+      "countryAbbreviation": "US",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationcore1prod@yopmail.com",
+      "phone": "250-444-2126",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationplppdpp1prod@yopmail.com",
+      "phone": "250-444-2010",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationplppdpp2prod@yopmail.com",
+      "phone": "250-444-2021",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationplppdp3pprod@yopmail.com",
+      "phone": "250-444-1212",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "automationplppdp4pprod@yopmail.com",
+      "phone": "250-444-1213",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "M5J 1V6",
+      "city": "Toronto",
+      "email": "testautomationcrossuser1tblcaprod@yopmail.com",
+      "phone": "250-444-2003",
+      "province": "Ontario",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "changepasswordtest1tblusprod@yopmail.com",
+      "phone": "250-444-9202",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 City Centre Dr2",
+      "building": "University Avenue",
+      "postalCode": "02111",
+      "city": "Boston",
+      "email": "testguestuser@yopmail.com",
+      "phone": "250-444-0495",
+      "province": "Massachusetts",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Ash",
+      "lastName": "Smith",
+      "streetAddress": "5399 W Genesee St",
+      "building": "",
+      "postalCode": "13031",
+      "city": "Camillus",
+      "province": "New York",
+      "email": "ash6@yopmail.com",
+      "phone": "250-555-0199"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "860 Washington St",
+      "building": "Medical Center",
+      "city": "Boston",
+      "province": "Massachusetts",
+      "postalCode": "02132",
+      "email": "testautonewuser@yopmail.com",
+      "password": "VFCorp@1234",
+      "confirmPassword": "VFCorp@1234",
+      "phone": "250-555-9910",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

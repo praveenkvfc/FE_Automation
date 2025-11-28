@@ -1,0 +1,36 @@
+{
+  "VISA": [
+    {
+      "CARD_NUMBER": "4444333322221111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "MASTERCARD": [
+    {
+      "CARD_NUMBER": "5555444433331111",
+      "MONTH": "03",
+      "YEAR": "30",
+      "SECURITY_CODE": "737"
+    }
+  ],
+  "PAYPAL": [
+    {
+      "EMAIL_ID": "TBLIT_buyer@vfc.com",
+      "PASSWORD": "Canvas1000!!"
+    }
+  ],
+  "INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "1239273939992344",
+      "PIN": "1567"
+    }
+  ],
+  "GCB_PAGE_INVALID_GIFTCARD": [
+    {
+      "CARD_NUMBER": "EFERGSEGGG",
+      "PIN": "157"
+    }
+  ]
+}

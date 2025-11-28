@@ -1,0 +1,66 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "automationallpreprod_fr01@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "testguestuser1preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "testguestuser2preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "testguestuser3preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Quai de la Rapée",
+      "building": "",
+      "postalCode": "75012",
+      "city": "Paris",
+      "email": "testguestuser4preprodfr@yopmail.com",
+      "phone": "2255550001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ]
+}

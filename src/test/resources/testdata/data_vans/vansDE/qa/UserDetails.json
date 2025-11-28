@@ -1,0 +1,683 @@
+{
+  "registeredUser_all": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationallqa_uk1@yopmail.com",
+      "phone": "2555-555-000",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationallqa_uk2@yopmail.com",
+      "phone": "2555-555-001",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationallqa_uk3@yopmail.com",
+      "phone": "2555-555-002",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationallqa_uk4@yopmail.com",
+      "phone": "2555-555-003",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccountqa_uk01@yopmail.com",
+      "phone": "2555-555-004",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccountqa_uk02@yopmail.com",
+      "phone": "2555-555-005",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccountqa_uk03@yopmail.com",
+      "phone": "2555-555-006",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccountqa_uk04@yopmail.com",
+      "phone": "2555-555-007",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckoutqa_uk01@yopmail.com",
+      "phone": "2555-555-008",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckoutqa_uk02@yopmail.com",
+      "phone": "2555-555-009",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckoutqa_uk03@yopmail.com",
+      "phone": "2555-555-010",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckoutqa_uk04@yopmail.com",
+      "phone": "2555-555-011",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_MyAccount_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccount_mobileqauk01@yopmail.com",
+      "phone": "2555-555-012",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccount_mobileqauk02@yopmail.com",
+      "phone": "2555-555-013",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccount_mobileqauk03@yopmail.com",
+      "phone": "2555-555-014",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationmyaccount_mobileqauk04@yopmail.com",
+      "phone": "2555-555-015",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Checkout_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckout_mobileqauk01@yopmail.com",
+      "phone": "2555-555-016",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckout_mobileqauk02@yopmail.com",
+      "phone": "2555-555-017",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckout_mobileqauk03@yopmail.com",
+      "phone": "2555-555-018",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcheckout_mobileqauk04@yopmail.com",
+      "phone": "2555-555-019",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearchqa_uk01@yopmail.com",
+      "phone": "2555-555-020",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearchqa_uk02@yopmail.com",
+      "phone": "2555-555-021",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearchqa_uk03@yopmail.com",
+      "phone": "2555-555-022",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearchqa_uk04@yopmail.com",
+      "phone": "2555-555-023",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Core": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcanvascoreqa_uk01@yopmail.com",
+      "phone": "2555-555-024",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcanvascoreqa_uk02@yopmail.com",
+      "phone": "2555-555-044",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcanvascoreqa_uk03@yopmail.com",
+      "phone": "2555-555-045",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcanvascoreqa_uk04@yopmail.com",
+      "phone": "2555-555-046",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUser_Canvas_Catalogue_PLP_PDP_Search_mobile": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearch_mobileqauk01@yopmail.com",
+      "phone": "2555-555-047",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearch_mobileqauk02@yopmail.com",
+      "phone": "2555-555-048",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearch_mobileqauk03@yopmail.com",
+      "phone": "2555-555-049",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationplppdpsearch_mobileqauk04@yopmail.com",
+      "phone": "2555-555-050",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "crossregionuser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationcrossregionuserqa_uk01@yopmail.com",
+      "phone": "2555-555-025",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "changePasswordTestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationchangepasswordTestUserqa_uk01@yopmail.com",
+      "phone": "2555-555-026",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "guestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "testguestuserqa_uk1@yopmail.com",
+      "phone": "2555-555-027",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser01qauk@yopmail.com",
+      "phone": "2555-555-028",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser02qauk@yopmail.com",
+      "phone": "2555-555-029",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "province": "",
+      "countryAbbreviation": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser03qauk@yopmail.com",
+      "phone": "2555-555-030",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "province": "",
+      "countryAbbreviation": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser04qauk@yopmail.com",
+      "phone": "2555-555-031",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "EmployeeUserWithNotAcceptedT&C": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser05qauk@yopmail.com",
+      "phone": "2555-555-032",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser06qauk@yopmail.com",
+      "phone": "2555-555-033",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser07qauk@yopmail.com",
+      "phone": "2555-555-034",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "empuser08qauk@yopmail.com",
+      "phone": "2555-555-035",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "klarna": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "klarnaqauk@yopmail.com",
+      "phone": "2555-555-036",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "newUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationnewuserqauk@yopmail.com",
+      "phone": "2555-555-037",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000"
+    }
+  ],
+  "registeredUserNonLoyalty_Canvas_MyAccount": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "postalCode": "W1F 0TN",
+      "city": "London",
+      "email": "automationnon_loyaltyuserqauk1@yopmail.com",
+      "phone": "2555-555-038",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "Note": "Non Loyalty User for TblUK can be any user registered in a non-loyalty country (DK, BE, ..)"
+    }
+  ],
+  "returnOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "city": "London",
+      "phone": "2555-555-039",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "registereduserreturnorderqauk01@yopmail.com",
+      "postalCode": "W1F 0TN"
+    }
+  ],
+  "returnOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "city": "London",
+      "phone": "2555-555-040",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "guestuserreturnorderqauk01@yopmail.com",
+      "postalCode": "W1F 0TN"
+    }
+  ],
+  "returnInitiatedOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "city": "London",
+      "phone": "2555-555-041",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "W1F 0TN",
+      "returnTrackingNumber": ""
+    }
+  ],
+  "returnInitiatedOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "city": "London",
+      "phone": "2555-555-042",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "",
+      "email": "",
+      "postalCode": "W1F 0TN",
+      "returnTrackingNumber": ""
+    }
+  ],
+  "resendGCOrderGuestUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "city": "London",
+      "phone": "2555-555-042",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "Q0002372",
+      "email": "testguestuserqauk@yopmail.com",
+      "postalCode": "W1F 0TN"
+    }
+  ],
+  "resendGCOrderRegisteredUser": [
+    {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "streetAddress": "100 Wardour St",
+      "building": "",
+      "city": "London",
+      "phone": "2555-555-054",
+      "password": "VFCorp@1234",
+      "birthday": "01/01/2000",
+      "orderNumber": "Q0002273",
+      "email": "automationresendgcorderqauk@yopmail.com",
+      "postalCode": "W1F 0TN"
+    }
+  ]
+}
