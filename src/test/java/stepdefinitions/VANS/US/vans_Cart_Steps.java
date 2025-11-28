@@ -75,7 +75,7 @@ public class vans_Cart_Steps {
         getVansCartPage().vans_PickupInStoreWindow_SelectStore_CartPage_Click();
     }
 
-       @Then("User navigates to {string} page from cart page")
+    /*   @Then("User navigates to {string} page from cart page")
     public void userNavigatesToPageFromCartPage(String pageName) {
         getHeaderPage().vans_Profile_MyAccount_Click();
 
@@ -87,7 +87,22 @@ public class vans_Cart_Steps {
 
 
 
-}
+}*/
+
+    //Divya changes
+    @Then("User navigates to {string} page from cart page")
+    public void userNavigatesToPageFromCartPage(String pageName) {
+        if (pageName.equalsIgnoreCase("favourites")) {
+            getHeaderPage().vans_Favorites_MyAccount_Click();
+        } else if (pageName.equalsIgnoreCase("Save for later")) {
+            System.out.println("=======================================");
+            System.out.println("Im here in save for later page");
+            System.out.println("=======================================");
+            getVansCartPage().vans_SaveForLaterClick_CartPage();
+        } else {
+            throw new IllegalArgumentException("Unsupported navigation target: " + pageName);
+        }
+    }
 
     @And("User clicks on save later option in cart page")
     public void userClicksOnSaveLaterOptionInCartPage() {
@@ -117,4 +132,6 @@ public class vans_Cart_Steps {
         getvansCheckoutPage().check_GotAPromoCodeinput();
         getvansCheckoutPage().check_GotAPromoCodeaply();
     }
+
+
 }
