@@ -4,18 +4,18 @@ import com.microsoft.playwright.Page;
 import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import pages.VANS.US.vans_FavoritesPage;
+import pages.VANS.US.*;
 import io.cucumber.java.en.When;
-import pages.VANS.US.vans_cartPage;
-import pages.VANS.US.vans_checkoutPage;
-import pages.VANS.US.vans_productDetailsPage;
 import utils.PlaywrightFactory;
-import pages.VANS.US.vans_HeaderPage;
+
 public class vans_Cart_Steps {
 
     private Page page;
     private vans_cartPage getVansCartPage;
     private vans_checkoutPage getVansCheckoutPage;
+    private vans_paypal_paymentPage getVansPaypalPaymentPage;
+
+
 
     private Page getPage() {
         if (page == null) {
@@ -25,6 +25,13 @@ public class vans_Cart_Steps {
             }
         }
         return page;
+    }
+
+    private vans_paypal_paymentPage getVans_Paypal_page() {
+        if (getVansPaypalPaymentPage == null) {
+            getVansPaypalPaymentPage = new vans_paypal_paymentPage(getPage(),"PAYPAL");
+        }
+        return getVansPaypalPaymentPage;
     }
 
     private vans_cartPage getVansCartPage() {
