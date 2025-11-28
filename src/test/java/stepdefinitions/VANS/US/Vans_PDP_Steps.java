@@ -5,16 +5,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.VANS.US.vans_FavoritesPage;
-import pages.VANS.US.vans_SignInSignUp_Page;
 import pages.VANS.US.vans_cartPage;
 import utils.PlaywrightFactory;
 import pages.VANS.US.vans_productDetailsPage;
 
 public class Vans_PDP_Steps {
     private Page page;
-    private vans_productDetailsPage vansProductDetialsPage;
-    private vans_cartPage vansCartPage;
-    private vans_FavoritesPage vansFavoritesPage;
+    private vans_productDetailsPage productDetailsPage;
+    private vans_cartPage cartPage;
+    private vans_FavoritesPage favoritesPage;
+
     private Page getPage() {
         if (page == null) {
             page = PlaywrightFactory.getPage();
@@ -25,50 +25,72 @@ public class Vans_PDP_Steps {
         return page;
     }
 
-    private vans_productDetailsPage getVansProductDetialsPage() {
-        if (vansProductDetialsPage == null) {
-            vansProductDetialsPage = new vans_productDetailsPage(getPage());
+    private vans_productDetailsPage getProductDetailsPage() {
+        if (productDetailsPage == null) {
+            productDetailsPage = new vans_productDetailsPage(getPage());
         }
-        return vansProductDetialsPage;
+        return productDetailsPage;
     }
 
-    private vans_cartPage getVansCartPage() {
-        if (vansCartPage == null) {
-            vansCartPage = new vans_cartPage(getPage());
+    private vans_cartPage getCartPage() {
+        if (cartPage == null) {
+            cartPage = new vans_cartPage(getPage());
         }
-        return vansCartPage;
+        return cartPage;
     }
+
+    // --- Step Definitions ---
 
     @When("User navigates to the Cart page")
     public void userNavigatesToTheCartPage() {
-        getVansProductDetialsPage().check_GotAPromoCode_isVisible();
+       getProductDetailsPage().check_GotAPromoCode_isVisible();
 
     }
 
     @Then("User should click the {string} CTA in Mini Cart")
-    public void userShouldClickTheCTAInMiniCart(String arg0) {
-        getVansProductDetialsPage().click_viewCartButton();
-
-
+    public void userShouldClickTheCTAInMiniCart(String buttonName) {
+        getProductDetailsPage().click_viewCartButton();
     }
 
     @And("User clicks on favorite icon and navigates to favorites page")
     public void userClicksOnFavoriteIconAndNavigatesToFavoritesPage() {
-        getVansProductDetialsPage().vans_FavProductName_PDP_Visible();
-        getVansProductDetialsPage().clickFavoriteAndGoToFavoritesPage();
-
+        getProductDetailsPage().vans_FavProductName_PDP_Visible();
+        getProductDetailsPage().clickFavoriteAndGoToFavoritesPage();
     }
 
-            @And("User adds {string} product to cart")
-        public void userAddsProductToCart(String searchItem) {
-//            getVansProductDetialsPage().click_SizeDropDownOption_PDP();
-//            getVansProductDetialsPage().click_SelectSize_PDP(searchItem);
-            getVansProductDetialsPage().click_addTocartButton_PDP();
-        }
+    @And("User adds {string} product to cart")
+    public void userAddsProductToCart(String productType) {
+        System.out.println("Adding product to cart: " + productType);
+        getProductDetailsPage().click_addTocartButton_PDP();
+    }
+
 
     @And("User clicks on favorite icon")
     public void userClicksOnFavoriteIcon() {
-        getVansProductDetialsPage().clickFavoriteIcon_FavoritesPage();
+        getProductDetailsPage().clickFavoriteIcon_FavoritesPage();
+    }
+
+    @And("User selects the size for a {string} product")
+    public void userSelectsTheSizeForAProduct(String productType) {
+        System.out.println("Selecting size for product: " + productType);
+        getProductDetailsPage().click_SizeDropDownOption_PDP();
+        getProductDetailsPage().click_SelectSize_PDP();
+        getProductDetailsPage().click_closeDialog_PDP();
+    }
+
+
+    @And("User increments product quantity in Mini Cart")
+    public void userIncrementsProductQuantityInMiniCart() {
+        getProductDetailsPage().click_incrementQty_MiniCart();
+    }
+
+    @And("User decrements product quantity in Mini Cart")
+    public void userDecrementsProductQuantityInMiniCart() {
+        getProductDetailsPage().click_decrementQty_MiniCart();
+    }
+
+    @And("User should be able to close the Mini Cart")
+    public void userShouldBeAbleToCloseTheMiniCart() {
+        getProductDetailsPage().vans_closeMiniCartWindow_Click();
     }
 }
-

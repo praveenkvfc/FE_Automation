@@ -54,14 +54,34 @@ public class vans_productListpage {
             vans_ProductWithoutFilter_PLP().click();
         }
     }
-    private Locator vans_ProductWithoutFilter_PLP(){
-        return page.locator("div:nth-child(4) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
-
+    private Locator vans_SecondProductWithoutFilter_PLP(){
+        //return  page.locator("[data-test-id=\"vf-dialog-close\"]");
+        return page.locator("div:nth-child(3) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
     }
 
+public void click_SelectSecondProductinPLP(boolean isFilterApplied) {
+    if (isFilterApplied) {
+        vans_product_in_PLP().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        vans_ProductWithoutFilter_PLP().click();
+    } else {
+        // Added scroll before wait/click
+        vans_SecondProductWithoutFilter_PLP().scrollIntoViewIfNeeded();
 
+        vans_SecondProductWithoutFilter_PLP().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        vans_SecondProductWithoutFilter_PLP().click();
+    }
+}
 
-
+    private Locator vans_ProductWithoutFilter_PLP(){
+        //return page.locator("div > .absolute-0").first();
+        return page.locator("div:nth-child(2) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
+    }
     public void click_vans_FilterOption() {
         page.waitForTimeout(SHORT_WAIT);
         vans_FilterOption_PLP().waitFor(new Locator.WaitForOptions()
@@ -86,7 +106,6 @@ public class vans_productListpage {
 
     private Locator vans_searchOption_addressPage() {
          return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Open search"));
-        //return page.locator("xpath=//*[@id=\"__nuxt\"]/div[1]/div/div[2]/header/div/div/section[2]/section/button[3]/span/i");
     }
     public void click_searchOption_inAddressPage() {
         page.waitForTimeout(DEFAULT_WAIT);
