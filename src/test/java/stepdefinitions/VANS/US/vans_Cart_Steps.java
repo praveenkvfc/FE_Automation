@@ -114,6 +114,14 @@ public class vans_Cart_Steps {
         }
     }
 
+    @Then("User places the order by clicking pay now using paypal in cart page")
+    public void userPlacesTheOrderByClickingPayNowUsingPaypalInCartPage() {
+        System.out.println("====================");
+        System.out.println("======Moved to top of cart page==============");
+        getVansCartPage().vans_paypal_CartPage_Click();
+        getVans_Paypal_page().complete_paypal_payment("Cart paypal");
+    }
+
     @And("User clicks on save later option in cart page")
     public void userClicksOnSaveLaterOptionInCartPage() {
         getVansCartPage().vans_SaveForLaterClick_CartPage();
