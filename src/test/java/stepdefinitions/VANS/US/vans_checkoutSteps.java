@@ -1,6 +1,7 @@
 package stepdefinitions.VANS.US;
 
 import com.microsoft.playwright.Page;
+import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,6 +13,9 @@ import utils.PaymentDataReader;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.testng.Assert.assertEquals;
+import static utils.Constants.DEFAULT_WAIT;
+import static utils.Constants.SHORT_WAIT;
+
 public class vans_checkoutSteps {
     private Page page;
     private vans_checkoutPage getVansCheckoutPage;
@@ -136,13 +140,16 @@ public class vans_checkoutSteps {
 
     @And("User enters mandatory details for who is picking up the order")
     public void userEnterMandatoryDetailsForWhoIsPickingUpTheOrder() {
-        // Generate random data
-        String firstName = RandomDataGenerator.generateRandomName();
-        String lastName = RandomDataGenerator.generateRandomName();
-        // Fill into form using checkout page methods
-        getGetVansCheckoutPage().vans_PickingUpTheOrder_FirstName_Fill(firstName);
-        getGetVansCheckoutPage().vans_PickingUpTheOrder_LastName_Fill(lastName);
-
+        if (ConfigReader.get("brand").equals("vans")) {
+            if (ConfigReader.get("region").equals("us")) {
+                // Generate random data
+                String firstName = RandomDataGenerator.generateRandomName();
+                String lastName = RandomDataGenerator.generateRandomName();
+                // Fill into form using checkout page methods
+                getGetVansCheckoutPage().vans_PickingUpTheOrder_FirstName_Fill(firstName);
+                getGetVansCheckoutPage().vans_PickingUpTheOrder_LastName_Fill(lastName);
+            }
+        }
     }
 
     @And("User enters mandatory inputs for billing address")
@@ -171,8 +178,16 @@ public class vans_checkoutSteps {
     @And("User confirms and submits the order")
     public void userConfirmsAndSubmitsTheOrder() {
         getGetVansCheckoutPage().click_payNow_creditCard();
-
-    }
+        if (ConfigReader.get("brand").equals("vans")) {
+            if (ConfigReader.get("region").equals("ca")) {
+                page.waitForTimeout(SHORT_WAIT);
+                if(getGetVansCheckoutPage().Vans_Ca_ConfirmAddress_Dailog().isVisible())
+                {
+                    getGetVansCheckoutPage().click_Ca_Confirm_Button();
+                }
+            }
+        }
+            }
 
     @And("User should be able to see the order in Order history page")
     public void userShouldBeAbleToSeeTheOrderInOrderHistoryPage() {

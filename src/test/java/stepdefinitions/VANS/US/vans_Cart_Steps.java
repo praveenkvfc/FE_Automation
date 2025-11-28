@@ -1,6 +1,7 @@
 package stepdefinitions.VANS.US;
 
 import com.microsoft.playwright.Page;
+import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.VANS.US.vans_FavoritesPage;
@@ -61,18 +62,27 @@ public class vans_Cart_Steps {
     public void userProceedsToCheckout() {
         getVansCartPage().Click_CheckoutButton_vans();
     }
-
+    //QA-Kajal kabade
     @Then("User selects Pick up Instore option")
     public void userSelectsPickUpInstoreOption() {
-        getVansCartPage().vans_PickupInStoreSelect_CartPage();
+        if (ConfigReader.get("brand").equals("vans")) {
+            if (ConfigReader.get("region").equals("us")) {
+                getVansCartPage().vans_PickupInStoreSelect_CartPage();
+            }
+        }
     }
 
+    //QA-Kajal kabade
     @And("User able to find and select the store")
     public void userAbleToFindAndSelectTheStore() {
-        getVansCartPage().vans_PickupInStoreWindow_Distance_Select_CartPage();
-        getVansCartPage().vans_PickupInStoreWindow_enterPostalCodeFill_CartPage();
-        getVansCartPage().vans_PickupInStoreWindow_FindStore_CartPage_Click();
-        getVansCartPage().vans_PickupInStoreWindow_SelectStore_CartPage_Click();
+        if (ConfigReader.get("brand").equals("vans")) {
+            if (ConfigReader.get("region").equals("us")) {
+                getVansCartPage().vans_PickupInStoreWindow_Distance_Select_CartPage();
+                getVansCartPage().vans_PickupInStoreWindow_enterPostalCodeFill_CartPage();
+                getVansCartPage().vans_PickupInStoreWindow_FindStore_CartPage_Click();
+                getVansCartPage().vans_PickupInStoreWindow_SelectStore_CartPage_Click();
+            }
+        }
     }
 
     /*   @Then("User navigates to {string} page from cart page")

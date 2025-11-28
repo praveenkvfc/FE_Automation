@@ -172,9 +172,6 @@ public class vans_checkoutPage {
         page.waitForTimeout(DEFAULT_WAIT);
     }
 
-
-
-
     private Locator paynow_button_checkout() {
         return page.locator("[data-test-id=\"checkout-payment-continue\"]");
     }
@@ -282,6 +279,21 @@ public class vans_checkoutPage {
         page.waitForTimeout(DEFAULT_WAIT);
         Vans_GotAPromoCodeSubmit_Checkout().click();
         page.waitForTimeout(DEFAULT_WAIT);
+    }
+    //QA-Kajal kabade
+    public Locator Vans_Ca_ConfirmAddress_Dailog() {
+        return page.locator("xpath=//div[@data-test-id='vf-dialog-content']//h2[text()='Confirm Address']");
+    }
+
+    //QA-Kajal kabade
+    private Locator Vans_Ca_Confirm_Button() {
+        return page.locator("xpath=//button[@data-test-id='confirm']");
+    }
+    //QA-Kajal kabade
+    public void click_Ca_Confirm_Button() {
+        Vans_Ca_Confirm_Button().scrollIntoViewIfNeeded();
+        Vans_Ca_Confirm_Button().click();
+        page.waitForTimeout(SHORT_WAIT);
     }
 
 
