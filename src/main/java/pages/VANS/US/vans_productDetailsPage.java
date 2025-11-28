@@ -9,7 +9,6 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static utils.Constants.DEFAULT_WAIT;
-import static utils.Constants.SHORT_WAIT;
 
 public class vans_productDetailsPage {
     private Page page;
@@ -28,13 +27,18 @@ public class vans_productDetailsPage {
                 .setTimeout(DEFAULT_WAIT));
         vans_selectSizeDropdown_PDP().click();
     }
+public void NavigateBack(){
+    page.goBack();
+}
     private Locator vans_selectShoeSize_PDP() {
         return page.locator("[data-test-id=\"vf-size-picker\"]").getByText("One Size");
 
     }
+
     private Locator vans_selectPantSize_PDP() {
         return page.locator("span").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^L$"))).first();
     }
+
     private Locator vans_selectSize_PDP() {
         return page.locator("[data-test-id=\"vf-size-picker\"]").getByText("One Size");
     }
@@ -56,6 +60,20 @@ public class vans_productDetailsPage {
         }
     }
 
+    // Finds all size options inside the size picker
+    private Locator vans_allSizes_PDP() {
+        return page.getByText("B3.5 / W5");
+
+    }
+
+    // Clicks the first available size option
+    public void click_SelectSize_PDP() {
+        vans_allSizes_PDP().first().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        vans_allSizes_PDP().first().click();
+    }
+
     private Locator vans_closeDialog_PDP() {
         return page.locator("[data-test-id=\"vf-dialog-close\"]");
     }
@@ -69,8 +87,9 @@ public class vans_productDetailsPage {
     }
 
     private Locator vans_AddToCartButton_PDP() {
-       // return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
-       return page.locator("[data-test-id=\"vf-button\"]").filter(new Locator.FilterOptions().setHasText("Add to Cart"));
+        // return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
+        //return page.locator("[data-test-id=\"vf-button\"]").filter(new Locator.FilterOptions().setHasText("Add to Cart"));
+        return page.locator("#pdp-add-to-cart");
     }
 
     private Locator vans_ViewCartButton_PDP() {
@@ -87,7 +106,6 @@ public class vans_productDetailsPage {
     }
 
     public void click_addTocartButton_PDP() {
-        page.waitForTimeout(SHORT_WAIT);
         vans_AddToCartButton_PDP().waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT));
@@ -106,37 +124,37 @@ public class vans_productDetailsPage {
         vans_ViewCartButton_PDP().click();
     }
 
-        // PDP: Favorite icon
-        private Locator vans_FavoriteIcon_PDP() {
-            return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Favorites"));
-        }
+    // PDP: Favorite icon
+    private Locator vans_FavoriteIcon_PDP() {
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Favorites"));
+    }
 
-        public void vans_FavoriteIcon_PDP_Visible() {
-            assertThat(vans_FavoriteIcon_PDP()).isVisible();
-        }
+    public void vans_FavoriteIcon_PDP_Visible() {
+        assertThat(vans_FavoriteIcon_PDP()).isVisible();
+    }
 
-        public void vans_FavoriteIcon_PDP_Click() {
-            vans_FavoriteIcon_PDP().click();
-        }
+    public void vans_FavoriteIcon_PDP_Click() {
+        vans_FavoriteIcon_PDP().click();
+    }
 
-        // PDP: Toaster "View Favorites" link
-        private Locator vans_ViewFavoritesLink_PDP() {
-            return page.locator("[data-test-id=\"vf-toast\"] [data-test-id=\"vf-link\"]");
-        }
+    // PDP: Toaster "View Favorites" link
+    private Locator vans_ViewFavoritesLink_PDP() {
+        return page.locator("[data-test-id=\"vf-toast\"] [data-test-id=\"vf-link\"]");
+    }
 
-        public void vans_ViewFavoritesLink_PDP_Visible() {
-            vans_ViewFavoritesLink_PDP().waitFor(new Locator.WaitForOptions()
-                    .setState(WaitForSelectorState.VISIBLE)
-                    .setTimeout(DEFAULT_WAIT));
-            assertThat(vans_ViewFavoritesLink_PDP()).isVisible();
-        }
+    public void vans_ViewFavoritesLink_PDP_Visible() {
+        vans_ViewFavoritesLink_PDP().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        assertThat(vans_ViewFavoritesLink_PDP()).isVisible();
+    }
 
-        public void vans_ViewFavoritesLink_PDP_Click() {
-            vans_ViewFavoritesLink_PDP().waitFor(new Locator.WaitForOptions()
-                    .setState(WaitForSelectorState.VISIBLE)
-                    .setTimeout(DEFAULT_WAIT));
-            vans_ViewFavoritesLink_PDP().click();
-        }
+    public void vans_ViewFavoritesLink_PDP_Click() {
+        vans_ViewFavoritesLink_PDP().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        vans_ViewFavoritesLink_PDP().click();
+    }
 
     // PDP: Product name (used to verify item in Favorites)
     private Locator vans_FavProductName_PDP() {
@@ -146,23 +164,87 @@ public class vans_productDetailsPage {
     public void vans_FavProductName_PDP_Visible() {
         assertThat(vans_FavProductName_PDP()).isVisible();
     }
+
     //User clicks on favorite icon
     public void clickFavoriteIcon_FavoritesPage() {
         vans_FavoriteIcon_PDP_Click();
     }
 
-        // ✅ Combined flow: Favorite → Toaster → Navigate
-        public void clickFavoriteAndGoToFavoritesPage() {
-            vans_FavoriteIcon_PDP_Click();
+    // Combined flow: Favorite → Toaster → Navigate
+    public void clickFavoriteAndGoToFavoritesPage() {
+        vans_FavoriteIcon_PDP_Click();
 
-            vans_ViewFavoritesLink_PDP().waitFor(new Locator.WaitForOptions()
-                    .setState(WaitForSelectorState.VISIBLE)
-                    .setTimeout(DEFAULT_WAIT));
+        vans_ViewFavoritesLink_PDP().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
 
-            vans_ViewFavoritesLink_PDP().click();
+        vans_ViewFavoritesLink_PDP().click();
 
-            page.waitForURL("**/favorites"); // Adjust if your URL differs
+        page.waitForURL("**/favorites"); // Adjust if your URL differs
 
-            vans_FavProductName_PDP_Visible(); // Confirm item is present
-        }
+        vans_FavProductName_PDP_Visible(); // Confirm item is present
     }
+
+    // Mini Cart: Increment quantity button
+    private Locator vans_incrementQtyButton_MiniCart() {
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase Classic Slip-On"));
+    }
+
+    // Mini Cart: Decrement quantity button
+    private Locator vans_decrementQtyButton_MiniCart() {
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease Classic Slip-On"));
+    }
+
+       public void click_incrementQty_MiniCart() {
+        vans_incrementQtyButton_MiniCart().scrollIntoViewIfNeeded();
+        vans_incrementQtyButton_MiniCart().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        vans_incrementQtyButton_MiniCart().click();
+        page.waitForTimeout(DEFAULT_WAIT);
+    }
+
+    public void click_decrementQty_MiniCart() {
+        vans_decrementQtyButton_MiniCart().scrollIntoViewIfNeeded();
+        vans_decrementQtyButton_MiniCart().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        vans_decrementQtyButton_MiniCart().click();
+        page.waitForTimeout(DEFAULT_WAIT);
+    }
+    // Mini Cart: Increment quantity button
+    private Locator vans_incrementQtyButtonForSecondProduct_MiniCart() {
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase Classic Slip-On Shoe"));
+    }
+
+    // Mini Cart: Decrement quantity button
+    private Locator vans_decrementQtyButtonForSecondProduct_MiniCart() {
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease Classic Slip-On Shoe"));
+    }
+
+    public void click_vans_incrementQtyButtonForSecondProduct_MiniCart() {
+        vans_incrementQtyButtonForSecondProduct_MiniCart().scrollIntoViewIfNeeded();
+        vans_incrementQtyButtonForSecondProduct_MiniCart().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        vans_incrementQtyButtonForSecondProduct_MiniCart().click();
+        page.waitForTimeout(DEFAULT_WAIT);
+    }
+
+    public void click_vans_decrementQtyButtonForSecondProduct_MiniCart() {
+        vans_decrementQtyButtonForSecondProduct_MiniCart().scrollIntoViewIfNeeded();
+        vans_decrementQtyButtonForSecondProduct_MiniCart().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
+        vans_decrementQtyButtonForSecondProduct_MiniCart().click();
+        page.waitForTimeout(DEFAULT_WAIT);
+    }
+
+    private Locator vans_closeMiniCartWindow() {
+        return page.locator("[data-test-id=\"vf-dialog-close\"]");
+    }
+    public void vans_closeMiniCartWindow_Click(){
+        vans_closeMiniCartWindow().click();
+    }
+}
+

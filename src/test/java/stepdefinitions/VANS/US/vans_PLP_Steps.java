@@ -21,6 +21,7 @@ public class vans_PLP_Steps {
     private vans_homePage vansHomePage;
     private vans_categoryPage vansCategoryPage;
     private vans_productListpage vansProductListpage;
+    private vans_productDetailsPage productDetailsPage;
 private static boolean flag = false;
     private Page getPage() {
         if (page == null) {
@@ -31,7 +32,12 @@ private static boolean flag = false;
         }
         return page;
     }
-
+    private vans_productDetailsPage getProductDetailsPage() {
+        if (productDetailsPage == null) {
+            productDetailsPage = new vans_productDetailsPage(getPage());
+        }
+        return productDetailsPage;
+    }
     private vans_homePage getVansHomePage() {
         if (vansHomePage == null) {
             vansHomePage = new vans_homePage(getPage());
@@ -104,5 +110,36 @@ private static boolean flag = false;
         getVansProductListpage().click_SelectProductinPLP(flag);
 
 
+    }
+
+    @And("User navigates to PDP page by selecting {string} product")
+    public void userNavigatesToPDPPageBySelectingProduct(String arg0) {
+        if (arg0.equals("a")){
+            getVansProductListpage().click_SelectProductinPLP(flag);
+            getProductDetailsPage().clickFavoriteIcon_FavoritesPage();
+            getProductDetailsPage().click_SizeDropDownOption_PDP();
+            getProductDetailsPage().click_SelectSize_PDP();
+            getProductDetailsPage().click_closeDialog_PDP();
+            getProductDetailsPage().click_addTocartButton_PDP();
+            getProductDetailsPage().click_incrementQty_MiniCart();
+
+        } else if (arg0.equals("multiple")) {
+            getVansProductListpage().click_SelectProductinPLP(flag);
+            getProductDetailsPage().clickFavoriteIcon_FavoritesPage();
+            getProductDetailsPage().click_SizeDropDownOption_PDP();
+            getProductDetailsPage().click_SelectSize_PDP();
+            getProductDetailsPage().click_closeDialog_PDP();
+            getProductDetailsPage().click_addTocartButton_PDP();
+            getProductDetailsPage().click_incrementQty_MiniCart();
+            getProductDetailsPage().vans_closeMiniCartWindow_Click();
+            getProductDetailsPage().NavigateBack();
+            getVansProductListpage().click_SelectSecondProductinPLP(flag);
+            getProductDetailsPage().click_SizeDropDownOption_PDP();
+            getProductDetailsPage().click_SelectSize_PDP();
+            getProductDetailsPage().click_closeDialog_PDP();
+            getProductDetailsPage().click_addTocartButton_PDP();
+            getProductDetailsPage().click_vans_incrementQtyButtonForSecondProduct_MiniCart();
+            getProductDetailsPage().click_vans_decrementQtyButtonForSecondProduct_MiniCart();
+        }
     }
 }
