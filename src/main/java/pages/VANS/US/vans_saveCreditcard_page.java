@@ -234,8 +234,7 @@ public class vans_saveCreditcard_page {
         vans_creditcard_addressLine().click();
         vans_creditcard_addressLine().fill(user.getStreetAddress());
         page.keyboard().press("Enter");
-        System.out.println("Address entered: " + user.getStreetAddress());
-        page.keyboard().press("Enter");
+        System.out.println("Address entered: " + user.getStreetAddress());;
         page.waitForTimeout(3000);
     }
 
