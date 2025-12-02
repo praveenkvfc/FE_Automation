@@ -3,10 +3,10 @@
     {
       "firstName": "Test",
       "lastName": "Automation",
-      "streetAddress": "100 Strandgade",
+      "streetAddress": "123 William St",
       "building": "University Avenue",
-      "postalCode": "02111",
-      "city": "Boston",
+      "postalCode": "10038-3804",
+      "city": "New York",
       "email": "smokeTest2.7.0@yopmail.com",
       "phone": "250-555-9001",
       "province": "Massachusetts",

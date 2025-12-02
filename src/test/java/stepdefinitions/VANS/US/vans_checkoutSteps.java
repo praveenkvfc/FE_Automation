@@ -219,6 +219,18 @@ public class vans_checkoutSteps {
 
     }
 
+    //swathi changes
+
+    @Then("user should be able to toggle the accordion section for payment method")
+    public void userShouldBeAbleToToggleTheAccordionSectionForPaymentMethod() {
+        getGetVansCheckoutPage().validatePaymentMethodClickability();
+    }
+
+    @And("^User enters email for contact info in guestUser$")
+    public void userEntersEmailForContactInfoInGuestUser() {
+        getGetVansCheckoutPage().emailforcontactinfoforGuestUser();
+    }
+
 
     @And("user select change payment option")
     public void userSelectChangePaymentOption() {

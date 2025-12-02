@@ -11,6 +11,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 import static utils.Constants.*;
 import utils.UserDetailsReader;
 import com.microsoft.playwright.FrameLocator;
+import utils.RandomDataGenerator;
 public class vans_checkoutPage {
 
     private final Page page;
@@ -295,6 +296,69 @@ public class vans_checkoutPage {
         Vans_Ca_Confirm_Button().click();
         page.waitForTimeout(SHORT_WAIT);
     }
+
+    //Swathi changes
+    private Locator CreditCardRadio_Button() {
+        return page.locator("span[data-test-id='vf-radio-input']").nth(2);
+    }
+
+    private Locator PayPalRadio_Button() {
+        return page.locator("span[data-test-id='vf-radio-input']").nth(4);
+    }
+
+    private Locator ApplePayRadio_Button() {
+        return page.locator("span[data-test-id='vf-radio-input']").nth(3);
+    }
+
+    private Locator KlarnaRadio_Button() {
+        return page.getByRole(AriaRole.IMG, new Page.GetByRoleOptions().setName("KLARNA"));
+    }
+
+    public void validatePaymentMethodClickability() {
+        try {
+            // PayPal
+            if (PayPalRadio_Button().isVisible()) {
+                PayPalRadio_Button().click();
+                System.out.println("PayPal button clicked successfully.");
+            } else {
+                System.out.println("PayPal button is NOT visible.");
+            }
+
+            // Apple Pay
+            if (ApplePayRadio_Button().isVisible()) {
+                ApplePayRadio_Button().click();
+                System.out.println("Apple Pay button clicked successfully.");
+            } else {
+                System.out.println("Apple Pay button is NOT visible.");
+            }
+
+            //Credit Card
+            if (CreditCardRadio_Button().isVisible()) {
+                CreditCardRadio_Button().click();
+                System.out.println("Credit Card button clicked successfully.");
+            } else {
+                System.out.println("Credit Card button is NOT visible.");
+            }
+
+        } catch (Exception e) {
+            System.out.println(" Error while clicking payment methods " + e.getMessage());
+        }
+    }
+
+    //swathi changes
+
+    public void emailforcontactinfoforGuestUser(){
+        UserDetailsReader user = UserDetailsReader.getInstance(REGISTERED_USER_ALL);
+        Locator contactInfoEmail = page.locator("[data-test-id='vf-form-field-email'] [data-test-id='base-input']");
+        if (contactInfoEmail.isVisible()) {
+            String randomEmail = RandomDataGenerator.generateRandomEmail(user.getFirstName(), user.getLastName());
+            contactInfoEmail.fill(randomEmail);
+            System.out.println("Filled contact info email for guest user: " + randomEmail);
+        }
+    }
+
+
+
 
 
 }
