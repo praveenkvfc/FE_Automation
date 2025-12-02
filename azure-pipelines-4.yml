@@ -36,4 +36,4 @@ steps:
 
 - script: |
     mvn test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke12
-  displayName: 'Execute scripts'
+  displayName: 'Execute scenarioooo'
