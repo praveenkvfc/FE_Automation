@@ -4,11 +4,14 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import com.microsoft.playwright.options.WaitUntilState;
+import utils.UserDetailsReader;
 
 import static utils.Constants.*;
 
 public class CreateAccount_Page {
     private Page page;
+    private UserDetailsReader user =
+            UserDetailsReader.getInstance(REGISTERED_USER_ALL);
 
     public CreateAccount_Page(Page page) {
         this.page = page;
@@ -188,5 +191,24 @@ public class CreateAccount_Page {
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
         return createAccountSuccessMsg().textContent().trim();
+    }
+
+    private Locator tnf_zipcode() {
+        return page.locator("xpath=//div[@data-test-id='vf-form-field-postalCode']//input[@type='text']");
+    }
+
+    public void enter_tnf_zipcode() {
+        System.out.println("Checking zip code field");
+        tnf_zipcode().scrollIntoViewIfNeeded();
+        tnf_zipcode().waitFor(new
+                Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(SHORT_WAIT));
+        tnf_zipcode().fill(user.getPostalCode());
+        System.out.println("Zipcode entered: " + user.getPostalCode());
+
+        // Press Tab to move to next field
+        for (int i = 0; i < 2; i++) {
+            page.keyboard().press("Tab");
+            page.waitForTimeout(300);
+        }
     }
 }

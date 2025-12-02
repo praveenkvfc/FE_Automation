@@ -135,6 +135,7 @@ public class vans_SignInSignUp_Page {
     }
 
     public void click_vans_agree_Vans_TnC_checkbox() {
+        //This method is working for vans - CA,US and TNF - US, CA
         vans_agree_Vans_TnC_checkbox().waitFor(new Locator.WaitForOptions()
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
@@ -275,6 +276,27 @@ public class vans_SignInSignUp_Page {
         page.waitForTimeout(DEFAULT_WAIT);
     }
 
+    //QA-Kajal kabade
+    private Locator tnf_signup_email() {
+        return page.locator("xpath=//div[@data-test-id='form-sign-up']//input[@name='email']");
+    }
+    //QA-Kajal kabade
+    public void Settnf_signup_email(String input) {
+        tnf_signup_email().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        tnf_signup_email().pressSequentially(input); //pressSequentially or fill we can use but this will enter char by char as real user
+        page.waitForTimeout(500);
+    }
 
+    private Locator tnf_agree_privacyPolicy_checkbox() {
+        return page.locator("[data-test-id=\"form-sign-up\"] [data-test-id=\"vf-form-field-policy\"] i");
+    }
 
+    public void Click_tnf_agree_privacyPolicy_checkbox() {
+        tnf_agree_privacyPolicy_checkbox().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        tnf_agree_privacyPolicy_checkbox().click();
+    }
 }
