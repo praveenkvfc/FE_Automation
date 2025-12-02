@@ -21,7 +21,7 @@ public class vans_homePage {
     }
     private Locator Vans_createAccount()
     {
-        return page.locator("[data-test-id=\"base-form\"] [data-test-id=\"vf-link\"]");
+         return page.locator("xpath=//button[text()='Create Account']");
     }
     public void click_createAccount()
     {
