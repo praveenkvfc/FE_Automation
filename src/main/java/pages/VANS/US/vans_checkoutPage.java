@@ -3,20 +3,11 @@ package pages.VANS.US;
 import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.TimeoutError;
 import com.microsoft.playwright.options.AriaRole;
-import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.WaitForSelectorState;
-import org.testng.Reporter;
-import org.testng.asserts.SoftAssert;
 import utils.PaymentDataReader;
 import utils.RetryUtility;
 import utils.UserDetailsReader;
-import org.junit.Assert;
-import java.math.BigDecimal;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static utils.Constants.*;
 
@@ -460,21 +451,35 @@ public class vans_checkoutPage {
         String confQty = extractProductQtyValue(productQty);
         String confPrice = extractProductPriceValue(productPrice);
 
-        softAssert.assertEquals(normalize(histName), normalize(confName), "Product name mismatch");
-        softAssert.assertEquals(normalize(histColor), normalize(confColor), "Product color mismatch");
-        softAssert.assertEquals(normalize(histSize), normalize(confSize), "Product size mismatch");
-        softAssert.assertEquals(normalize(histQty), normalize(confQty), "Product quantity mismatch");
-        softAssert.assertEquals(normalize(histPrice), normalize(confPrice), "Product price mismatch");
+        softAssert.assertEquals(
+                normalize(histName),
+                normalize(confName),
+                "Product name mismatch");
+        softAssert.assertEquals(
+                normalize(histColor),
+                normalize(confColor),
+                "Product color mismatch");
+        softAssert.assertEquals(
+                normalize(histSize),
+                normalize(confSize),
+                "Product size mismatch");
+        softAssert.assertEquals(
+                normalize(histQty),
+                normalize(confQty),
+                "Product quantity mismatch");
+        softAssert.assertEquals(
+                normalize(histPrice),
+                normalize(confPrice),
+                "Product price mismatch");
 
         // DO NOT fail the test: swallow the aggregated assertion error
         try {
             softAssert.assertAll();
         } catch (AssertionError ae) {
             System.out.println("Soft assertion differences (not failing test):\n" + ae.getMessage());
-            // Optionally log into your reporting system here (Allure/Extent).
         }
 
-        // Hard asserts remain commented as requested
+        // Hard asserts commented
         //Assert.assertEquals("Order number mismatch",    normalize(orderNumber),    normalize(historyOrderNumber));
         //Assert.assertEquals("Order date mismatch",      normalize(orderDate),      normalize(historyOrderDate));
         //Assert.assertEquals("Shipping method mismatch", normalize(shippingMethod), normalize(historyShippingMethod));
