@@ -1,9 +1,14 @@
 
 trigger:
 - main
+- feature/*
 
 pool:
   vmImage: ubuntu-latest
+
+
+workspace:
+  clean: all   # Full cleanup before build
 
 steps:
 # ✅ Clean and checkout latest code first
