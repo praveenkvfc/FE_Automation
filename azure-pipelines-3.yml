@@ -36,5 +36,5 @@ steps:
   displayName: 'Install Maven'
 
 - script: |
-    mvn test -Denv=prod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke12
-  displayName: 'Execute scripts'
+    mvn test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke12
+  displayName: 'Execute scenario'
