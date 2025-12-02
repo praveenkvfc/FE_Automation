@@ -27,12 +27,6 @@ steps:
     npx playwright install --with-deps
   displayName: 'Playwright install'
 
-# ✅ Install Java and Maven (required for mvn test)
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '11'
-  displayName: 'Install Java'
-
 - script: |
     sudo apt-get update
     sudo apt-get install -y maven
