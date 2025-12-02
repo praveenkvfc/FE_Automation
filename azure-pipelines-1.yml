@@ -29,5 +29,5 @@ steps:
   displayName: 'Playwright install'
  
 - script: |
-    mvn test -Denv=preprod -Dbrand=vans -Dregion=us -Dtag=@Vans_SmokePaypal2
+    mvn test -Denv=preprod -Dbrand=vans -Dregion=us -Dtag=@Vans_Smoke2
     displayName: 'Execute scripts'
