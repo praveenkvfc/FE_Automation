@@ -10,16 +10,12 @@ workspace:
 
 steps:
 - script: |
-    echo "Building commit:"
-    git rev-parse HEAD
-  displayName: 'Show current commit'
-
-- script: |
     mkdir -p screenshorts
   displayName: 'Create screenshorts directory'
 
 - checkout: self
   clean: true  # Ensures fresh code from repo
+  fetchDepth: 0
 
 - task: NodeTool@0
   inputs:
