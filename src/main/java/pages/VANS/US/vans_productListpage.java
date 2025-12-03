@@ -101,3 +101,38 @@ public class VansProductListPage {
     }
 
     public void click_searchOption_inAddressPage() {
+        page.waitForTimeout(DEFAULT_WAIT);
+        vans_searchOption_addressPage().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.ATTACHED)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        vans_searchOption_addressPage().click(new Locator.ClickOptions().setForce(true));
+        page.waitForTimeout(2000);
+    }
+
+    public String check_ShoesAndSneaker_Title() {
+        ShoeAndSneakers_Title().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        return ShoeAndSneakers_Title().textContent().trim();
+    }
+
+    protected Locator getProductCards() {
+        return page.locator("xpath=//*[@id=\"__nuxt\"]/div[1]/div/main/div[3]/div[3]/div/div[2]/div[1]");
+    }
+
+    public record ProductInfo(String name, String price, int index) {
+        @Override
+        public String toString() {
+            return String.format("Product[%d]: %s - %s", index, name, price);
+        }
+    }
+
+    public boolean check_sortedProducts() {
+        SortUtility SU = new SortUtility(page);
+        SU.printAllProducts();
+        boolean isSorted = SU.validatePriceSorting("low_to_high", page, getProductCards());
+        return isSorted;
+    }
+}
