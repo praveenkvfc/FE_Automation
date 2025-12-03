@@ -107,7 +107,7 @@ public void click_SelectSecondProductinPLP(boolean isFilterApplied) {
     private Locator vans_searchOption_addressPage() {
          //return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Open search"));
         system.out.println("inside search");
-        return page.locator("section[@class='grid cols-[1fr_auto_1fr] w-full <lg:hidden']/section/button[3]");
+        return page.locator("//section[@class='grid cols-[1fr_auto_1fr] w-full <lg:hidden']/section/button[3]");
     }
     public void click_searchOption_inAddressPage() {
         page.waitForTimeout(DEFAULT_WAIT);
