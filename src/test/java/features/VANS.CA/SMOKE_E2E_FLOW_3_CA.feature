@@ -6,15 +6,16 @@ Feature: Create a new user account and place order successfully
   Background:
     Given the user is on the "Create an Account" page
 
-  @Vans_SmokePaypal2
+  @Vans_CA_SmokePaypal2 @pp
   Scenario: Account creation and place order using paypal from cart page Successfully
 #    When the user enters the email for vans
 #    And the user provides the password for vans to Signup or SignIn
-#    And the user agrees Vans Terms and Conditions
 #    And the user agree privacy policy
+#    And the user agrees Vans Terms and Conditions
 #    And the user agrees to receive mails
 #    And the user clicks the Create an Account button
-#    Then account created successfully with confirmation message "Welcome to the Vans Family"
+#    Then account created successfully with confirmation message "Your account has been created!"
+#
 #    When User navigates to the MyAccount page as "registeredUser"
 #    And User opens the Credit Cards page
 #    And User adds a default "VISA" credit card for "registeredUser"
@@ -32,5 +33,4 @@ Feature: Create a new user account and place order successfully
     Then User places the order by clicking pay now using paypal in cart page
     And Order confirmation should display
 #    And User should be able to see the order in Order history page
-
 

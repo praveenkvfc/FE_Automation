@@ -12,11 +12,12 @@ import utils.RandomDataGenerator;
 import utils.PlaywrightFactory;
 
 import static org.testng.Assert.assertTrue;
+import static utils.PlaywrightFactory.getPage;
 import static utils.RandomDataGenerator.generateRandomName;
 
 public class AccountCreationSteps {
 
-    private Page page = PlaywrightFactory.getPage();
+    private Page page = getPage();
     private final String firstname = RandomDataGenerator.generateRandomName();
     private final String lastname = RandomDataGenerator.generateRandomName();
     private final String mobileNumber = RandomDataGenerator.generateMobileNumber(ConfigReader.get("region"));
@@ -31,6 +32,13 @@ public class AccountCreationSteps {
     @Given("the user is on the {string} page")
     public void userIsOnPage(String pageName) {
         createAccountPage.launchApplication(ConfigReader.get("url"));
+        // 404 recovery check
+        if (getPage().locator("text=404").isVisible()) {
+            System.out.println("404 detected, clicking Return to Home...");
+            getPage().locator("[data-test-id=\"vf-button\"]").click();
+            getPage().waitForLoadState();
+        }
+
         if (ConfigReader.get("brand").equals("tbl")) {
             homePage.clickWelcomeIcon();
             homePage.clickCreateAccountButton();

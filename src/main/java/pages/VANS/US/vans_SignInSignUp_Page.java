@@ -7,8 +7,7 @@ import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import io.cucumber.java.en.Then;
 
-import static utils.Constants.DEFAULT_WAIT;
-import static utils.Constants.SHORT_WAIT;
+import static utils.Constants.*;
 
 public class vans_SignInSignUp_Page {
     private Page page;
@@ -132,6 +131,7 @@ public class vans_SignInSignUp_Page {
 
     private Locator vans_agree_Vans_TnC_checkbox() {
         return page.locator("[data-test-id=\"vf-form-field-loyaltyTerms\"] i");
+
     }
 
     public void click_vans_agree_Vans_TnC_checkbox() {

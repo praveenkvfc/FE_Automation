@@ -15,10 +15,18 @@ public class vans_SaveForLaterPage {
         this.page = page;
     }
 
-    private Locator addToCart_SaveForLater() {
-        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add to Cart").setExact(true));
-
-    }
+//    private Locator addToCart_SaveForLater() {
+//        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add to Cart").setExact(true));
+//
+//    }
+private Locator addToCart_SaveForLater() {
+    // Scoped to "Saved For Later" section, then find the Add to Cart button
+    return page.getByLabel("Saved For Later")
+            .getByRole(AriaRole.BUTTON,
+                    new Locator.GetByRoleOptions()
+                            .setName("Add to Cart")
+                            .setExact(true));
+}
 
     public void clickAddToCartFromSaveForLater() {
         page.waitForTimeout(SHORT_WAIT);
@@ -30,9 +38,15 @@ public class vans_SaveForLaterPage {
         page.waitForTimeout(SHORT_WAIT);
     }
 
-    private Locator addToCart_Multiple_SaveForLater() {
-        return page.getByLabel("Saved For Later").locator("div").filter(new Locator.FilterOptions().setHasText("Classic Slip-On Checkerboard Shoe $60.00Color: Black/Off WhiteSize: 3.5 Boys =")).locator("[data-test-id=\"move-to-cart\"]");
-    }
+//    private Locator addToCart_Multiple_SaveForLater() {
+//        return page.getByLabel("Saved For Later").locator("div").filter(new Locator.FilterOptions().setHasText("Classic Slip-On Checkerboard Shoe $60.00Color: Black/Off WhiteSize: 3.5 Boys =")).locator("[data-test-id=\"move-to-cart\"]");
+//    }
+private Locator addToCart_Multiple_SaveForLater() {
+    // Same idea, but returns all "Move to Cart" buttons in Saved For Later
+    return page.getByLabel("Saved For Later")
+            .locator("[data-test-id='move-to-cart']");
+}
+
     public void clickAddToCart_Multiple_SaveForLater() {
         page.waitForTimeout(SHORT_WAIT);
         System.out.println("Im here to see item moved from save for later page to cart");

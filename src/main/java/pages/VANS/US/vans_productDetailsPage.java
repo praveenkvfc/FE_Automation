@@ -1,6 +1,5 @@
-
-
 package pages.VANS.US;
+
 import java.util.regex.Pattern;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
@@ -27,12 +26,13 @@ public class vans_productDetailsPage {
                 .setTimeout(DEFAULT_WAIT));
         vans_selectSizeDropdown_PDP().click();
     }
-public void NavigateBack(){
-    page.goBack();
-}
+
+    public void NavigateBack() {
+        page.goBack();
+    }
+
     private Locator vans_selectShoeSize_PDP() {
         return page.locator("[data-test-id=\"vf-size-picker\"]").getByText("One Size");
-
     }
 
     private Locator vans_selectPantSize_PDP() {
@@ -47,15 +47,13 @@ public void NavigateBack(){
         if (searchItem.equals("shoe")) {
             vans_selectShoeSize_PDP().waitFor(new Locator.WaitForOptions()
                     .setState(WaitForSelectorState.VISIBLE)
-                    .setTimeout(DEFAULT_WAIT)
-            );
+                    .setTimeout(DEFAULT_WAIT));
             vans_selectShoeSize_PDP().click();
         }
         if (searchItem.equals("pant")) {
             vans_selectPantSize_PDP().waitFor(new Locator.WaitForOptions()
                     .setState(WaitForSelectorState.VISIBLE)
-                    .setTimeout(DEFAULT_WAIT)
-            );
+                    .setTimeout(DEFAULT_WAIT));
             vans_selectPantSize_PDP().click();
         }
     }
@@ -63,7 +61,6 @@ public void NavigateBack(){
     // Finds all size options inside the size picker
     private Locator vans_allSizes_PDP() {
         return page.getByText("B3.5 / W5");
-
     }
 
     // Clicks the first available size option
@@ -87,8 +84,6 @@ public void NavigateBack(){
     }
 
     private Locator vans_AddToCartButton_PDP() {
-        // return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
-        //return page.locator("[data-test-id=\"vf-button\"]").filter(new Locator.FilterOptions().setHasText("Add to Cart"));
         return page.locator("#pdp-add-to-cart");
     }
 
@@ -165,11 +160,21 @@ public void NavigateBack(){
         assertThat(vans_FavProductName_PDP()).isVisible();
     }
 
-    //User clicks on favorite icon
+    // User clicks on favorite icon
     public void clickFavoriteIcon_FavoritesPage() {
         vans_FavoriteIcon_PDP_Click();
     }
+    // Mini Cart: Increment quantity button
+    private Locator vans_incrementQtyButtonForSecondProduct_MiniCart() {
+        String productName = page.locator("[data-test-id='product-name']").innerText();
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase "+productName));
+    }
 
+    // Mini Cart: Decrement quantity button
+    private Locator vans_decrementQtyButtonForSecondProduct_MiniCart() {
+        String productName = page.locator("[data-test-id='product-name']").innerText();
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease "+productName));
+    }
     // Combined flow: Favorite → Toaster → Navigate
     public void clickFavoriteAndGoToFavoritesPage() {
         vans_FavoriteIcon_PDP_Click();
@@ -185,43 +190,39 @@ public void NavigateBack(){
         vans_FavProductName_PDP_Visible(); // Confirm item is present
     }
 
+        // Increment quantity button (index-based)
+    private Locator vans_incrementQtyButtonForSecondProduct_MiniCart(int index) {
+        String productName = page.locator("[data-test-id='product-name']").nth(index).innerText();
+        System.out.println("Product name at index " + index + ": " + productName);
+
+        return page.getByRole(AriaRole.BUTTON,
+                new Page.GetByRoleOptions()
+                        .setName("Increase " + productName)
+                        .setExact(true));
+    }
+
+
+
     // Mini Cart: Increment quantity button
     private Locator vans_incrementQtyButton_MiniCart() {
-        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase Classic Slip-On"));
+        String productName = page.locator("[data-test-id='product-name']").innerText();
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase "+productName));
     }
 
     // Mini Cart: Decrement quantity button
     private Locator vans_decrementQtyButton_MiniCart() {
-        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease Classic Slip-On"));
+        String productName = page.locator("[data-test-id='product-name']").innerText();
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease "+productName));
     }
 
-       public void click_incrementQty_MiniCart() {
-        vans_incrementQtyButton_MiniCart().scrollIntoViewIfNeeded();
-        vans_incrementQtyButton_MiniCart().waitFor(new Locator.WaitForOptions()
-                .setState(WaitForSelectorState.VISIBLE)
-                .setTimeout(DEFAULT_WAIT));
+    public void click_incrementQty_MiniCart() {
+
         vans_incrementQtyButton_MiniCart().click();
-        page.waitForTimeout(DEFAULT_WAIT);
     }
 
     public void click_decrementQty_MiniCart() {
-        vans_decrementQtyButton_MiniCart().scrollIntoViewIfNeeded();
-        vans_decrementQtyButton_MiniCart().waitFor(new Locator.WaitForOptions()
-                .setState(WaitForSelectorState.VISIBLE)
-                .setTimeout(DEFAULT_WAIT));
         vans_decrementQtyButton_MiniCart().click();
-        page.waitForTimeout(DEFAULT_WAIT);
     }
-    // Mini Cart: Increment quantity button
-    private Locator vans_incrementQtyButtonForSecondProduct_MiniCart() {
-        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase Classic Slip-On Shoe"));
-    }
-
-    // Mini Cart: Decrement quantity button
-    private Locator vans_decrementQtyButtonForSecondProduct_MiniCart() {
-        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease Classic Slip-On Shoe"));
-    }
-
     public void click_vans_incrementQtyButtonForSecondProduct_MiniCart() {
         vans_incrementQtyButtonForSecondProduct_MiniCart().scrollIntoViewIfNeeded();
         vans_incrementQtyButtonForSecondProduct_MiniCart().waitFor(new Locator.WaitForOptions()
@@ -240,11 +241,16 @@ public void NavigateBack(){
         page.waitForTimeout(DEFAULT_WAIT);
     }
 
+    // Close Mini Cart window
     private Locator vans_closeMiniCartWindow() {
         return page.locator("[data-test-id=\"vf-dialog-close\"]");
     }
-    public void vans_closeMiniCartWindow_Click(){
+
+    public void vans_closeMiniCartWindow_Click() {
+        vans_closeMiniCartWindow().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(DEFAULT_WAIT));
         vans_closeMiniCartWindow().click();
+        page.waitForTimeout(DEFAULT_WAIT);
     }
 }
-

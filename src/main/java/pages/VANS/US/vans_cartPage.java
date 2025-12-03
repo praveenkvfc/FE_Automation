@@ -340,23 +340,28 @@ public class vans_cartPage {
         assertThat(vans_OrderTotalAmount_CartPage()).isVisible();
     }
 
-    // Locator for PayPal button on Cart Page
-    private Locator vans_PayPalButton_CartPage() {
-        return page.locator("xpath=//button[.//div[contains(@class,'paypal-button-label-container')]]");
-    }
+private Locator vans_PayPalButton_CartPage() {
+    FrameLocator paypalFrame = page.frameLocator("iframe[title*='PayPal']");
+    return paypalFrame.locator("div[role='link'][aria-label='PayPal']");
+}
 
     // Action method called from step definition
     public void vans_paypal_CartPage_Click() {
-        Locator paypalButton = vans_PayPalButton_CartPage();
+        // Scope into PayPal iframe
+        FrameLocator paypalFrame = page.frameLocator("iframe[title*='PayPal']");
+        Locator paypalButton = paypalFrame.locator("div[role='link'][aria-label='PayPal']");
 
         // Wait until visible
         paypalButton.waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT));
 
-        // Click and wait for popup
+        // Instead of scrollIntoViewIfNeeded (which can hang), use evaluate directly
+        paypalButton.evaluate("el => el.scrollIntoView({behavior: 'instant', block: 'center'})");
+
+        // Click and capture popup
         Page popup = page.waitForPopup(() -> {
-            paypalButton.click();
+            paypalButton.click(new Locator.ClickOptions().setForce(true));
         });
 
         popup.waitForLoadState();
