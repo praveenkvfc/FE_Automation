@@ -125,6 +125,19 @@ public class vans_productListpage {
         boolean isSorted = SU.validatePriceSorting("low_to_high", page, getProductCards());
         return true;
     }
+    //QA-Kajal kabade
+    private Locator tnfUs_searchField() {
+        return page.locator("xpath=//input[@placeholder='Search']");
+    }
+    public void click_tnfUs_searchField() {
+        page.waitForTimeout(DEFAULT_WAIT);
+        tnfUs_searchField().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.ATTACHED)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        tnfUs_searchField().click(new Locator.ClickOptions().setForce(true));
+        page.waitForTimeout(2000);
 
+    }
 
 }

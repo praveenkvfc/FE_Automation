@@ -201,7 +201,7 @@ public class vans_SignInSignUp_Page {
                 .setState(WaitForSelectorState.VISIBLE));
 
         if (vans_SkipForNow_button().isEnabled() &&
-                vans_MayBeLater_Button().isVisible()) {
+                vans_SkipForNow_button().isVisible()) {
             System.out.println("Skip for now button is visible");
             vans_SkipForNow_button().click(new
                     Locator.ClickOptions().setForce(true));
@@ -286,17 +286,30 @@ public class vans_SignInSignUp_Page {
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
         tnf_signup_email().pressSequentially(input); //pressSequentially or fill we can use but this will enter char by char as real user
+        page.keyboard().press("Tab");
         page.waitForTimeout(500);
     }
-
+    //QA-Kajal kabade
     private Locator tnf_agree_privacyPolicy_checkbox() {
         return page.locator("[data-test-id=\"form-sign-up\"] [data-test-id=\"vf-form-field-policy\"] i");
     }
-
+    //QA-Kajal kabade
     public void Click_tnf_agree_privacyPolicy_checkbox() {
         tnf_agree_privacyPolicy_checkbox().waitFor(new Locator.WaitForOptions()
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
         tnf_agree_privacyPolicy_checkbox().click();
+    }
+
+    //QA-Kajal kabade
+    private Locator tnf_Us_successMessage() {
+        return page.locator("xpath=//h2[text()='Your account has been created!']");
+    }
+    //QA-Kajal kabade
+    public String getTnf_US_successMessage() {
+        tnf_Us_successMessage().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        return tnf_Us_successMessage().textContent().trim();
     }
 }

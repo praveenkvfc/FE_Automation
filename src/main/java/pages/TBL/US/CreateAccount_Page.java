@@ -192,23 +192,19 @@ public class CreateAccount_Page {
                 .setState(WaitForSelectorState.VISIBLE));
         return createAccountSuccessMsg().textContent().trim();
     }
-
+    //QA- Kajal kabade
     private Locator tnf_zipcode() {
-        return page.locator("xpath=//div[@data-test-id='vf-form-field-postalCode']//input[@type='text']");
+        return page.locator("xpath=//div[@data-test-id='vf-form-field-postalCode']//input");
     }
 
     public void enter_tnf_zipcode() {
-        System.out.println("Checking zip code field");
         tnf_zipcode().scrollIntoViewIfNeeded();
-        tnf_zipcode().waitFor(new
-                Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(SHORT_WAIT));
-        tnf_zipcode().fill(user.getPostalCode());
-        System.out.println("Zipcode entered: " + user.getPostalCode());
-
-        // Press Tab to move to next field
-        for (int i = 0; i < 2; i++) {
-            page.keyboard().press("Tab");
-            page.waitForTimeout(300);
-        }
+        tnf_zipcode().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(SHORT_WAIT)
+        );
+        String postalCode = user.getPostalCode();
+        tnf_zipcode().fill(postalCode);
+        System.out.println("Zipcode entered: " + postalCode);
     }
 }

@@ -1,7 +1,9 @@
 
 package stepdefinitions.VANS.US;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import config.ConfigReader;
 import io.cucumber.java.en.*;
 import pages.TBL.US.CreateAccount_Page;
@@ -12,6 +14,7 @@ import utils.RandomDataGenerator;
 import utils.PlaywrightFactory;
 
 import static org.testng.Assert.assertTrue;
+import static utils.Constants.DEFAULT_WAIT;
 import static utils.RandomDataGenerator.generateRandomEmail;
 import static utils.RandomDataGenerator.generateRandomName;
 
@@ -34,8 +37,10 @@ public class AccountCreationSteps {
     public void userIsOnPage(String pageName) {
         createAccountPage.launchApplication(ConfigReader.get("url"));
         if (ConfigReader.get("brand").equals("tbl")) {
-            homePage.clickWelcomeIcon();
-            homePage.clickCreateAccountButton();
+            if (ConfigReader.get("region").equals("us")) {
+                homePage.clickWelcomeIcon();
+                homePage.clickCreateAccountButton();
+            }
         }
         if (ConfigReader.get("brand").equals("vans")) {
             if (ConfigReader.get("region").equals("ca")) {
@@ -127,9 +132,14 @@ public class AccountCreationSteps {
             } else if (ConfigReader.get("region").equals("ca")) {
                 actualMessage = vansSignInSignUpPage.getCA_successMessage();
             }
-            System.out.println("Actual message: " + actualMessage);
-            assertTrue(actualMessage.contains(expectedMessage), "Expected: " + expectedMessage + ", but got: " + actualMessage);
+        }else if (ConfigReader.get("brand").equals("tnf")) {
+            if (ConfigReader.get("region").equals("us")) {
+                actualMessage = vansSignInSignUpPage.getTnf_US_successMessage();
+            }
         }
+
+        System.out.println("Actual message: " + actualMessage);
+        assertTrue(actualMessage.contains(expectedMessage), "Expected: " + expectedMessage + ", but got: " + actualMessage);
     }
 
 
