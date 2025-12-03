@@ -42,7 +42,7 @@ public class vans_homePage {
 
     private Locator vans_searchField()
     {
-       return page.locator("[data-test-id=\"base-input\"]");
+       return page.locator("//input[@data-test-id='base-input']");
     }
 
     public void enter_searchInputField(String searchInput)
