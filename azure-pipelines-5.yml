@@ -3,6 +3,7 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+
 trigger:
 - main
 
@@ -37,3 +38,10 @@ steps:
 - script: |
     mvn test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke12
   displayName: 'Execute new script'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'screenshorts'
+    artifact: 'test-screenshorts'
+  condition: succeededOrFailed()
+  displayName: 'Publish test Screenshorts'
