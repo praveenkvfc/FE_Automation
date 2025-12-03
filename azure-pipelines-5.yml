@@ -36,7 +36,7 @@ steps:
   displayName: 'Install Maven'
 
 - script: |
-    mvn test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke12
+    mvn test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke2
   displayName: 'Execute new script'
 
 - task: PublishPipelineArtifact@1
