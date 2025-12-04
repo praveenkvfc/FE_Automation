@@ -236,6 +236,40 @@ public class vans_checkoutSteps {
     public void userSelectChangePaymentOption() {
         getGetVansCheckoutPage().click_changePaymentButton();
     }
+
+    //resma changes
+
+    @And("User clicks on Change link in the shipping address section")
+    public void userClickOnChangeLink() {
+        getGetVansCheckoutPage().click_changeLink_ShippingAddress();
+    }
+
+    @And("User clicks on New Address in the shipping address section")
+    public void userClicksOnNewAddressLink() {
+        getGetVansCheckoutPage().click_NewAddress_ShippingAddress();
+    }
+
+    @Then("User clicks on Save button")
+    public void userClicksOnSaveButton() {
+        getGetVansCheckoutPage().click_SaveButton_ShippingAddress();
+    }
+
+    @And("User varifies the order details in order confirmation page")
+    public void userTemporarilySavesTheOrderDetails() {
+        getGetVansCheckoutPage().saveOrderDetails();
+    }
+
+    @And("User validates order confirmation details in order history page")
+    public void userTemporarilyVerifiesTheOrderDetailsInOrderHistoryPage() {
+        getGetVansCheckoutPage().verifyOrderDetails();
+    }
+
+    @And("User clicks on view order details button")
+    public void userClickOnViewOrderDetails() {
+        getVansHeaderPage().navigateFromProfileTo("order history");
+        getGetVansCheckoutPage().clickOnViewOrderDetails();
+    }
+
 }
 
 
