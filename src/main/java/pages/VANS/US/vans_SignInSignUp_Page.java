@@ -307,7 +307,7 @@ public class vans_SignInSignUp_Page {
     }
     //QA-Kajal kabade
     public String getTnf_US_successMessage() {
-        page.waitForTimeout(SHORT_WAIT);
+        page.waitForTimeout(DEFAULT_WAIT);
         tnf_Us_successMessage().waitFor(new Locator.WaitForOptions()
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
