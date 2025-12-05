@@ -20,10 +20,10 @@ Feature: Create a new user account and place order successfully
     When User navigates to the MyAccount page as "registeredUser"
     And user closes the my account window
     Given user clicks on search button
-    Then enter the text "bag" in search field
+    Then enter the text "cap" in search field
     When User navigates to PDP page by selecting a product
     And User clicks on favorite icon
-    And User adds "pant" product to cart
+    And User adds "cap" product to cart
     Then User should click the "View Cart" CTA in Mini Cart
     When User navigates to the Cart page
     And User should be able to increase the quantity in cart page

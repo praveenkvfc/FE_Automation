@@ -35,8 +35,8 @@ public class vans_productListpage {
     private Locator vans_product_in_PLP() {
 //        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(ProductName));
         return page.locator(".relative.w-full > a").first();
-
     }
+
     public void click_SelectProductinPLP(boolean isFilterApplied) {
         if(isFilterApplied) {
             vans_product_in_PLP().waitFor(new Locator.WaitForOptions()
@@ -57,9 +57,6 @@ public class vans_productListpage {
         return page.locator("div:nth-child(4) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
 
     }
-
-
-
 
     public void click_vans_FilterOption() {
         page.waitForTimeout(SHORT_WAIT);
@@ -138,6 +135,27 @@ public class vans_productListpage {
         tnfUs_searchField().click(new Locator.ClickOptions().setForce(true));
         page.waitForTimeout(2000);
 
+    }
+
+    private Locator tnf_product_in_PLP() {
+        return page.locator("[data-test-id='product-card']").first();
+    }
+
+    public void click_Tnf_SelectProductinPLP(boolean isFilterApplied) {
+        if(isFilterApplied) {
+            tnf_product_in_PLP().waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE)
+                    .setTimeout(DEFAULT_WAIT)
+            );
+//            tnf_ProductWithoutFilter_PLP().click();
+        }
+        else {
+            tnf_product_in_PLP().waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE)
+                    .setTimeout(DEFAULT_WAIT)
+            );
+            tnf_product_in_PLP().click();
+        }
     }
 
 }

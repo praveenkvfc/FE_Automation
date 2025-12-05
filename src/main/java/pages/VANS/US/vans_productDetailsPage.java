@@ -70,7 +70,7 @@ public class vans_productDetailsPage {
 
     private Locator vans_AddToCartButton_PDP() {
        // return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
-       return page.locator("[data-test-id=\"vf-button\"]").filter(new Locator.FilterOptions().setHasText("Add to Cart"));
+       return page.locator("xpath=//button[@id='pdp-add-to-cart']");
     }
 
     private Locator vans_ViewCartButton_PDP() {

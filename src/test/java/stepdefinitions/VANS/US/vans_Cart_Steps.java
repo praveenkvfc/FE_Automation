@@ -65,7 +65,7 @@ public class vans_Cart_Steps {
     //QA-Kajal kabade
     @Then("User selects Pick up Instore option")
     public void userSelectsPickUpInstoreOption() {
-        if (ConfigReader.get("brand").equals("vans")) {
+        if (ConfigReader.get("brand").equals("vans") || ConfigReader.get("brand").equals("tnf")) {
             if (ConfigReader.get("region").equals("us")) {
                 getVansCartPage().vans_PickupInStoreSelect_CartPage();
             }
@@ -75,7 +75,7 @@ public class vans_Cart_Steps {
     //QA-Kajal kabade
     @And("User able to find and select the store")
     public void userAbleToFindAndSelectTheStore() {
-        if (ConfigReader.get("brand").equals("vans")) {
+        if (ConfigReader.get("brand").equals("vans") || ConfigReader.get("brand").equals("tnf")) {
             if (ConfigReader.get("region").equals("us")) {
                 getVansCartPage().vans_PickupInStoreWindow_Distance_Select_CartPage();
                 getVansCartPage().vans_PickupInStoreWindow_enterPostalCodeFill_CartPage();
@@ -85,19 +85,27 @@ public class vans_Cart_Steps {
         }
     }
 
-       @Then("User navigates to {string} page from cart page")
+    @Then("User navigates to {string} page from cart page")
     public void userNavigatesToPageFromCartPage(String pageName) {
-        getHeaderPage().vans_Profile_MyAccount_Click();
-
         if (pageName.equalsIgnoreCase("favourites")) {
-            getHeaderPage().vans_Favorites_MyAccount_Click();
+            if (ConfigReader.get("brand").equals("vans")) {
+                getHeaderPage().vans_Profile_MyAccount_Click();
+                getHeaderPage().vans_Favorites_MyAccount_Click();
+            }else if(ConfigReader.get("brand").equals("tnf")){
+                getHeaderPage().tnf_Profile_MyAccount_Click();
+                getHeaderPage().tnf_Favorites_MyAccount_Click();
+               }
+        }
+        else if (pageName.equalsIgnoreCase("Save for later")) {
+            System.out.println("=======================================");
+            System.out.println("Im here in save for later page");
+            System.out.println("=======================================");
+            getVansCartPage().vans_SaveForLaterClick_CartPage();
         } else {
             throw new IllegalArgumentException("Unsupported navigation target: " + pageName);
         }
 
-
-
-}
+    }
 
     @And("User clicks on save later option in cart page")
     public void userClicksOnSaveLaterOptionInCartPage() {

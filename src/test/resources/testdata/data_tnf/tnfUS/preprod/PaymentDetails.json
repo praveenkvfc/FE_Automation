@@ -59,9 +59,16 @@
   ],
   "VALID_GIFTCARDS": [
     {
-      "CARD_NUMBER": "6035718880000750370",
-      "PIN": "6114",
-      "VALUE": "10,00"
+      "CARD_NUMBER": "7777405410238099",
+      "PIN": "43032930",
+      "VALUE": "1,00"
+    }
+  ],
+  "VALID_GIFTCARDS_FULL_PAYMENT": [
+    {
+      "CARD_NUMBER": "7777405410382976",
+      "PIN": "79436331",
+      "VALUE": "1.00"
     },
     {
       "CARD_NUMBER": "6035718880000752251",

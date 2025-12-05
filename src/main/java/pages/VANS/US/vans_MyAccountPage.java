@@ -67,10 +67,12 @@ public class vans_MyAccountPage {
     }
 public void vans_CloseWindow_MyAccount_Click(){
     page.waitForTimeout(500);
-    vans_CloseWindow_MyAccount().waitFor(new Locator.WaitForOptions()
-            .setState(WaitForSelectorState.VISIBLE)
-            .setTimeout(SHORT_WAIT)
-    );
-    vans_CloseWindow_MyAccount().click();
-}
+    if(vans_CloseWindow_MyAccount().isVisible()) {
+        vans_CloseWindow_MyAccount().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(SHORT_WAIT)
+        );
+        vans_CloseWindow_MyAccount().click();
+    }
+    }
 }

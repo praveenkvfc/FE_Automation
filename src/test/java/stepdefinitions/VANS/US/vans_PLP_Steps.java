@@ -106,9 +106,13 @@ private static boolean flag = false;
 
     @When("User navigates to PDP page by selecting a product")
     public void userNavigatesToPDPPageBySelectingAProduct() {
-       // getVansProductListpage().vans_ProductWithoutFilter_PLP_Click();
-        getVansProductListpage().click_SelectProductinPLP(flag);
-
+        if (ConfigReader.get("brand").equals("vans")) {
+            // getVansProductListpage().vans_ProductWithoutFilter_PLP_Click();
+            getVansProductListpage().click_SelectProductinPLP(flag);
+        }
+        if (ConfigReader.get("brand").equals("tnf")) {
+            getVansProductListpage().click_Tnf_SelectProductinPLP(flag);
+        }
 
     }
 }
