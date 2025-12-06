@@ -2,6 +2,7 @@ package pages.VANS.US;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.assertions.LocatorAssertions;
 import com.microsoft.playwright.options.AriaRole;
 import utils.PaymentDataReader;
 import utils.RetryUtility;
@@ -30,6 +31,7 @@ public class vans_checkoutPage {
     private Locator CreditCard_payNow() {
         return page.locator("[data-test-id=\"checkout-payment-continue\"]");
     }
+
     private Locator vans_PickingUpTheOrder_FirstName() {
         return page.locator("[data-test-id=\"vf-form-field-firstName\"] [data-test-id=\"base-input\"]");
     }
@@ -45,8 +47,6 @@ public class vans_checkoutPage {
     public void vans_PickingUpTheOrder_LastName_Fill(String lastName) {
         vans_PickingUpTheOrder_LastName().fill(lastName);
     }
-
-
 
     // Billing Address at checkout
     public void fillBillingAddressFields() {
@@ -72,6 +72,7 @@ public class vans_checkoutPage {
 
         System.out.println("Filled billing address on checkout page");
     }
+
     public void enterCreditCardDetails_CheckoutPage(String cardType) {
         Locator cardIframe = page.locator("iframe[title=\"Iframe for card number\"]");
 
@@ -114,6 +115,7 @@ public class vans_checkoutPage {
         assertThat(button).isVisible(); // Ensure it's visible
         button.click();                 // Click the button
     }
+
     private Locator giftCardNumberInput_CheckoutPage(Page page) {
         return page.locator("[data-test-id=\"vf-form-field-cardNumber\"] [data-test-id=\"base-input\"]");
     }
@@ -130,7 +132,6 @@ public class vans_checkoutPage {
         input.click();                   // Click the input field
         input.fill(actualCardNumber);   // Fill the card number from JSON
     }
-
 
     private Locator giftCardPinTitle_CheckoutPage(Page page) {
         return page.locator("[data-test-id=\"vf-form-field-cardPin\"] [data-test-id=\"vf-input-label\"]");
@@ -157,7 +158,6 @@ public class vans_checkoutPage {
         input.fill(pin);                // Fill the PIN from JSON
     }
 
-
     private Locator applyGiftCardButton_CheckoutPage(Page page) {
         return page.locator("[data-test-id=\"gift-card-payment-accordion\"] [data-test-id=\"vf-button\"]");
     }
@@ -166,6 +166,7 @@ public class vans_checkoutPage {
         Locator button = applyGiftCardButton_CheckoutPage(page);
         button.click();                 // Click the "Apply" button
     }
+
     public void click_payNow_creditCard() {
         CreditCard_payNow().scrollIntoViewIfNeeded();
         RetryUtility.gradualScrollToBottomUntilLocator(page, CreditCard_payNow(), "CLICK");
@@ -236,8 +237,22 @@ public class vans_checkoutPage {
     }
 
     public void check_orderConfirmation() {
-        page.waitForTimeout(DEFAULT_WAIT);
-        assertThat(vans_orderConfirmationMessage()).isVisible();
+        // Wait until "processing payment" disappears
+        Locator processingPayment = page.locator("[data-test-id='paypal-processing']");
+        processingPayment.waitFor(new Locator.WaitForOptions()
+                .setTimeout(40000)
+                .setState(WaitForSelectorState.DETACHED));
+
+         // Wait until order confirmation heading appears
+        Locator confirmationHeading = page.locator("[data-test-id='order-confirmation-heading']");
+        confirmationHeading.waitFor(new Locator.WaitForOptions()
+                .setTimeout(40000)
+                .setState(WaitForSelectorState.VISIBLE));
+
+        // Assert heading is visible
+        assertThat(confirmationHeading).isVisible();
+
+        System.out.println("Order confirmation page verified successfully!");
     }
 
     public void check_standardShippingMethod() {
@@ -295,6 +310,4 @@ public class vans_checkoutPage {
         Vans_Ca_Confirm_Button().click();
         page.waitForTimeout(SHORT_WAIT);
     }
-
-
 }

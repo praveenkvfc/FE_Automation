@@ -1,9 +1,7 @@
 package pages.VANS.US;
 
 import com.microsoft.playwright.*;
-import com.microsoft.playwright.options.AriaRole;
-import com.microsoft.playwright.options.ElementState;
-import com.microsoft.playwright.options.WaitForSelectorState;
+import com.microsoft.playwright.options.*;
 import utils.RetryUtility;
 import utils.ScreenshotUtil;
 import utils.UserDetailsReader;
@@ -345,27 +343,83 @@ private Locator vans_PayPalButton_CartPage() {
     return paypalFrame.locator("div[role='link'][aria-label='PayPal']");
 }
 
+
     // Action method called from step definition
+//    public void vans_paypal_CartPage_Click() {
+//        // Scope into PayPal iframe
+//        FrameLocator paypalFrame = page.frameLocator("iframe[title*='PayPal']");
+//        Locator paypalButton = paypalFrame.locator("div[role='link'][aria-label='PayPal']");
+//
+//        // Wait until visible
+//        paypalButton.waitFor(new Locator.WaitForOptions()
+//                .setState(WaitForSelectorState.VISIBLE)
+//                .setTimeout(DEFAULT_WAIT));
+//
+//        // Instead of scrollIntoViewIfNeeded (which can hang), use evaluate directly
+//        paypalButton.evaluate("el => el.scrollIntoView({behavior: 'instant', block: 'center'})");
+//
+//        // Click and capture popup
+//        Page popup = page.waitForPopup(() -> {
+//            paypalButton.click(new Locator.ClickOptions().setForce(true));
+//        });
+//
+//        popup.waitForLoadState();
+//        System.out.println("Clicked PayPal button on Cart Page and captured popup window.");
+//    }
+//    public void vans_paypal_CartPage_Click() {
+//        // Scope into PayPal iframe
+//        FrameLocator paypalFrame = page.frameLocator("iframe[title*='PayPal']");
+//        Locator paypalButton = paypalFrame.locator("div[role='link'][aria-label='PayPal']");
+//
+//        // Wait until visible
+//        paypalButton.waitFor(new Locator.WaitForOptions()
+//                .setState(WaitForSelectorState.VISIBLE)
+//                .setTimeout(DEFAULT_WAIT));
+//
+//        // Instead of scrollIntoViewIfNeeded (which can hang), use evaluate directly
+//        paypalButton.evaluate("el => el.scrollIntoView({behavior: 'instant', block: 'center'})");
+//
+//        // Click and capture popup
+//        Page popup = page.waitForPopup(() -> {
+//            paypalButton.click(new Locator.ClickOptions().setForce(true));
+//        });
+//
+//        popup.waitForLoadState();
+//        System.out.println("Clicked PayPal button on Cart Page and captured popup window.");
+//    }
+
+    // VANS Cart Page
+
     public void vans_paypal_CartPage_Click() {
         // Scope into PayPal iframe
         FrameLocator paypalFrame = page.frameLocator("iframe[title*='PayPal']");
         Locator paypalButton = paypalFrame.locator("div[role='link'][aria-label='PayPal']");
 
-        // Wait until visible
         paypalButton.waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT));
 
-        // Instead of scrollIntoViewIfNeeded (which can hang), use evaluate directly
+        // Center the button; avoids scroll utils stealing focus
         paypalButton.evaluate("el => el.scrollIntoView({behavior: 'instant', block: 'center'})");
 
         // Click and capture popup
         Page popup = page.waitForPopup(() -> {
-            paypalButton.click(new Locator.ClickOptions().setForce(true));
+            try {
+                paypalButton.click(); // try natural click first
+            } catch (Exception e) {
+                paypalButton.click(new Locator.ClickOptions().setForce(true)); // fallback
+            }
         });
 
-        popup.waitForLoadState();
+        // Stabilize popup (if bringToFront is supported in your Playwright version)
+        try {
+            popup.waitForLoadState(LoadState.DOMCONTENTLOADED);
+            popup.bringToFront(); // if underlined in your IDE, remove this line (older versions)
+        } catch (Exception ignored) {}
+
         System.out.println("Clicked PayPal button on Cart Page and captured popup window.");
+
+        // (No return here—method remains void)
     }
 
     private Locator vans_SaveForLater_CartPage() {

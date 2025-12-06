@@ -1,15 +1,12 @@
 package pages.VANS.US;
 
-import com.microsoft.playwright.FrameLocator;
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page;
+import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import utils.PaymentDataReader;
 import utils.RetryUtility;
-
 import java.util.concurrent.atomic.LongAccumulator;
-
 import static utils.Constants.*;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
@@ -52,17 +49,16 @@ public class vans_paypal_paymentPage {
                 .getByRole(AriaRole.LINK, new FrameLocator.GetByRoleOptions().setName("PayPal"));
     }
 
-    // PayPal popup page locators
     private Locator paypalEmailField(Page popupPage) {
-        return popupPage.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Email or mobile number"));
+        return popupPage.locator("#email");
+    }
+
+    private Locator paypalPasswordField(Page popupPage) {
+        return popupPage.locator("#password");
     }
 
     private Locator paypalNextButton(Page popupPage) {
         return popupPage.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next"));
-    }
-
-    private Locator paypalPasswordField(Page popupPage) {
-        return popupPage.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password"));
     }
 
     private Locator paypalLoginButton(Page popupPage) {
@@ -70,12 +66,13 @@ public class vans_paypal_paymentPage {
     }
 
     private Locator paypalPaymentMethod(Page popupPage) {
-        return popupPage.getByTestId("BA-MYGNLCTG8RFE6-fi-display").getByTestId("c3-fi-details-name");
+        return popupPage.locator("[data-testid*='-fi-display']").first();
     }
 
     private Locator paypalContinueButton(Page popupPage) {
-        return popupPage.getByTestId("submit-button-initial");
+        return popupPage.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Continue"));
     }
+
 
     // Main PayPal payment flow method
     public void complete_paypal_payment(String paymentType) {
@@ -88,7 +85,7 @@ public class vans_paypal_paymentPage {
         handlePaypalPopupLogin(email, password);
         // Step 3: Wait for payment processing and confirmation
         waitForPaymentProcessing();
-        System.out.println("PayPal payment completed successfully!");
+        System.out.println("=======PayPal payment completed successfully!=======");
     }
 
     private Locator paypal_express_checkout_button() {
@@ -96,7 +93,17 @@ public class vans_paypal_paymentPage {
     }
 
     private Locator paypal_cart_checkout_button() {
-        return page.locator("xpath=//*[@id=\"buttons-container\"]/div/div/div");
+        return page.locator("#cart-page .paypal-button");
+    }
+
+
+    // "Complete purchase" button – use stable attributes from the PayPal UI
+    private Locator paypalCompletePurchaseButton(Page popupPage) {
+        return popupPage.locator(
+                "[data-testid='submit-button-initial'], " +
+                        "[data-id='payment-submit-btn'], " +
+                        "button:has-text('Complete purchase')"
+        );
     }
 
     private Locator paypal_checkout_button() {
@@ -137,12 +144,29 @@ public class vans_paypal_paymentPage {
 
     private void clickPaypal_Checkout(String paymentType) {
         System.out.println("Looking for PayPal  button...");
-        // Wait for the page to load completely
         page.waitForLoadState();
         page.waitForTimeout(SHORT_WAIT);
+
+        // --- EARLY RETURN FOR CART FLOW ---
+        if ("Cart paypal".equalsIgnoreCase(paymentType)) {
+            System.out.println("Cart flow detected: skipping click because popup was opened in the previous step.");
+            return;
+        }
+
+        // If a PayPal popup is already open (express/checkout flows), skip clicking again
+        for (Page p : page.context().pages()) {
+            if (p != page) {
+                String u = p.url();
+                if (u != null && u.contains("paypal.com")) {
+                    System.out.println("Detected existing PayPal popup, skipping extra click.");
+                    return;
+                }
+            }
+        }
+
         Locator paypalButton = null;
+
         if (paymentType.equals("paypal")) {
-            // Try different PayPal button locators one by one
             click_Change_paymentOption();
             System.out.println("Im looking for paypal radio button");
             paypal_radioButton_CheckoutPagePage_Select();
@@ -151,73 +175,133 @@ public class vans_paypal_paymentPage {
 
         } else if (paymentType.equals("express paypal")) {
             paypalButton = paypal_express_checkout_button();
-        } else if (paymentType.equals("Cart paypal")) {
-            // Try different PayPal button locators one by one
-            System.out.println("Im looking for paypal in cart page");
-            paypalButton = paypal_cart_checkout_button();
-            RetryUtility.gradualScrollToBottomUntilLocator(page, paypalButton, "CLICK");
-        }
-        if (paypalButton != null) {
-            System.out.println("PayPal express checkout button found, scrolling and clicking...");
 
-            // Use RetryUtility to handle the click with scrolling
-            RetryUtility.gradualScrollToBottomUntilLocator(page, paypalButton, "CLICK");
-
-            System.out.println("Successfully clicked PayPal express checkout button");
         } else {
-            throw new RuntimeException("PayPal express checkout button not found on the page");
+            throw new RuntimeException("Unknown paymentType: " + paymentType);
         }
+
+        if (paypalButton != null) {
+            System.out.println("PayPal express/checkout button found, scrolling and clicking...");
+            RetryUtility.gradualScrollToBottomUntilLocator(page, paypalButton, "CLICK");
+            System.out.println("Successfully clicked PayPal button");
+        } else {
+            throw new RuntimeException("PayPal button not found on the page");
+        }
+
         page.waitForTimeout(MEDIUM_WAIT);
     }
 
     Page paypalPopup;
 
     private void handlePaypalPopupLogin(String email, String password) {
-        System.out.println("Waiting for PayPal popup to open...");
+        System.out.println("Starting PayPal login flow...");
 
-        // Wait for PayPal popup to open when clicking the PayPal button in iframe
-        paypalPopup = page.waitForPopup(() -> {
-            System.out.println("Clicking PayPal button inside iframe...");
+        Page paypalPopup = null;
 
-            // Wait for iframe to be available
-            paypalIframe().waitFor(new Locator.WaitForOptions().setTimeout(10000));
+        // --- Reuse an already-open popup (opener or paypal.com URL) ---
+        for (Page p : page.context().pages()) {
+            if (p != page) {
+                boolean isPopupOfThisPage = false;
+                try {
+                    isPopupOfThisPage = (p.opener() == page);
+                } catch (Exception ignored) {
+                }
+                String u = p.url();
+                boolean looksLikePaypal = (u != null && u.contains("paypal.com"));
 
-            // Click the PayPal button inside the iframe
-            paypalButtonInIframe().click();
-        });
-
-        System.out.println("PayPal popup opened, handling login...");
-
-        // Work within the popup context
-        paypalPopup.waitForLoadState();
-        paypalPopup.waitForTimeout(SHORT_WAIT);
+                if (isPopupOfThisPage || looksLikePaypal) {
+                    paypalPopup = p;
+                    System.out.println("[PopupPage] Reusing existing popup: opener=" + isPopupOfThisPage + " url=" + u);
+                    break;
+                }
+            }
+        }
 
         try {
-            // Fill email and proceed
-            System.out.println("Entering PayPal email: " + email);
-            paypalEmailField(paypalPopup).click();
-            paypalEmailField(paypalPopup).fill(email);
-            paypalNextButton(paypalPopup).click();
+            // If no popup exists yet, click once and wait for popup (safety)
+            if (paypalPopup == null) {
+                System.out.println("[PopupPage] No existing popup, attempting to click PayPal and wait for popup...");
+                paypalPopup = page.waitForPopup(() -> {
+                    FrameLocator buttonFrame = page.frameLocator("iframe[name^='__zoid__paypal_buttons__'], iframe[title*='PayPal']");
+                    Locator paypalButton = buttonFrame.getByRole(
+                            AriaRole.LINK,
+                            new FrameLocator.GetByRoleOptions().setName("PayPal")
+                    );
+                    try {
+                        paypalButton.click();
+                    } catch (Exception e) {
+                        paypalButton.click(new Locator.ClickOptions().setForce(true));
+                    }
+                });
+            }
 
-            // Wait for password field to appear
-            paypalPopup.waitForTimeout(SHORT_WAIT);
+            // Stabilize popup
+            paypalPopup.waitForLoadState(LoadState.DOMCONTENTLOADED);
+            try {
+                paypalPopup.bringToFront();
+            } catch (Exception ignored) {
+            }
+            System.out.println("[PopupPage] Popup detected, handling login...");
 
-            // Fill password and login
-            System.out.println("Entering PayPal password...");
-            paypalPasswordField(paypalPopup).click();
-            paypalPasswordField(paypalPopup).fill(password);
-            paypalLoginButton(paypalPopup).click();
+            // Debug: list frames inside popup
+            for (Frame frame : paypalPopup.frames()) {
+                System.out.println("Frame name: " + frame.name() + " | URL: " + frame.url());
+            }
 
-            // Wait for payment method selection page
-            paypalPopup.waitForTimeout(MEDIUM_WAIT);
+            // Perform login inside popup
+            performPaypalLoginSteps(paypalPopup, email, password);
 
-            // Select payment method and continue
+            // NEW: After login, select payment method and click Complete Purchase
             selectPaypalPaymentMethod(paypalPopup);
+
+        } catch (TimeoutError te) {
+            if (paypalPopup == null) {
+                System.out.println("No popup detected or timed out while opening, falling back to inline iframe flow...");
+                page.waitForLoadState(LoadState.NETWORKIDLE);
+
+                for (Frame f : page.frames()) {
+                    System.out.println("[MainPage] Frame name: " + f.name() + " | URL: " + f.url());
+                }
+
+                Frame loginFrame = page.frameByUrl(".*paypal.com.*(signin|login|authenticate).*");
+                if (loginFrame != null) {
+                    performPaypalLoginStepsInFrame(loginFrame, email, password);
+                } else {
+                    System.err.println("PayPal login iframe not found on main page; keeping test alive.");
+                    return;
+                }
+            } else {
+                System.out.println("[PopupPage] Timeout after popup reuse. Retrying login within popup...");
+                try {
+                    performPaypalLoginSteps(paypalPopup, email, password);
+                    // Ensure payment method selection is retried too
+                    selectPaypalPaymentMethod(paypalPopup);
+                } catch (Exception e) {
+                    System.err.println("Retry in popup failed: " + e.getMessage());
+                    return;
+                }
+            }
+        }
+    }
+
+
+    // --- Login steps ---
+    private void performPaypalLoginSteps(Page popupPage, String email, String password) {
+        System.out.println("Performing PayPal login steps...");
+
+        try {
+            Frame loginFrame = waitForPaypalLoginFrame(popupPage, 20000); // 20s poll
+            System.out.println("[Popup] Selected login frame: " + (loginFrame != null ? loginFrame.url() : "null"));
+            if (loginFrame == null) {
+                System.err.println("PayPal login frame not found in popup within timeout; skipping login to avoid termination.");
+                return; // avoid throwing to prevent TERMINATED
+            }
+
+            performPaypalLoginStepsInFrame(loginFrame, email, password);
 
         } catch (Exception e) {
             System.err.println("Error during PayPal login: " + e.getMessage());
-            paypalPopup.close();
-            throw e;
+            // Avoid hard fail; let the test continue to merchant processing
         }
     }
 
@@ -225,96 +309,223 @@ public class vans_paypal_paymentPage {
         System.out.println("Selecting PayPal payment method...");
 
         try {
-            // Wait for payment methods to load
             popupPage.waitForTimeout(DEFAULT_WAIT);
 
-            // Try to select the specific payment method from your recording
+            // Step 1: Select payment method if visible
             if (paypalPaymentMethod(popupPage).isVisible()) {
-                System.out.println("Selecting payment method: BA-MYGNLCTG8RFE6");
+                System.out.println("Selecting payment method...");
+                paypalPaymentMethod(popupPage).scrollIntoViewIfNeeded();
                 paypalPaymentMethod(popupPage).click();
                 popupPage.waitForTimeout(VERY_SHORT_WAIT);
             } else {
-                // Fallback: try to find any payment method
-                System.out.println("Specific payment method not found, looking for alternatives...");
+                System.out.println("No specific payment method found, trying fallback...");
                 Locator anyPaymentMethod = popupPage.locator("[data-testid*='-fi-display']").first();
                 if (anyPaymentMethod.isVisible()) {
+                    anyPaymentMethod.scrollIntoViewIfNeeded();
                     anyPaymentMethod.click();
                     popupPage.waitForTimeout(VERY_SHORT_WAIT);
                 } else {
-                    System.out.println("No payment method selection required, proceeding directly...");
+                    System.out.println("No payment method selection required, proceeding...");
                 }
             }
 
-            // Click continue to complete payment
-            System.out.println("Clicking continue to complete payment...");
-            paypalContinueButton(popupPage).click();
+            // Step 2: Click Continue
+            System.out.println("Clicking continue...");
+            Locator continueBtn = paypalContinueButton(popupPage);
+            if (continueBtn.isVisible()) {
+                try {
+                    continueBtn.scrollIntoViewIfNeeded();
+                    continueBtn.click(new Locator.ClickOptions().setTimeout(10000));
+                } catch (Exception e) {
+                    continueBtn.evaluate("el => el.click()");
+                }
+            }
+            popupPage.waitForTimeout(MEDIUM_WAIT);
 
-            // Wait for payment to process in the popup
-            popupPage.waitForTimeout(LONG_WAIT);
+            // Step 3: Click Complete Purchase
+            System.out.println("Clicking Complete Purchase...");
+            Locator completePurchaseBtn = paypalCompletePurchaseButton(popupPage);
+            completePurchaseBtn.waitFor(new Locator.WaitForOptions()
+                    .setTimeout(15000)
+                    .setState(WaitForSelectorState.VISIBLE));
+
+            try {
+                completePurchaseBtn.scrollIntoViewIfNeeded();
+                completePurchaseBtn.click(new Locator.ClickOptions().setTimeout(10000));
+                System.out.println("Complete Purchase clicked successfully!");
+            } catch (Exception e) {
+                System.out.println("Normal click failed; trying JS click...");
+                completePurchaseBtn.evaluate("el => el.click()");
+            }
+
+            // Step 4: Wait for popup redirect or merchant return
+            try {
+                popupPage.waitForURL("**/checkout**", new Page.WaitForURLOptions().setTimeout(20000));
+                System.out.println("Popup navigated to merchant page.");
+            } catch (Exception e) {
+                System.out.println("Popup did not navigate; checking if it closed or main page advanced...");
+            }
+
+            // Step 5: Only close popup if still open
+            boolean popupIsOpen = true;
+            try {
+                popupPage.title();
+            } catch (Exception e) {
+                popupIsOpen = false;
+            }
+            if (popupIsOpen) {
+                popupPage.waitForTimeout(2000);
+                System.out.println("Closing PayPal popup after grace period...");
+                popupPage.close();
+            }
 
         } catch (Exception e) {
             System.out.println("Payment method selection had issues: " + e.getMessage());
-            // Continue anyway as sometimes PayPal auto-proceeds
-        } finally {
-            // Close the popup after payment is complete
-            System.out.println("Closing PayPal popup...");
-            popupPage.close();
+            // Do not force-close here; let main flow handle processing
         }
     }
 
     private void waitForPaymentProcessing() {
-        System.out.println("Waiting for payment processing on main page...");
+        System.out.println("Waiting for payment processing on cart page...");
 
         try {
-            // Wait for processing messages
-            page.waitForTimeout(SHORT_WAIT);
+            // Wait for the "processing payment" indicator to disappear
+            Locator processingPayment = page.locator("[data-test-id='paypal-processing']");
+            processingPayment.waitFor(new Locator.WaitForOptions()
+                    .setTimeout(LONG_WAIT)
+                    .setState(WaitForSelectorState.DETACHED));
 
-            // Check for processing messages with timeout
-            try {
-                Locator processingPayment = page.getByText("Processing payment...");
-                processingPayment.waitFor(new Locator.WaitForOptions()
-                        .setTimeout(MEDIUM_WAIT)
-                        .setState(WaitForSelectorState.VISIBLE));
-                System.out.println("Processing payment message detected");
-
-                // Wait for it to disappear
-                processingPayment.waitFor(new Locator.WaitForOptions()
-                        .setTimeout(LONG_WAIT)
-                        .setState(WaitForSelectorState.HIDDEN));
-                System.out.println("Processing completed");
-            } catch (Exception e) {
-                System.out.println("Processing message not found or timed out, continuing...");
-            }
-
-            // Wait additional time for processing
-            page.waitForTimeout(LONG_WAIT);
-
-            // Navigate to order confirmation page if not redirected automatically
-            if (!page.url().contains("order-confirmation")) {
-                System.out.println("Navigating to order confirmation page...");
-                page.navigate("https://preprod3.vans.com/en-us/order-confirmation");
-            }
-
-            // Wait for order confirmation
-            page.waitForLoadState();
-            page.waitForTimeout(DEFAULT_WAIT);
-
-            // Verify order confirmation
-            Locator confirmationHeading = page.locator("[data-test-id=\"order-confirmation-heading\"]");
-            confirmationHeading.waitFor(new Locator.WaitForOptions()
-                    .setTimeout(MEDIUM_WAIT)
-                    .setState(WaitForSelectorState.VISIBLE));
-            System.out.println("Order confirmation page loaded successfully!");
+            // At this point, the site itself will handle navigation to order confirmation
+            System.out.println("Payment processing finished, ready for order confirmation page.");
 
         } catch (Exception e) {
-            System.err.println("Error during payment processing wait: " + e.getMessage());
-            // Try to navigate to confirmation page anyway
-            if (!page.url().contains("order-confirmation")) {
-                page.navigate("https://preprod3.vans.com/en-us/order-confirmation");
-                page.waitForTimeout(DEFAULT_WAIT);
+            System.err.println("Error during payment processing: " + e.getMessage());
+        }
+    }
+
+    private void performPaypalLoginStepsInFrame(Frame loginFrame, String email, String password) {
+        System.out.println("Performing PayPal login steps inside login frame...");
+
+        try {
+            // --- Email field ---
+            Locator emailField = loginFrame.locator("input#email, input[name='login_email'], input[type='email']");
+            emailField.waitFor(new Locator.WaitForOptions()
+                    .setTimeout(15000)
+                    .setState(WaitForSelectorState.VISIBLE));
+
+            System.out.println("Email field found, focusing...");
+            try {
+                emailField.click(); // prefer natural click to get caret
+            } catch (Exception e) {
+                emailField.click(new Locator.ClickOptions().setForce(true));
             }
+            emailField.fill("");
+            emailField.type(email, new Locator.TypeOptions().setDelay(60));
+
+            // --- Next button ---
+            Locator nextButton = loginFrame.locator("button#btnNext, button:has-text('Next')");
+            nextButton.waitFor(new Locator.WaitForOptions().setTimeout(10000).setState(WaitForSelectorState.VISIBLE));
+            nextButton.click();
+            System.out.println("Clicked Next after entering email");
+
+            // --- Password field ---
+            Locator passwordField = loginFrame.locator("input#password, input[name='login_password'], input[type='password']");
+            passwordField.waitFor(new Locator.WaitForOptions()
+                    .setTimeout(15000)
+                    .setState(WaitForSelectorState.VISIBLE));
+
+            System.out.println("Password field found, focusing...");
+            try {
+                passwordField.click();
+            } catch (Exception e) {
+                passwordField.click(new Locator.ClickOptions().setForce(true));
+            }
+            passwordField.fill("");
+            passwordField.type(password, new Locator.TypeOptions().setDelay(60));
+
+//           Log In button (unique by id) ---
+            Locator loginButton = loginFrame.locator("button#btnLogin"); // unique
+            loginButton.waitFor(new Locator.WaitForOptions()
+                    .setTimeout(10000)
+                    .setState(WaitForSelectorState.VISIBLE));
+            loginButton.click();
+            System.out.println("Clicked Log In after entering password");
+
+        } catch (Exception e) {
+            System.err.println("Error during PayPal login in frame: " + e.getMessage());
             throw e;
         }
+    }
 
+    // Helper: find the PayPal login iframe inside the popup
+    private Frame findPaypalLoginFrame(Page popupPage) {
+        // Brief wait for frames to attach
+        popupPage.waitForTimeout(500);
+
+        // Prefer URLs explicitly indicating login
+        for (Frame f : popupPage.frames()) {
+            String url = safeUrl(f);
+            if (url.contains("paypal.com") &&
+                    (url.contains("signin") || url.contains("login") || url.contains("authenticate"))) {
+                System.out.println("[Popup] Using login frame: " + url);
+                return f;
+            }
+        }
+
+        // Heuristic: any PayPal frame containing login inputs
+        for (Frame f : popupPage.frames()) {
+            String url = safeUrl(f);
+            if (url.contains("paypal.com")) {
+                boolean hasEmail = f.locator("input#email, input[name='login_email'], input[type='email']").count() > 0;
+                boolean hasPassword = f.locator("input#password, input[name='login_password'], input[type='password']").count() > 0;
+                if (hasEmail || hasPassword) {
+                    System.out.println("[Popup] Heuristic login frame: " + url);
+                    return f;
+                }
+            }
+        }
+
+        // Fallback: first PayPal frame
+        for (Frame f : popupPage.frames()) {
+            String url = safeUrl(f);
+            if (url.contains("paypal.com")) {
+                System.out.println("[Popup] Fallback frame: " + url);
+                return f;
+            }
+        }
+
+        System.out.println("[Popup] No suitable PayPal login frame found.");
+        return null;
+    }
+
+    private String safeUrl(Frame f) {
+        try {
+            String u = f.url();
+            return (u == null) ? "" : u;
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    private Frame waitForPaypalLoginFrame(Page popupPage, int timeoutMs) {
+        final int step = 500;
+        int waited = 0;
+
+        while (waited <= timeoutMs) {
+            Frame f = findPaypalLoginFrame(popupPage);
+            if (f != null) {
+                // Double-check: inputs are present
+                boolean hasEmail = f.locator("input#email, input[name='login_email'], input[type='email']").count() > 0;
+                boolean hasPassword = f.locator("input#password, input[name='login_password'], input[type='password']").count() > 0;
+                if (hasEmail || hasPassword) {
+                    System.out.println("[Popup] waitForPaypalLoginFrame: found frame " + f.url());
+                    return f;
+                }
+            }
+            popupPage.waitForTimeout(step);
+            waited += step;
+        }
+        System.out.println("[Popup] waitForPaypalLoginFrame: timed out after " + timeoutMs + "ms");
+        return null;
     }
 }

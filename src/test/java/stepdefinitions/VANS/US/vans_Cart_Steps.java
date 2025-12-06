@@ -1,11 +1,15 @@
 package stepdefinitions.VANS.US;
 
+import com.microsoft.playwright.FrameLocator;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.AriaRole;
 import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.VANS.US.*;
 import io.cucumber.java.en.When;
+import utils.PaymentDetails;
 import utils.PlaywrightFactory;
 
 public class vans_Cart_Steps {
@@ -16,8 +20,10 @@ public class vans_Cart_Steps {
     private vans_paypal_paymentPage getVansPaypalPaymentPage;
 
 
+    private Page paypalPopup;
+    private PaymentDetails paymentDetails;
 
-    private Page getPage() {
+        private Page getPage() {
         if (page == null) {
             page = PlaywrightFactory.getPage();
             if (page == null) {

@@ -17,7 +17,7 @@
   ],
   "AMEX": [
     {
-      "CARD_NUMBER": "3700 0000 0000 002",
+      "CARD_NUMBER": "370000000000002",
       "MONTH": "03",
       "YEAR": "30",
       "SECURITY_CODE": "7373"
@@ -31,47 +31,41 @@
       "SECURITY_CODE": "838"
     }
   ],
+  "INVALIDCARD": [
+    {
+      "CARD_NUMBER": "4111111145551142768",
+      "MONTH": "12",
+      "YEAR": "21",
+      "SECURITY_CODE": "83"
+    }
+  ],
+  "PAYPAL": [
+    {
+
+      "EMAIL_ID": "vans_test_66@vfc.com",
+      "PASSWORD": "Marvel@123",
+
+      "CARD_NUMBER": "NA"
+
+    }
+  ],
   "VALID_GIFTCARDS": [
     {
       "CARD_NUMBER": "7777405410238099",
       "PIN": "43032930",
-      "VALUE": "1,00"
+      "VALUE": "1.00"
     }
   ],
   "VALID_GIFTCARDS_FULL_PAYMENT": [
     {
       "CARD_NUMBER": "7777409296369981",
       "PIN": "50129323",
-      "VALUE": "1,00"
-    }
-  ],
-  "INVALIDCARD": [
-    {
-      "CARD_NUMBER": "4111 1111 4555 1142 768",
-      "MONTH": "12",
-      "YEAR": "21",
-      "SECURITY_CODE": "83"
-    }
-  ],
-
-  "PAYPAL": [
-    {
-      "EMAIL_ID": "tbl_ca_tester@vfc.com",
-      "PASSWORD": "P1ssw2rd"
-    }
-  ],
-  "VALID_GIFTCARDS": [
-    {
-      "CARD_NUMBER": "7777405410238099",
-      "PIN": "43032930",
-      "VALUE": "1,00"
-    }
-  ],
-  "VALID_GIFTCARDS_FULL_PAYMENT": [
+      "VALUE": "1.00"
+    },
     {
       "CARD_NUMBER": "7777405410382976",
       "PIN": "79436331",
       "VALUE": "1.00"
     }
-]   
+  ]
 }

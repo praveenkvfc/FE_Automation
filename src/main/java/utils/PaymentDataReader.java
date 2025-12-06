@@ -1,7 +1,5 @@
 package utils;
 
-//import com.fasterxml.jackson.core.type.TypeReference;
-
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,14 +14,12 @@ import java.util.List;
 public class PaymentDataReader {
     private static Path FILE_PATH;
     private static PaymentDetails paymentDetails;
-    private static List<PaymentDetails> paymentDetailsList;
 
     // Load payment details from JSON by payment type
     public static PaymentDataReader getInstance(String paymentType) {
         String env = System.getProperty("env");
         String brand = System.getProperty("brand");
         String region = System.getProperty("region");
-        String tag = System.getProperty("tag");
 
         String projectDir = System.getProperty("user.dir");
         System.out.println(projectDir + " - this is project dir");
@@ -40,8 +36,7 @@ public class PaymentDataReader {
         System.out.println("Payment details file location : " + FILE_PATH);
 
         ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,
-                false);
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         try (InputStream inputStream = Files.newInputStream(FILE_PATH)) {
 
@@ -50,8 +45,7 @@ public class PaymentDataReader {
 
             // Check if the payment type exists
             if (!rootNode.has(paymentType)) {
-                System.err.println("No data found for paymentType: "
-                        + paymentType);
+                System.err.println("No data found for paymentType: " + paymentType);
                 System.err.println("Available payment types: " + getAvailablePaymentTypes(rootNode));
                 throw new RuntimeException("No data found for paymentType: " + paymentType);
             }
@@ -59,15 +53,7 @@ public class PaymentDataReader {
             JsonNode paymentNode = rootNode.get(paymentType);
 
             // Debug: Print what we're trying to parse
-            System.out.println("Raw JSON for " + paymentType + ": "
-                    + paymentNode.toString());
-
-            // Skip VALID_GIFT_CARDS_DYNAMIC_VALUES as it has nested arrays
-            if ("VALID_GIFT_CARDS_DYNAMIC_VALUES".equals(paymentType)) {
-                System.err.println("VALID_GIFT_CARDS_DYNAMIC_VALUES has unsupported nested array structure");
-                throw new
-                        RuntimeException("VALID_GIFT_CARDS_DYNAMIC_VALUES payment type is not supported");
-            }
+            System.out.println("Raw JSON for " + paymentType + ": " + paymentNode.toString());
 
             // Check if it's an array and has at least one element
             if (!paymentNode.isArray() || paymentNode.size() == 0) {
@@ -80,26 +66,11 @@ public class PaymentDataReader {
             // Manually create PaymentDetails to ensure fields are set
             paymentDetails = new PaymentDetails();
 
-            if (firstElement.has("CARD_NUMBER")) {
-
-                paymentDetails.setCARD_NUMBER(firstElement.get("CARD_NUMBER").asText());
-            }
-            if (firstElement.has("MONTH")) {
-                paymentDetails.setMONTH(firstElement.get("MONTH").asText());
-            }
-            if (firstElement.has("YEAR")) {
-                paymentDetails.setYEAR(firstElement.get("YEAR").asText());
-            }
-            if (firstElement.has("SECURITY_CODE")) {
-
-                paymentDetails.setSECURITY_CODE(firstElement.get("SECURITY_CODE").asText());
-            }
+            // Common fields
             if (firstElement.has("EMAIL_ID")) {
-
                 paymentDetails.setEMAIL_ID(firstElement.get("EMAIL_ID").asText());
             }
             if (firstElement.has("PASSWORD")) {
-
                 paymentDetails.setPASSWORD(firstElement.get("PASSWORD").asText());
             }
             if (firstElement.has("PIN")) {
@@ -109,16 +80,44 @@ public class PaymentDataReader {
                 paymentDetails.setVALUE(firstElement.get("VALUE").asText());
             }
 
-            // Validate required fields for card payment
-            if (paymentDetails.getCARD_NUMBER() == null) {
-                throw new RuntimeException("Card number is null for payment type: " + paymentType);
+            // Card-specific fields
+            if (firstElement.has("CARD_NUMBER")) {
+                paymentDetails.setCARD_NUMBER(firstElement.get("CARD_NUMBER").asText());
+            }
+            if (firstElement.has("MONTH")) {
+                paymentDetails.setMONTH(firstElement.get("MONTH").asText());
+            }
+            if (firstElement.has("YEAR")) {
+                paymentDetails.setYEAR(firstElement.get("YEAR").asText());
+            }
+            if (firstElement.has("SECURITY_CODE")) {
+                paymentDetails.setSECURITY_CODE(firstElement.get("SECURITY_CODE").asText());
             }
 
-            System.out.println("Successfully loaded payment details for: " + paymentType);
-            System.out.println("Card Number: " + getMaskedCardNumber(paymentDetails.getCARD_NUMBER()));
-            System.out.println("Expiry: " +
-                    paymentDetails.getMONTH() + "/" + paymentDetails.getYEAR());
-            System.out.println("CVV: " + paymentDetails.getSECURITY_CODE());
+            // ✅ Validation based on payment type
+            if ("PAYPAL".equalsIgnoreCase(paymentType)) {
+                if (paymentDetails.getEMAIL_ID() == null || paymentDetails.getPASSWORD() == null) {
+                    throw new RuntimeException("Email or password missing for PayPal payment type");
+                }
+                System.out.println("Successfully loaded PayPal details for: " + paymentType);
+                System.out.println("Email: " + paymentDetails.getEMAIL_ID());
+            } else if ("GIFT_CARD".equalsIgnoreCase(paymentType)) {
+                if (paymentDetails.getPIN() == null || paymentDetails.getVALUE() == null) {
+                    throw new RuntimeException("PIN or value missing for Gift Card payment type");
+                }
+                System.out.println("Successfully loaded Gift Card details for: " + paymentType);
+                System.out.println("PIN: " + paymentDetails.getPIN());
+                System.out.println("Value: " + paymentDetails.getVALUE());
+            } else {
+                // Default: Card payment
+                if (paymentDetails.getCARD_NUMBER() == null) {
+                    throw new RuntimeException("Card number is null for payment type: " + paymentType);
+                }
+                System.out.println("Successfully loaded card details for: " + paymentType);
+                System.out.println("Card Number: " + getMaskedCardNumber(paymentDetails.getCARD_NUMBER()));
+                System.out.println("Expiry: " + paymentDetails.getMONTH() + "/" + paymentDetails.getYEAR());
+                System.out.println("CVV: " + paymentDetails.getSECURITY_CODE());
+            }
 
             return new PaymentDataReader();
 
@@ -169,8 +168,7 @@ public class PaymentDataReader {
     }
 
     public String getSecurityCode() {
-        if (paymentDetails == null ||
-                paymentDetails.getSECURITY_CODE() == null) {
+        if (paymentDetails == null || paymentDetails.getSECURITY_CODE() == null) {
             throw new RuntimeException("Security code is not available. Payment details not loaded properly.");
         }
         return paymentDetails.getSECURITY_CODE();

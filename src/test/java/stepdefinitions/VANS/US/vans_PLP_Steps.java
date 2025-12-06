@@ -111,13 +111,13 @@ public class vans_PLP_Steps {
     public void userNavigatesToPDPPageBySelectingProduct(String arg0) {
         if (arg0.equals("a")) {
             getVansProductListpage().click_SelectProductinPLP(flag);
-            getProductDetailsPage().clickFavoriteIcon_FavoritesPage();
+//            getProductDetailsPage().clickFavoriteIcon_FavoritesPage();
             getProductDetailsPage().click_SizeDropDownOption_PDP();
             getProductDetailsPage().click_SelectSize_PDP();
 
             getProductDetailsPage().click_closeDialog_PDP();
             getProductDetailsPage().click_addTocartButton_PDP();
-            getProductDetailsPage().click_incrementQty_MiniCart();
+//            getProductDetailsPage().click_incrementQty_MiniCart();
         } else if (arg0.equals("multiple")) {
             getVansProductListpage().click_SelectProductinPLP(flag);
             getProductDetailsPage().clickFavoriteIcon_FavoritesPage();

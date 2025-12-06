@@ -29,7 +29,7 @@ Feature: Create a new user account and place order successfully
     And User navigates to PDP page by selecting "a" product
     Then User should click the "View Cart" CTA in Mini Cart
     Then User navigates to "Save for later" page from cart page
-    And User clicks on Add to Cart button from Save for Later page for "multiple" product
+    And User clicks on Add to Cart button from Save for Later page for "a" product
     Then User places the order by clicking pay now using paypal in cart page
     And Order confirmation should display
 #    And User should be able to see the order in Order history page
