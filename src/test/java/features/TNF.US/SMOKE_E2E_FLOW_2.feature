@@ -41,7 +41,9 @@ Feature: Create a new user account and place order successfully
     And User enters mandatory inputs for billing address
     And User confirms and submits the order
     And Order confirmation should display
-    And User should be able to see the order in Order history page
+    And User varifies the order details in order confirmation page
+    And User clicks on view order details button
+    And User validates order confirmation details in order history page
     Examples:
       | paymentType    |
 #      | gift card      |

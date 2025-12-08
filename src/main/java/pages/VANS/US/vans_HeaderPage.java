@@ -102,4 +102,27 @@ public class vans_HeaderPage {
         );
         favoritesLink.click(new Locator.ClickOptions().setForce(true));
     }
+
+    private Locator tnf_MyOrder_MyAccount() {
+        return page.locator("xpath=//a[text()='My Orders']");
+    }
+
+    private Locator tnf_ViewOrderDetails() {
+        return page.locator("xpath=(//span[text()='View Order Details'])[1]");
+    }
+
+    public void tnf_MyOrder_MyAccount_Click() {
+        Locator myOrderLink = tnf_MyOrder_MyAccount();
+        myOrderLink.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(5000)
+        );
+        myOrderLink.click(new Locator.ClickOptions().setForce(true));
+        tnf_ViewOrderDetails().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(5000)
+        );
+        tnf_ViewOrderDetails().click(new Locator.ClickOptions().setForce(true));
+    }
+
 }
