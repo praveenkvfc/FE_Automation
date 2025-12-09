@@ -1,0 +1,60 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+workspace:
+  clean: all
+
+steps:
+- checkout: self
+  clean: true
+  fetchDepth: 0
+
+- script: |
+    echo "Commit building:"
+    git rev-parse HEAD
+    git --no-pager log --oneline -5
+    sed -n '1,30p' src/main/java/utils/SortUtility.java || true
+  displayName: 'Diagnostics: commit + SortUtility snapshot'
+
+- script: |
+    mkdir -p screenshorts
+  displayName: 'Create screenshorts directory'
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'
+  displayName: 'Install Node.js'
+
+- script: npm ci
+  displayName: 'Clean npm install'
+
+- script: |
+    chmod +x node_modules/.bin/playwright
+    npx playwright install --with-deps
+  displayName: 'Playwright install'
+
+- script: |
+    sudo apt-get update
+    sudo apt-get install -y maven
+  displayName: 'Install Maven'
+
+- script: |
+    mvn clean test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke2
+  displayName: 'Execute tests with clean'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'screenshorts'
+    artifact: 'test-screenshorts'
+  condition: succeededOrFailed()
+  displayName: 'Publish test Screenshorts'
+

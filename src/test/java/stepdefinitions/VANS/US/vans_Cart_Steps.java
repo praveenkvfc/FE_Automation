@@ -4,18 +4,18 @@ import com.microsoft.playwright.Page;
 import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import pages.VANS.US.vans_FavoritesPage;
+import pages.VANS.US.*;
 import io.cucumber.java.en.When;
-import pages.VANS.US.vans_cartPage;
-import pages.VANS.US.vans_checkoutPage;
-import pages.VANS.US.vans_productDetailsPage;
 import utils.PlaywrightFactory;
-import pages.VANS.US.vans_HeaderPage;
+
 public class vans_Cart_Steps {
 
     private Page page;
     private vans_cartPage getVansCartPage;
     private vans_checkoutPage getVansCheckoutPage;
+    private vans_paypal_paymentPage getVansPaypalPaymentPage;
+
+
 
     private Page getPage() {
         if (page == null) {
@@ -25,6 +25,13 @@ public class vans_Cart_Steps {
             }
         }
         return page;
+    }
+
+    private vans_paypal_paymentPage getVans_Paypal_page() {
+        if (getVansPaypalPaymentPage == null) {
+            getVansPaypalPaymentPage = new vans_paypal_paymentPage(getPage(),"PAYPAL");
+        }
+        return getVansPaypalPaymentPage;
     }
 
     private vans_cartPage getVansCartPage() {
@@ -85,7 +92,8 @@ public class vans_Cart_Steps {
         }
     }
 
-    @Then("User navigates to {string} page from cart page")
+
+     @Then("User navigates to {string} page from cart page")
     public void userNavigatesToPageFromCartPage(String pageName) {
         if (pageName.equalsIgnoreCase("favourites")) {
             if (ConfigReader.get("brand").equals("vans")) {
@@ -104,7 +112,16 @@ public class vans_Cart_Steps {
         } else {
             throw new IllegalArgumentException("Unsupported navigation target: " + pageName);
         }
+}
 
+
+
+    @Then("User places the order by clicking pay now using paypal in cart page")
+    public void userPlacesTheOrderByClickingPayNowUsingPaypalInCartPage() {
+        System.out.println("====================");
+        System.out.println("======Moved to top of cart page==============");
+        getVansCartPage().vans_paypal_CartPage_Click();
+        getVans_Paypal_page().complete_paypal_payment("Cart paypal");
     }
 
     @And("User clicks on save later option in cart page")
@@ -135,4 +152,6 @@ public class vans_Cart_Steps {
         getvansCheckoutPage().check_GotAPromoCodeinput();
         getvansCheckoutPage().check_GotAPromoCodeaply();
     }
+
+
 }

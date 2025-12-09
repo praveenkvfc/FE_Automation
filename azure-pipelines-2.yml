@@ -1,0 +1,43 @@
+
+trigger:
+- main
+- feature/*
+
+pool:
+  vmImage: ubuntu-latest
+
+
+workspace:
+  clean: all   # Full cleanup before build
+
+steps:
+# ✅ Clean and checkout latest code first
+- checkout: self
+  clean: true
+
+# ✅ Install Node.js
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'
+  displayName: 'Install Node.js'
+
+# ✅ Install npm dependencies
+- script: |
+    npm install
+  displayName: 'npm install'
+
+# ✅ Install Playwright with dependencies
+- script: |
+    chmod +x node_modules/.bin/playwright
+    npx playwright install --with-deps
+  displayName: 'Playwright install'
+
+- script: |
+    sudo apt-get update
+    sudo apt-get install -y maven
+  displayName: 'Install Maven'
+
+# ✅ Run Maven tests
+- script: |
+    mvn test -Denv=preprod -Dbrand=vans -Dregion=ca -Dtag=@Vans_CA_Smoke12
+  displayName: 'Execute scripts'

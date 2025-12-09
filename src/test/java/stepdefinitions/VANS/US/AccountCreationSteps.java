@@ -36,6 +36,10 @@ public class AccountCreationSteps {
     @Given("the user is on the {string} page")
     public void userIsOnPage(String pageName) {
         createAccountPage.launchApplication(ConfigReader.get("url"));
+        if (pageName.equalsIgnoreCase("guest")) {
+            System.out.println("Launched Site as a guest user");
+            return;
+        }
         if (ConfigReader.get("brand").equals("tbl")) {
             if (ConfigReader.get("region").equals("us")) {
                 homePage.clickWelcomeIcon();

@@ -95,6 +95,10 @@ public class vans_paypal_paymentPage {
         return page.locator("xpath=//*[@id=\"buttons-container\"]/div/div/div");
     }
 
+    private Locator paypal_cart_checkout_button() {
+        return page.locator("xpath=//*[@id=\"buttons-container\"]/div/div/div");
+    }
+
     private Locator paypal_checkout_button() {
         return page.locator("xpath=//*[@id=\"buttons-container\"]/div/div/div/div[1]/img");
     }
@@ -132,7 +136,7 @@ public class vans_paypal_paymentPage {
     }
 
     private void clickPaypal_Checkout(String paymentType) {
-        System.out.println("Looking for PayPal express checkout button...");
+        System.out.println("Looking for PayPal  button...");
         // Wait for the page to load completely
         page.waitForLoadState();
         page.waitForTimeout(SHORT_WAIT);
@@ -147,6 +151,11 @@ public class vans_paypal_paymentPage {
 
         } else if (paymentType.equals("express paypal")) {
             paypalButton = paypal_express_checkout_button();
+        } else if (paymentType.equals("Cart paypal")) {
+            // Try different PayPal button locators one by one
+            System.out.println("Im looking for paypal in cart page");
+            paypalButton = paypal_cart_checkout_button();
+            RetryUtility.gradualScrollToBottomUntilLocator(page, paypalButton, "CLICK");
         }
         if (paypalButton != null) {
             System.out.println("PayPal express checkout button found, scrolling and clicking...");

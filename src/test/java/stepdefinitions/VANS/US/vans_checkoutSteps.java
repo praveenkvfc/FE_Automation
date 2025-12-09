@@ -187,7 +187,7 @@ public class vans_checkoutSteps {
                 }
             }
         }
-            }
+    }
 
     @And("User should be able to see the order in Order history page")
     public void userShouldBeAbleToSeeTheOrderInOrderHistoryPage() {
@@ -219,28 +219,41 @@ public class vans_checkoutSteps {
 
     }
 
+    //swathi changes
+
+    @Then("user should be able to toggle the accordion section for payment method")
+    public void userShouldBeAbleToToggleTheAccordionSectionForPaymentMethod() {
+        getGetVansCheckoutPage().validatePaymentMethodClickability();
+    }
+
+    @And("^User enters email for contact info in guestUser$")
+    public void userEntersEmailForContactInfoInGuestUser() {
+        getGetVansCheckoutPage().emailforcontactinfoforGuestUser();
+    }
+
 
     @And("user select change payment option")
     public void userSelectChangePaymentOption() {
         getGetVansCheckoutPage().click_changePaymentButton();
     }
 
-    //Reshma
+    //resma changes
+
     @And("User clicks on Change link in the shipping address section")
     public void userClickOnChangeLink() {
-                getGetVansCheckoutPage().click_changeLink_ShippingAddress();
+        getGetVansCheckoutPage().click_changeLink_ShippingAddress();
     }
-    //reshma
+
     @And("User clicks on New Address in the shipping address section")
     public void userClicksOnNewAddressLink() {
-                getGetVansCheckoutPage().click_NewAddress_ShippingAddress();
+        getGetVansCheckoutPage().click_NewAddress_ShippingAddress();
     }
-    //reshma
+
     @Then("User clicks on Save button")
     public void userClicksOnSaveButton() {
         getGetVansCheckoutPage().click_SaveButton_ShippingAddress();
     }
-    //reshma
+
     @And("User varifies the order details in order confirmation page")
     public void userTemporarilySavesTheOrderDetails() {
         if (ConfigReader.get("brand").equals("vans")) {
@@ -249,7 +262,16 @@ public class vans_checkoutSteps {
             getGetVansCheckoutPage().saveOrderDetails_TNF();
         }
     }
-    //reshma
+
+    @And("User validates order confirmation details in order history page")
+    public void userTemporarilyVerifiesTheOrderDetailsInOrderHistoryPage() {
+        if (ConfigReader.get("brand").equals("vans")) {
+            getGetVansCheckoutPage().verifyOrderDetails();
+        } else if (ConfigReader.get("brand").equals("tnf")) {
+            getGetVansCheckoutPage().verifyOrderDetails_TNF();
+        }
+    }
+
     @And("User clicks on view order details button")
     public void userClickOnViewOrderDetails() {
         if (ConfigReader.get("brand").equals("vans")) {
@@ -261,15 +283,6 @@ public class vans_checkoutSteps {
         }
     }
 
-    @And("User validates order confirmation details in order history page")
-    public void userTemporarilyVerifiesTheOrderDetailsInOrderHistoryPage() {
-//        page.pause();
-        if (ConfigReader.get("brand").equals("vans")) {
-            getGetVansCheckoutPage().verifyOrderDetails();
-        } else if (ConfigReader.get("brand").equals("tnf")) {
-            getGetVansCheckoutPage().verifyOrderDetails_TNF();
-        }
-    }
 }
 
 

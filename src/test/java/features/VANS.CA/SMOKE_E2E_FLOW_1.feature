@@ -4,12 +4,12 @@ Feature: Create a new user account and place order successfully
   I want to create an account with valid information
   and I am able to place order successfully
   Background:
-    Given the user is on the "Create an Account" page
+    Given the user is on the "guest" page
 
   @Vans_CA_Smoke12 @payments
-  Scenario: Account creation and place order using creditcard Successfully
-    When the user enters the email for vans
-    And the user provides the password for vans to Signup or SignIn
+  Scenario: Account creation and place order using search field Successfully
+    Given user clicks on search button
+    Then enter the text "bag" in search field
     And the user agree privacy policy
     And the user agrees Vans Terms and Conditions
     And the user agrees to receive mails

@@ -433,9 +433,9 @@ public class vans_checkoutPage {
         orderNumber = extractOrderId(raw);
 
         orderDate = page.locator("[data-test-id='order-date']").textContent().trim();
-      shippingMethod = page.getByText("Shipping Method: Standard").textContent().trim();
-        shippingAddress = page.locator("[data-test-id='order-shipping-details']").textContent().trim();
+        shippingMethod = page.getByText("Shipping Method: Standard").textContent().trim();
 
+        shippingAddress = page.locator("[data-test-id='order-shipping-details']").textContent().trim();
         billingAddress = page.locator("[data-test-id='checkout-active-billing-address']").textContent().trim();
 
         paymentMethod = page.locator("[data-test-id='checkout-active-payment-method']").textContent().trim();
@@ -1070,8 +1070,7 @@ public class vans_checkoutPage {
             System.out.println("Soft assertion differences (not failing test):\n" + ae.getMessage());
         }
 
-        }
-
+    }
     /**
      * Build a neat multi-line block for logging Order History.
      */

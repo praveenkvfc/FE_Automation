@@ -1,3 +1,4 @@
+
 package pages.VANS.US;
 
 import com.microsoft.playwright.Locator;
@@ -6,16 +7,14 @@ import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import utils.SortUtility;
 
-import java.awt.*;
-import java.util.*;
-import java.util.List;
+import java.util.Random;
 
 import static utils.Constants.DEFAULT_WAIT;
 import static utils.Constants.SHORT_WAIT;
 
 public class vans_productListpage {
-    private Page page;
-    Random random;
+    private final Page page;
+    private final Random random;
 
     public vans_productListpage(Page page) {
         this.page = page;
@@ -28,24 +27,20 @@ public class vans_productListpage {
 
     private Locator vans_FilterOption_PLP() {
         return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Show Filters"));
-
     }
 
-
     private Locator vans_product_in_PLP() {
-//        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(ProductName));
         return page.locator(".relative.w-full > a").first();
     }
 
     public void click_SelectProductinPLP(boolean isFilterApplied) {
-        if(isFilterApplied) {
+        if (isFilterApplied) {
             vans_product_in_PLP().waitFor(new Locator.WaitForOptions()
                     .setState(WaitForSelectorState.VISIBLE)
                     .setTimeout(DEFAULT_WAIT)
             );
             vans_ProductWithoutFilter_PLP().click();
-        }
-        else {
+        } else {
             vans_ProductWithoutFilter_PLP().waitFor(new Locator.WaitForOptions()
                     .setState(WaitForSelectorState.VISIBLE)
                     .setTimeout(DEFAULT_WAIT)
@@ -53,9 +48,30 @@ public class vans_productListpage {
             vans_ProductWithoutFilter_PLP().click();
         }
     }
-    private Locator vans_ProductWithoutFilter_PLP(){
-        return page.locator("div:nth-child(4) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
 
+    private Locator vans_SecondProductWithoutFilter_PLP() {
+        return page.locator("div:nth-child(3) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
+    }
+
+    public void click_SelectSecondProductinPLP(boolean isFilterApplied) {
+        if (isFilterApplied) {
+            vans_product_in_PLP().waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE)
+                    .setTimeout(DEFAULT_WAIT)
+            );
+            vans_ProductWithoutFilter_PLP().click();
+        } else {
+            vans_SecondProductWithoutFilter_PLP().scrollIntoViewIfNeeded();
+            vans_SecondProductWithoutFilter_PLP().waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE)
+                    .setTimeout(DEFAULT_WAIT)
+            );
+            vans_SecondProductWithoutFilter_PLP().click();
+        }
+    }
+
+    private Locator vans_ProductWithoutFilter_PLP() {
+        return page.locator("div:nth-child(2) > div > .relative.overflow-hidden > .max-w-full > .flex > div > a").first();
     }
 
     public void click_vans_FilterOption() {
@@ -72,7 +88,6 @@ public class vans_productListpage {
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT)
         );
-//        vans_Sort_pricelowtohigh_PLP().hover();
         vans_Sort_pricelowtohigh_PLP().click();
     }
 
@@ -81,9 +96,10 @@ public class vans_productListpage {
     }
 
     private Locator vans_searchOption_addressPage() {
-         return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Open search"));
-        //return page.locator("xpath=//*[@id=\"__nuxt\"]/div[1]/div/div[2]/header/div/div/section[2]/section/button[3]/span/i");
+        System.out.println("inside search");
+        return page.locator("//section[@class='grid cols-[1fr_auto_1fr] w-full <lg:hidden']/section/button[3]");
     }
+
     public void click_searchOption_inAddressPage() {
         page.waitForTimeout(DEFAULT_WAIT);
         vans_searchOption_addressPage().waitFor(new Locator.WaitForOptions()
@@ -92,7 +108,6 @@ public class vans_productListpage {
         );
         vans_searchOption_addressPage().click(new Locator.ClickOptions().setForce(true));
         page.waitForTimeout(2000);
-
     }
 
     public String check_ShoesAndSneaker_Title() {
@@ -101,10 +116,8 @@ public class vans_productListpage {
                 .setTimeout(DEFAULT_WAIT)
         );
         return ShoeAndSneakers_Title().textContent().trim();
-
     }
 
-    // Better: Create locator methods that return Locator objects
     protected Locator getProductCards() {
         return page.locator("xpath=//*[@id=\"__nuxt\"]/div[1]/div/main/div[3]/div[3]/div/div[2]/div[1]");
     }
@@ -120,7 +133,7 @@ public class vans_productListpage {
         SortUtility SU = new SortUtility(page);
         SU.printAllProducts();
         boolean isSorted = SU.validatePriceSorting("low_to_high", page, getProductCards());
-        return true;
+        return isSorted;
     }
     //QA-Kajal kabade
     private Locator tnfUs_searchField() {
