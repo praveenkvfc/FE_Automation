@@ -38,7 +38,8 @@ public class vans_saveCreditcard_page {
     }
 
     private Locator vans_addCreditCard() {
-        return page.locator("xpath=//a[@class='vf-button vf-button-primary vf-button-sm dark:vf-button-primary <md:w-full']");
+       return page.locator("[data-test-id=\"vf-button\"]");
+       // return page.locator("xpath=//a[@class='vf-button vf-button-primary vf-button-sm dark:vf-button-primary <md:w-full']");
     }
 
     public void click_addCreditCard() {
