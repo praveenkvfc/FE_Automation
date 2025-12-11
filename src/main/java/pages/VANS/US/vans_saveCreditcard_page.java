@@ -49,7 +49,7 @@ public class vans_saveCreditcard_page {
         page.waitForTimeout(DEFAULT_WAIT);
         vans_addCreditCard().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(SHORT_WAIT));
         vans_addCreditCard().click();
-        System.out.println("Clicked add credit card option");
+        System.out.println("Clicked add credit cards option");
         page.waitForTimeout(5000);
     }
 

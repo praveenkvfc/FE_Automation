@@ -21,6 +21,7 @@ Feature: Create a new user account and place order successfully
     Then User should see a success message "Credit card added successfully!"
     When User navigates to the Address Book page
     Then Address Book should display correct details for "registeredUser"
+#    When User opens the add "Shipping" address form
     When User opens the add "Shipping" address form
     And User fills "Shipping" address details for "registeredUser"
     And User saves the "Shipping" address
