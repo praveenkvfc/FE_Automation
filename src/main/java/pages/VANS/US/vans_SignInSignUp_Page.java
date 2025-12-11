@@ -66,6 +66,7 @@ public class vans_SignInSignUp_Page {
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
         vans_createAccountButton().click();
+        page.waitForTimeout(SHORT_WAIT);
     }
 
     public void vans_click_continueButton() {
@@ -120,7 +121,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_signup_password() {
-        return page.locator("[data-test-id=\"input-password\"] [data-test-id=\"base-input\"]");
+        return page.locator("[data-test-id='input-password'] [data-test-id='base-input']");
     }
 
     public void Setvans_signup_password(String input) {
@@ -131,7 +132,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_Vans_TnC_checkbox() {
-        return page.locator("[data-test-id=\"vf-form-field-loyaltyTerms\"] i");
+        return page.locator("[data-test-id='vf-form-field-loyaltyTerms'] i");
     }
 
     public void click_vans_agree_Vans_TnC_checkbox() {
@@ -143,7 +144,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_privacyPolicy_checkbox() {
-        return page.locator("[data-test-id=\"vf-form-field-policy\"] i");
+        return page.locator("//span[@data-test-id='vf-checkbox-label']/a[text()='Privacy Policy']");
     }
 
     public void Click_vans_agree_privacyPolicy_checkbox() {
@@ -154,7 +155,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_receiveEmails_checkbox() {
-        return page.locator("[data-test-id=\"vf-form-field-newsletter\"] i");
+        return page.locator("[data-test-id='vf-form-field-newsletter'] i");
     }
 
     public void click_vans_agree_receiveEmails_checkbox() {

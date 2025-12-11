@@ -24,7 +24,7 @@ public class PlaywrightFactory {
                 case "chrome":
                     browser = playwright.chromium().launch(new
                             BrowserType.LaunchOptions()
-                            .setHeadless(true)
+                            .setHeadless(false)
                             .setArgs(Arrays.asList("--start-maximized",
                                     "--disable-blink-features=AutomationControlled"))
                             .setChannel("chrome"));
