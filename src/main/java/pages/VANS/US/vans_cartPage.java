@@ -391,7 +391,7 @@ private Locator vans_PayPalButton_CartPage() {
     // VANS Cart Page
 
     public void vans_paypal_CartPage_Click() {
-        // Scope into PayPal iframe
+        // Scope PayPal iframe
         FrameLocator paypalFrame = page.frameLocator("iframe[title*='PayPal']");
         Locator paypalButton = paypalFrame.locator("div[role='link'][aria-label='PayPal']");
 

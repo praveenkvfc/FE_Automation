@@ -75,6 +75,7 @@ public class vans_MyaccountSteps {
     }
     @And("User adds a default {string} credit card for {string}")
     public void userAddsADefaultCreditCardFor(String arg0, String arg1) {
+        //credit card methods
         getCreditCardPage().click_addCreditCard();
         getCreditCardPage().enter_vans_creditCard_Num();
         getCreditCardPage().enter_vans_creditCard_Expiry();
