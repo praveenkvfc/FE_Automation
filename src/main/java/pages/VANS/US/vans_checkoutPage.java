@@ -237,7 +237,7 @@ public class vans_checkoutPage {
     }
 
     public void check_orderConfirmation() {
-        // Wait until "processing payment" disappears
+        // Wait until "processingpayment" disappears
         Locator processingPayment = page.locator("[data-test-id='paypal-processing']");
         processingPayment.waitFor(new Locator.WaitForOptions()
                 .setTimeout(40000)
