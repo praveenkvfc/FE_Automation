@@ -76,7 +76,6 @@ public class vans_checkoutPage {
     }
 
 
-
     // Billing Address at checkout
     public void fillBillingAddressFields() {
         UserDetailsReader user = UserDetailsReader.getInstance(REGISTERED_USER_ALL);
@@ -375,7 +374,7 @@ public class vans_checkoutPage {
 
     //swathi changes
 
-    public void emailforcontactinfoforGuestUser(){
+    public void emailforcontactinfoforGuestUser() {
         UserDetailsReader user = UserDetailsReader.getInstance(REGISTERED_USER_ALL);
         Locator contactInfoEmail = page.locator("[data-test-id='vf-form-field-email'] [data-test-id='base-input']");
         if (contactInfoEmail.isVisible()) {
@@ -440,21 +439,21 @@ public class vans_checkoutPage {
 
         paymentMethod = page.locator("[data-test-id='checkout-active-payment-method']").textContent().trim();
 
-        itemsSubtotal = page.getByText("Items Subtotal (1)$").textContent().trim();
-        shippingCharge = page.getByText("More Info About Shipping $").textContent().trim();
-        taxAmount = page.getByText("Tax$").textContent().trim();
-        discountAmount = page.getByText("-$").textContent().trim();
-        orderTotalRaw = page.getByText("Order Total$").textContent().trim();
+        itemsSubtotal = page.locator("[data-test-id='order-summary']").textContent().trim();
+        shippingCharge = page.locator("[data-test-id='order-summary']").textContent().trim();
+        taxAmount = page.locator("[data-test-id='order-summary']").textContent().trim();
+        discountAmount = page.locator("[data-test-id='order-summary']").textContent().trim();
+        orderTotalRaw = page.locator("[data-test-id='order-summary']").textContent().trim();
 
-        productName = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
-        productColor = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
-        productSize = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
-        productQty = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
-        productPrice = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
+        productName = page.locator("[data-test-id='checkout-cart-product']").textContent().trim();
+        productColor = page.locator("[data-test-id='checkout-cart-product']").textContent().trim();
+        productSize = page.locator("[data-test-id='checkout-cart-product']").textContent().trim();
+        productQty = page.locator("[data-test-id='checkout-cart-product']").textContent().trim();
+        productPrice = page.locator("[data-test-id='checkout-cart-product']").textContent().trim();
 
         contactEmail = String.valueOf(page.getByText("Contact Information"));
         System.out.println(contactEmail);
-        phoneNumber = page.locator("[data-test-id=\"sms-phone-input\"]").inputValue();
+        phoneNumber = page.locator("[data-test-id='sms-phone-input']").inputValue();
         System.out.println(phoneNumber);
 
         // Print a clean, consolidated block
@@ -471,22 +470,27 @@ public class vans_checkoutPage {
         String historyOrderNumber = extractOrderId(raw);
 
         String historyOrderDate = page.locator("[data-test-id='order-date']").textContent().trim();
-        String historyShippingMethod = page.getByText("Shipping Method: Standard").textContent().trim();
-        String historyShippingAddress = page.getByText("Shipping InformationShipping").textContent().trim();
-        String historyBillingAddress = page.getByText("Billing InformationBilling to").textContent().trim();
+        String historyShippingMethod = page.locator("[data-test-id='order-shipping-method']").textContent().trim();
+        String historyShippingAddress = page.locator("[data-test-id='order-shipping-address']").textContent().trim();
+        String historyBillingAddress = page.locator("[data-test-id='order-billing-address']").textContent().trim();
         String historyPaymentMethod = page.locator("[data-test-id='order-shipping-method']").textContent().trim(); // as-is
 
-        String historyItemsSubtotal = page.getByText("Item Subtotal$").textContent().trim();
-        String historyShippingCharge = page.getByText("ShippingFree").textContent().trim();
-        String historyTaxAmount = page.getByText("Taxes$").textContent().trim();
-        String historyDiscountAmount = page.getByText("-$").textContent().trim();
-        String historyOrderTotalRaw = page.getByText("Order Total$").textContent().trim();
+        String historyItemsSubtotal = page.locator("[data-test-id='order-summary']").textContent().trim();
+        String historyShippingCharge = page.locator("[data-test-id='order-summary']").textContent().trim();
+        String historyTaxAmount = page.locator("[data-test-id='order-summary']").textContent().trim();
+        String historyDiscountAmount = page.locator("[data-test-id='order-summary']").textContent().trim();
+        String historyOrderTotalRaw = page.locator("[data-test-id='order-summary']").textContent().trim();
 
-        String historyProductName = page.getByText("Item SummaryTracking").textContent().trim();
-        String historyProductColor = page.getByText("Item SummaryTracking").textContent().trim();
-        String historyProductSize = page.getByText("Item SummaryTracking").textContent().trim();
-        String historyProductQty = page.getByText("Item SummaryTracking").textContent().trim();
-        String historyProductPrice = page.getByText("Item SummaryTracking").textContent().trim();
+        String historyProductName = page.locator("[data-test-id='order-item-description']").textContent().trim();
+        String historyProductColor = page.locator("[data-test-id='order-item-description']").textContent().trim();
+        String historyProductSize = page.locator("[data-test-id='order-item-description']").textContent().trim();
+        //String historyProductQty = page.locator("[data-test-id='order-item-quantity']").textContent().trim();
+        // line 487 — get "Qty: 1" from the description card
+        String historyProductQty = page
+                .locator("[data-test-id='order-item-description'] [data-test-id='order-item-quantity']")
+                .textContent().trim();
+
+        String historyProductPrice = page.locator("[data-test-id='order-item-price']").textContent().trim();
 
         // Print both blocks (normalized for readability)
         System.out.println(buildOrderConfirmationLog());

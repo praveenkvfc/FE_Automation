@@ -144,7 +144,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_privacyPolicy_checkbox() {
-        return page.locator("//span[@data-test-id='vf-checkbox-label']/a[text()='Privacy Policy']");
+        return page.locator("[data-test-id='vf-form-field-policy'] i");
     }
 
     public void Click_vans_agree_privacyPolicy_checkbox() {
@@ -155,7 +155,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_receiveEmails_checkbox() {
-        return page.locator("[data-test-id='vf-form-field-newsletter'] i");
+        return page.locator("[data-test-id=\"vf-form-field-newsletter\"] i");
     }
 
     public void click_vans_agree_receiveEmails_checkbox() {
