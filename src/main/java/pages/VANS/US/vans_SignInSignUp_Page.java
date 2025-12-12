@@ -262,10 +262,16 @@ public class vans_SignInSignUp_Page {
 
     //QA- Kajal kabade
     private Locator Ca_GoToMyAccount_icon() {
-        return page.locator("xpath=(//a[text()='Go to My Account'])[1]");
+        return page.locator("xpath=//section/button[@aria-label=\"My Account\"]");
     }
+    //resma
+    private Locator Ca_CreateAccountClose_icon() {
+        return page.locator("[data-test-id=\"vf-dialog-close\"]");
+    }
+
     //QA- Kajal kabade
     public void click_GoToMyAccount_Button() {
+        Ca_CreateAccountClose_icon().click();
         Ca_GoToMyAccount_icon().waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT)
@@ -274,7 +280,4 @@ public class vans_SignInSignUp_Page {
         System.out.println("Clicked Go To My Account button in home");
         page.waitForTimeout(DEFAULT_WAIT);
     }
-
-
-
 }

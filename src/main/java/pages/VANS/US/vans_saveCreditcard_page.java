@@ -222,23 +222,50 @@ public class vans_saveCreditcard_page {
         System.out.println("City entered: " + user.getCity());
     }
 
+    // Scoped locator to the address field (adjust scope if inside a drawer/overlay/iframe)
     private Locator vans_creditcard_addressLine() {
-        return page.locator("xpath=//input[@class='pac-target-input']");
+        // Prefer a scoped locator (e.g., to the drawer). Example:
+        // return page.locator("aside[aria-label='Add a new shipping address']").locator("input.pac-target-input").first();
+        return page.locator("input.pac-target-input").first();
+    }
+
+    // Locator for the Google Places dropdown items
+    private Locator placesSuggestions() {
+        // pac-item elements are rendered under body inside pac-container
+        return page.locator(".pac-item");
     }
 
     public void enter_vans_creditcard_addressLine() {
+        String address = user.getStreetAddress();
         System.out.println("Entering address");
-        vans_creditcard_addressLine().scrollIntoViewIfNeeded();
-        vans_creditcard_addressLine().waitFor(new
-                Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(SHORT_WAIT));
-        vans_creditcard_addressLine().click();
-        vans_creditcard_addressLine().fill(user.getStreetAddress());
-        System.out.println("Address entered: " + user.getStreetAddress());
-        page.keyboard().press("Enter");
-        page.waitForTimeout(3000);
+
+        Locator field = vans_creditcard_addressLine();
+
+        field.scrollIntoViewIfNeeded();
+        field.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(SHORT_WAIT));
+
+        // Click to focus, then TYPE (not fill) to trigger suggestions
+        field.click();
+        field.type(address, new Locator.TypeOptions().setDelay(50));
+
+        // Wait for the dropdown suggestions to appear
+        Locator firstSuggestion = placesSuggestions().first();
+        firstSuggestion.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(SHORT_WAIT));
+
+        // Click the first suggestion
+        firstSuggestion.click();
+
+        System.out.println("Address entered & suggestion selected: " + address);
+        // Optional: small wait if subsequent fields auto-populate
+        page.waitForTimeout(500);
     }
 
-    private Locator vans_creditcard_email() {
+
+        private Locator vans_creditcard_email() {
         return page.locator("xpath=//input[@name='email']");
     }
 

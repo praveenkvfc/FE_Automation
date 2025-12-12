@@ -12,11 +12,11 @@ import java.util.Random;
 import static utils.Constants.DEFAULT_WAIT;
 import static utils.Constants.SHORT_WAIT;
 
-public class VansProductListPage {
+public class vans_productListpage {
     private final Page page;
     private final Random random;
 
-    public VansProductListPage(Page page) {
+    public vans_productListpage(Page page) {
         this.page = page;
         this.random = new Random();
     }
@@ -135,4 +135,40 @@ public class VansProductListPage {
         boolean isSorted = SU.validatePriceSorting("low_to_high", page, getProductCards());
         return isSorted;
     }
+    //QA-Kajal kabade
+    private Locator tnfUs_searchField() {
+        return page.locator("xpath=//input[@placeholder='Search']");
+    }
+    public void click_tnfUs_searchField() {
+        page.waitForTimeout(DEFAULT_WAIT);
+        tnfUs_searchField().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.ATTACHED)
+                .setTimeout(DEFAULT_WAIT)
+        );
+        tnfUs_searchField().click(new Locator.ClickOptions().setForce(true));
+        page.waitForTimeout(2000);
+
+    }
+
+    private Locator tnf_product_in_PLP() {
+        return page.locator("[data-test-id='product-card']").first();
+    }
+
+    public void click_Tnf_SelectProductinPLP(boolean isFilterApplied) {
+        if(isFilterApplied) {
+            tnf_product_in_PLP().waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE)
+                    .setTimeout(DEFAULT_WAIT)
+            );
+//            tnf_ProductWithoutFilter_PLP().click();
+        }
+        else {
+            tnf_product_in_PLP().waitFor(new Locator.WaitForOptions()
+                    .setState(WaitForSelectorState.VISIBLE)
+                    .setTimeout(DEFAULT_WAIT)
+            );
+            tnf_product_in_PLP().click();
+        }
+    }
+
 }
