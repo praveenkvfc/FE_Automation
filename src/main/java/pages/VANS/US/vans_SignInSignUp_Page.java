@@ -58,7 +58,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_createAccountButton() {
-        return page.locator("[data-test-id=\"vf-button\"]");
+        return page.locator("xpath=//span[text()='Create Account']//ancestor::button");
     }
 
     public void vans_click_createAccountButton() {
@@ -66,6 +66,7 @@ public class vans_SignInSignUp_Page {
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
         vans_createAccountButton().click();
+        page.waitForTimeout(SHORT_WAIT);
     }
 
     public void vans_click_continueButton() {
@@ -120,7 +121,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_signup_password() {
-        return page.locator("[data-test-id=\"input-password\"] [data-test-id=\"base-input\"]");
+        return page.locator("[data-test-id='input-password'] [data-test-id='base-input']");
     }
 
     public void Setvans_signup_password(String input) {
@@ -131,10 +132,11 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_Vans_TnC_checkbox() {
-        return page.locator("[data-test-id=\"vf-form-field-loyaltyTerms\"] i");
+        return page.locator("[data-test-id='vf-form-field-loyaltyTerms'] i");
     }
 
     public void click_vans_agree_Vans_TnC_checkbox() {
+        //This method is working for vans - CA,US and TNF - US, CA
         vans_agree_Vans_TnC_checkbox().waitFor(new Locator.WaitForOptions()
                 .setTimeout(DEFAULT_WAIT)
                 .setState(WaitForSelectorState.VISIBLE));
@@ -142,7 +144,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_privacyPolicy_checkbox() {
-        return page.locator("[data-test-id=\"vf-form-field-policy\"] i");
+        return page.locator("//span[@data-test-id='vf-checkbox-label']/a[text()='Privacy Policy']");
     }
 
     public void Click_vans_agree_privacyPolicy_checkbox() {
@@ -153,7 +155,7 @@ public class vans_SignInSignUp_Page {
     }
 
     private Locator vans_agree_receiveEmails_checkbox() {
-        return page.locator("[data-test-id=\"vf-form-field-newsletter\"] i");
+        return page.locator("[data-test-id='vf-form-field-newsletter'] i");
     }
 
     public void click_vans_agree_receiveEmails_checkbox() {
@@ -200,7 +202,7 @@ public class vans_SignInSignUp_Page {
                 .setState(WaitForSelectorState.VISIBLE));
 
         if (vans_SkipForNow_button().isEnabled() &&
-                vans_MayBeLater_Button().isVisible()) {
+                vans_SkipForNow_button().isVisible()) {
             System.out.println("Skip for now button is visible");
             vans_SkipForNow_button().click(new
                     Locator.ClickOptions().setForce(true));
@@ -275,6 +277,41 @@ public class vans_SignInSignUp_Page {
         page.waitForTimeout(DEFAULT_WAIT);
     }
 
+    //QA-Kajal kabade
+    private Locator tnf_signup_email() {
+        return page.locator("xpath=//div[@data-test-id='form-sign-up']//input[@name='email']");
+    }
+    //QA-Kajal kabade
+    public void Settnf_signup_email(String input) {
+        tnf_signup_email().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        tnf_signup_email().pressSequentially(input); //pressSequentially or fill we can use but this will enter char by char as real user
+        page.keyboard().press("Tab");
+        page.waitForTimeout(500);
+    }
+    //QA-Kajal kabade
+    private Locator tnf_agree_privacyPolicy_checkbox() {
+        return page.locator("[data-test-id=\"form-sign-up\"] [data-test-id=\"vf-form-field-policy\"] i");
+    }
+    //QA-Kajal kabade
+    public void Click_tnf_agree_privacyPolicy_checkbox() {
+        tnf_agree_privacyPolicy_checkbox().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        tnf_agree_privacyPolicy_checkbox().click();
+    }
 
-
+    //QA-Kajal kabade
+    private Locator tnf_Us_successMessage() {
+        return page.locator("xpath=//h2[text()='Your account has been created!']");
+    }
+    //QA-Kajal kabade
+    public String getTnf_US_successMessage() {
+        page.waitForTimeout(DEFAULT_WAIT);
+        tnf_Us_successMessage().waitFor(new Locator.WaitForOptions()
+                .setTimeout(DEFAULT_WAIT)
+                .setState(WaitForSelectorState.VISIBLE));
+        return tnf_Us_successMessage().textContent().trim();
+    }
 }

@@ -155,7 +155,8 @@ public class vans_cartPage {
     private Locator vans_Product_IncreaseButton_CartPage() {
         //return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase Old Skool Shoe"));
         // return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Increase Lil Pergs Tote Bag"));
-        return page.locator("xpath=//*[@id=\"__nuxt\"]/div[1]/div/main/div[2]/div[2]/section/div[1]/section[1]/div/div[3]/div[3]/span/button[2]/i");
+//        return page.locator("xpath=//*[@id=\"__nuxt\"]/div[1]/div/main/div[2]/div[2]/section/div[1]/section[1]/div/div[3]/div[3]/span/button[2]/i");
+        return page.locator("xpath=//button[contains(@aria-label,'Increase')]");
     }
 
     public void vans_increaseItemFromCartPage_Click() {

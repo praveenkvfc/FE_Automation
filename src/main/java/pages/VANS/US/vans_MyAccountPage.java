@@ -66,6 +66,13 @@ public class vans_MyAccountPage {
         return page.locator("[data-test-id=\"vf-dialog-close\"]");
     }
 public void vans_CloseWindow_MyAccount_Click(){
-    vans_CloseWindow_MyAccount().click();
-}
+    page.waitForTimeout(500);
+    if(vans_CloseWindow_MyAccount().isVisible()) {
+        vans_CloseWindow_MyAccount().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(SHORT_WAIT)
+        );
+        vans_CloseWindow_MyAccount().click();
+    }
+    }
 }

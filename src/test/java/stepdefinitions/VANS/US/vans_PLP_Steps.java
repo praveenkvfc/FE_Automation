@@ -4,6 +4,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
+import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -79,8 +80,13 @@ private static boolean flag = false;
 
     @Given("user clicks on search button")
     public void userClicksOnSearchButton() {
-
-        getVansProductListpage().click_searchOption_inAddressPage();
+        if (!ConfigReader.get("brand").equals("tnf")) {
+            getVansProductListpage().click_searchOption_inAddressPage();
+        }else if (ConfigReader.get("brand").equals("tnf")) {
+            if (ConfigReader.get("region").equals("us")) {
+                getVansProductListpage().click_tnfUs_searchField();
+            }
+        }
     }
 
     @And("enter the text {string} in search field")
@@ -106,9 +112,13 @@ private static boolean flag = false;
 
     @When("User navigates to PDP page by selecting a product")
     public void userNavigatesToPDPPageBySelectingAProduct() {
-       // getVansProductListpage().vans_ProductWithoutFilter_PLP_Click();
-        getVansProductListpage().click_SelectProductinPLP(flag);
-
+        if (ConfigReader.get("brand").equals("vans")) {
+            // getVansProductListpage().vans_ProductWithoutFilter_PLP_Click();
+            getVansProductListpage().click_SelectProductinPLP(flag);
+        }
+        if (ConfigReader.get("brand").equals("tnf")) {
+            getVansProductListpage().click_Tnf_SelectProductinPLP(flag);
+        }
 
     }
 

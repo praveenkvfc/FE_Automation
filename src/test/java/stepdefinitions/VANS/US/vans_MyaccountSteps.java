@@ -52,7 +52,7 @@ public class vans_MyaccountSteps {
     @When("User navigates to the MyAccount page as {string}")
     public void userNavigatesToTheMyAccountPageAs(String userType) {
 //        vansSignInSignUpPagePage.click_vans_close_successMessage_MyAccount();
-        if((userType).equals("registeredUser")) {
+        if ((userType).equals("registeredUser")) {
             if (ConfigReader.get("brand").equals("vans")) {
                 if (ConfigReader.get("region").equals("us")) {
                     getSignupSignInPage().click_vans_MayBeLater_Button();
@@ -60,10 +60,15 @@ public class vans_MyaccountSteps {
                     getSignupSignInPage().click_SkipForNow_Button();
                 }
             }
-        }else if(userType.equals("ExistingUser"))
-        {
+            if (ConfigReader.get("brand").equals("tnf")) {
+                if (ConfigReader.get("region").equals("us")) {
+                    getSignupSignInPage().click_SkipForNow_Button();
+                }
+            }
+        }else if (userType.equals("ExistingUser")) {
 
-        }
+            }
+
     }
 
     @And("User opens the Credit Cards page")

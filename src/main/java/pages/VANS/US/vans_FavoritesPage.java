@@ -23,6 +23,7 @@ public class vans_FavoritesPage {
     }
 
     public void vans_ProductName_FavoritesPage_Visible() {
+        vans_FavProductName_FavoritesPage().scrollIntoViewIfNeeded();
            assertThat(vans_FavProductName_FavoritesPage()).isVisible();
         }
 
@@ -51,10 +52,9 @@ public class vans_FavoritesPage {
     }
     public void vans_QuickShopSizeOptions_FavoritesPage_Click() {
         vans_QuickShopSizeOptions_FavoritesPage().first().click();
-
     }
     private Locator vans_QuickShopAddToCartButton_FavoritesPage() {
-        return page.locator("[data-test-id=\"vf-button\"]"); // Final Add to Cart button
+        return page.locator("xpath=//div[@data-test-id='vf-dialog-content']//span[text()='Add to Cart']//ancestor::button"); // Final Add to Cart button
     }
     public void vans_QuickShopAddToCartButton_FavoritesPage_Click() {
         page.waitForTimeout(DEFAULT_WAIT);

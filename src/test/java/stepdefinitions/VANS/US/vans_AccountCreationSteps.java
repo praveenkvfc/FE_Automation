@@ -1,6 +1,8 @@
 package stepdefinitions.VANS.US;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -9,6 +11,7 @@ import pages.VANS.US.vans_SignInSignUp_Page;
 import utils.PlaywrightFactory;
 
 import static org.testng.Assert.assertTrue;
+import static utils.Constants.DEFAULT_WAIT;
 import static utils.RandomDataGenerator.generateRandomEmail;
 import static utils.RandomDataGenerator.generateRandomName;
 
@@ -35,16 +38,18 @@ public class vans_AccountCreationSteps {
         }
         return vansSignInSignUpPagePage;
     }
-
+    //QA-Kajal kabade
     @When("the user enters the email for vans")
     public void theUserEntersTheEmailForVans() {
-        firstname = generateRandomName();
-        lastname = generateRandomName();
+        if (!ConfigReader.get("brand").equals("tnf")) {
+            firstname = generateRandomName();
+            lastname = generateRandomName();
 
-        getVansSignInSignUpPage().Setvans_signin_email(generateRandomEmail(firstname,
-                lastname));
-        getVansSignInSignUpPage().vans_click_continueButton();
-        System.out.println("Clicked Continue after entering email.");
+            getVansSignInSignUpPage().Setvans_signin_email(generateRandomEmail(firstname,
+                    lastname));
+            getVansSignInSignUpPage().vans_click_continueButton();
+            System.out.println("Clicked Continue after entering email.");
+        }
     }
 
     //QA-Kajal kabade
@@ -60,17 +65,25 @@ public class vans_AccountCreationSteps {
                 getVansSignInSignUpPage().click_vans_agree_Vans_TnC_checkbox();
             }
         }
+        if (ConfigReader.get("brand").equals("tnf")) {
+            getVansSignInSignUpPage().click_vans_agree_Vans_TnC_checkbox();
+        }
     }
 
 
-
+    //QA-Kajal kabade
     @And("the user agree privacy policy")
     public void theUserAgreePrivacyPolicy() {
-        getVansSignInSignUpPage().Click_vans_agree_privacyPolicy_checkbox();
+        if (ConfigReader.get("brand").equals("tnf")) {
+            getVansSignInSignUpPage().Click_tnf_agree_privacyPolicy_checkbox();
+        }else{
+            getVansSignInSignUpPage().Click_vans_agree_privacyPolicy_checkbox();
+        }
     }
 
     @And("the user agrees to receive mails")
     public void theUserAgreesToReceiveMails() {
+        //This method is working for vans- CA,US and TNF- US, CA
         getVansSignInSignUpPage().click_vans_agree_receiveEmails_checkbox();
     }
 
@@ -78,9 +91,11 @@ public class vans_AccountCreationSteps {
     public void theUserClicksTheCreateAnAccountButton() {
         getVansSignInSignUpPage().vans_click_createAccountButton();
     }
-
+    //QA-Kajal kabade
     @And("the user provides the password for vans to Signup or SignIn")
     public void theUserProvidesThePasswordForVansToSignupSignIn() {
-        getVansSignInSignUpPage().Setvans_signup_password(input_password);
+        if (!ConfigReader.get("brand").equals("tnf")) {
+            getVansSignInSignUpPage().Setvans_signup_password(input_password);
+        }
     }
 }

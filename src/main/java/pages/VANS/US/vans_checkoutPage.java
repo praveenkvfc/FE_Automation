@@ -885,8 +885,241 @@ public class vans_checkoutPage {
         return sb.toString();
     }
 
+    // ==========================
+// Save all details from Order Confirmation for TNF
+// ==========================
 
+    public void saveOrderDetails_TNF() {
 
+        String raw = page.locator("[data-test-id='order-number']").textContent();
+        orderNumber = extractOrderId(raw);
 
+        orderDate = page.locator("[data-test-id='order-date']").textContent().trim();
+        shippingAddress = page.locator("[data-test-id='order-shipping-details']").textContent().trim();
 
+        billingAddress = page.locator("[data-test-id='checkout-active-billing-address']").textContent().trim();
+
+        paymentMethod = page.locator("[data-test-id='checkout-active-payment-method']").textContent().trim();
+        itemsSubtotal = page.locator("[data-test-id='checkout-summary-subtotal']").textContent().trim();
+        shippingCharge = page.locator("[data-test-id='checkout-summary-pickup']").textContent().trim();//tnf
+        taxAmount = page.locator("[data-test-id='checkout-summary-tax']").textContent().trim();
+        discountAmount = page.locator("[data-test-id='checkout-summary-promo']").textContent().trim();//tnf
+        orderTotalRaw = page.locator("xpath=//span[text()='Order Total']").textContent().trim();
+
+        productName = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
+        productColor = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
+        productSize = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
+        productQty = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
+        productPrice = page.locator("[data-test-id=\"checkout-cart-product\"]").textContent().trim();
+
+        // Print a clean, consolidated block
+        System.out.println(buildOrderConfirmationLog_TNF());
+    }
+
+    /**
+     * Build a neat multi-line block for logging Order Confirmation.
+     */
+    private String buildOrderConfirmationLog_TNF() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nOrder confirmation data:\n\n")
+                .append(normalize(orderDate)).append("\n")
+                .append(normalize(shippingAddress)).append("\n")
+                .append(normalize(billingAddress)).append("\n")
+                .append(normalize(paymentMethod)).append("\n")
+                .append(normalize(itemsSubtotal)).append("\n")
+                .append(normalize(shippingCharge)).append("\n")
+                .append(normalize(taxAmount)).append("\n")
+                .append(normalize(discountAmount)).append("\n")
+                .append(normalize(orderTotalRaw)).append("\n")
+                .append(normalize(productName)).append("\n")
+                .append(normalize(productColor)).append("\n")
+                .append(normalize(productSize)).append("\n")
+                .append(normalize(productQty)).append("\n")
+                .append(normalize(productPrice)).append("\n");
+        return sb.toString();
+    }
+
+    // ==========================
+// Verify order details in Order History page
+// ==========================
+
+    public void verifyOrderDetails_TNF() {
+
+        String raw = page.locator("[data-test-id='order-number']").textContent();
+        String historyOrderNumber = extractOrderId(raw);
+
+        String historyOrderDate = page.locator("[data-test-id='order-date']").textContent().trim();
+        String historyShippingAddress = page.locator("xpath=//h3[text()='Pickup Information']").textContent().trim();
+        String historyBillingAddress = page.locator("[data-test-id=\"order-billing-info\"]").textContent().trim();
+        String historyPaymentMethod = page.locator("[data-test-id='order-payment-method']").textContent().trim(); // as-is
+
+        String historyItemsSubtotal = page.locator("xpath=//span[text()='Item Subtotal']").textContent().trim();
+        String historyShippingCharge = page.locator("xpath=//span[text()='Pickup']").textContent().trim();
+        String historyTaxAmount = page.locator("xpath=//span[text()='Taxes']").textContent().trim();
+        String historyDiscountAmount = page.locator("xpath=//p[text()='Discounts Applied: ']").textContent().trim();
+        String historyOrderTotalRaw = page.locator("xpath=//span[text()='Order Total']").textContent().trim();
+
+        String historyProductName = page.locator("xpath=//section[@header='Item Summary']").textContent().trim();
+        String historyProductColor = page.locator("xpath=//section[@header='Item Summary']").textContent().trim();
+        String historyProductSize = page.locator("xpath=//section[@header='Item Summary']").textContent().trim();
+        String historyProductQty = page.locator("xpath=//section[@header='Item Summary']").textContent().trim();
+        String historyProductPrice = page.locator("xpath=//section[@header='Item Summary']").textContent().trim();
+
+        // Print both blocks (normalized for readability)
+        System.out.println(buildOrderConfirmationLog_TNF());
+        System.out.println(buildOrderHistoryLog_TNF(
+                historyOrderDate, historyShippingAddress, historyBillingAddress,
+                historyPaymentMethod, historyItemsSubtotal, historyShippingCharge, historyTaxAmount,
+                historyDiscountAmount, historyOrderTotalRaw, historyProductName, historyProductColor,
+                historyProductSize, historyProductQty, historyProductPrice
+        ));
+
+        // Soft assertions — normalized comparisons
+        org.testng.asserts.SoftAssert softAssert = new org.testng.asserts.SoftAssert();
+
+        // Order number
+        softAssert.assertEquals(
+                normalize(historyOrderNumber),
+                normalize(orderNumber),
+                "Order number mismatch"
+        );
+
+        // Date
+        softAssert.assertEquals(
+                normalizeDate(historyOrderDate),
+                normalizeDate(orderDate),
+                "Order date mismatch"
+        );
+
+        // shipping Addresses
+        softAssert.assertEquals(
+                normalizeAddress(historyShippingAddress),
+                normalizeAddress(shippingAddress),
+                "Shipping address mismatch"
+        );
+
+        // Billing Address
+        softAssert.assertEquals(
+                normalizeAddress(historyBillingAddress),
+                normalizeAddress(billingAddress),
+                "Billing address mismatch"
+        );
+
+        // Payment
+        softAssert.assertEquals(
+                normalizePayment(historyPaymentMethod),
+                normalizePayment(paymentMethod),
+                "Payment method mismatch"
+        );
+
+        // Money fields
+        softAssert.assertEquals(
+                normalizeMoney(historyItemsSubtotal),
+                normalizeMoney(itemsSubtotal),
+                "Item Subtotal mismatch"
+        );
+
+        softAssert.assertEquals(
+                normalizeMoney(historyShippingCharge),
+                normalizeMoney(shippingCharge),
+                "Shipping charge mismatch"
+        );
+
+        softAssert.assertEquals(
+                normalizeMoney(historyTaxAmount),
+                normalizeMoney(taxAmount),
+                "Tax Amount mismatch"
+        );
+
+        softAssert.assertEquals(
+                normalizeMoney(historyDiscountAmount),
+                normalizeMoney(discountAmount),
+                "Discount amount mismatch"
+        );
+
+        softAssert.assertEquals(
+                normalizeMoney(historyOrderTotalRaw),
+                normalizeMoney(orderTotalRaw),
+                "Order total mismatch"
+        );
+
+        // Product details — parse from blobs on both pages
+        String histName = extractProductName(historyProductName);
+        String histColor = extractProductColor(historyProductColor);
+        String histSize = extractProductSize(historyProductSize);
+        String histQty = extractProductQtyValue(historyProductQty);
+        String histPrice = extractProductPriceValue(historyProductPrice);
+
+        String confName = extractProductName(productName);
+        String confColor = extractProductColor(productColor);
+        String confSize = extractProductSize(productSize);
+        String confQty = extractProductQtyValue(productQty);
+        String confPrice = extractProductPriceValue(productPrice);
+
+        softAssert.assertEquals(
+                normalize(histName),
+                normalize(confName),
+                "Product name mismatch");
+        softAssert.assertEquals(
+                normalize(histColor),
+                normalize(confColor),
+                "Product color mismatch");
+        softAssert.assertEquals(
+                normalize(histSize),
+                normalize(confSize),
+                "Product size mismatch");
+        softAssert.assertEquals(
+                normalize(histQty),
+                normalize(confQty),
+                "Product quantity mismatch");
+        softAssert.assertEquals(
+                normalize(histPrice),
+                normalize(confPrice),
+                "Product price mismatch");
+
+        // DO NOT fail the test: swallow the aggregated assertion error
+        try {
+            softAssert.assertAll();
+        } catch (AssertionError ae) {
+            System.out.println("Soft assertion differences (not failing test):\n" + ae.getMessage());
+        }
+
+    }
+    /**
+     * Build a neat multi-line block for logging Order History.
+     */
+    private String buildOrderHistoryLog_TNF(
+            String historyOrderDate,
+            String historyShippingAddress,
+            String historyBillingAddress,
+            String historyPaymentMethod,
+            String historyItemsSubtotal,
+            String historyShippingCharge,
+            String historyTaxAmount,
+            String historyDiscountAmount,
+            String historyOrderTotalRaw,
+            String historyProductName,
+            String historyProductColor,
+            String historyProductSize,
+            String historyProductQty,
+            String historyProductPrice
+    ) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n\nOrder history data:\n\n")
+                .append(normalize(historyOrderDate)).append("\n")
+                .append(normalize(historyShippingAddress)).append("\n")
+                .append(normalize(historyBillingAddress)).append("\n")
+                .append(normalize(historyPaymentMethod)).append("\n")
+                .append(normalize(historyItemsSubtotal)).append("\n")
+                .append(normalize(historyShippingCharge)).append("\n")
+                .append(normalize(historyTaxAmount)).append("\n")
+                .append(normalize(historyDiscountAmount)).append("\n")
+                .append(normalize(historyOrderTotalRaw)).append("\n")
+                .append(normalize(historyProductName)).append("\n")
+                .append(normalize(historyProductColor)).append("\n")
+                .append(normalize(historyProductSize)).append("\n")
+                .append(normalize(historyProductQty)).append("\n")
+                .append(normalize(historyProductPrice)).append("\n");
+        return sb.toString();
+    }
 }

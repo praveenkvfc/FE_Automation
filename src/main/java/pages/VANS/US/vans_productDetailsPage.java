@@ -27,9 +27,9 @@ public class vans_productDetailsPage {
                 .setTimeout(DEFAULT_WAIT));
         vans_selectSizeDropdown_PDP().click();
     }
-public void NavigateBack(){
-    page.goBack();
-}
+    public void NavigateBack(){
+        page.goBack();
+    }
     private Locator vans_selectShoeSize_PDP() {
         return page.locator("[data-test-id=\"vf-size-picker\"]").getByText("One Size");
 
@@ -89,7 +89,7 @@ public void NavigateBack(){
     private Locator vans_AddToCartButton_PDP() {
         // return page.locator("[data-test-id=\"vf-dialog-layout\"] [data-test-id=\"vf-button\"]");
         //return page.locator("[data-test-id=\"vf-button\"]").filter(new Locator.FilterOptions().setHasText("Add to Cart"));
-        return page.locator("#pdp-add-to-cart");
+        return page.locator("xpath=//button[@id='pdp-add-to-cart']");
     }
 
     private Locator vans_ViewCartButton_PDP() {
@@ -195,7 +195,7 @@ public void NavigateBack(){
         return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Decrease Classic Slip-On"));
     }
 
-       public void click_incrementQty_MiniCart() {
+    public void click_incrementQty_MiniCart() {
         vans_incrementQtyButton_MiniCart().scrollIntoViewIfNeeded();
         vans_incrementQtyButton_MiniCart().waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)

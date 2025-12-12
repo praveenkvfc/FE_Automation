@@ -187,7 +187,7 @@ public class vans_checkoutSteps {
                 }
             }
         }
-            }
+    }
 
     @And("User should be able to see the order in Order history page")
     public void userShouldBeAbleToSeeTheOrderInOrderHistoryPage() {
@@ -256,18 +256,31 @@ public class vans_checkoutSteps {
 
     @And("User varifies the order details in order confirmation page")
     public void userTemporarilySavesTheOrderDetails() {
-        getGetVansCheckoutPage().saveOrderDetails();
+        if (ConfigReader.get("brand").equals("vans")) {
+            getGetVansCheckoutPage().saveOrderDetails();
+        }else if(ConfigReader.get("brand").equals("tnf")){
+            getGetVansCheckoutPage().saveOrderDetails_TNF();
+        }
     }
 
     @And("User validates order confirmation details in order history page")
     public void userTemporarilyVerifiesTheOrderDetailsInOrderHistoryPage() {
-        getGetVansCheckoutPage().verifyOrderDetails();
+        if (ConfigReader.get("brand").equals("vans")) {
+            getGetVansCheckoutPage().verifyOrderDetails();
+        } else if (ConfigReader.get("brand").equals("tnf")) {
+            getGetVansCheckoutPage().verifyOrderDetails_TNF();
+        }
     }
 
     @And("User clicks on view order details button")
     public void userClickOnViewOrderDetails() {
-        getVansHeaderPage().navigateFromProfileTo("order history");
-        getGetVansCheckoutPage().clickOnViewOrderDetails();
+        if (ConfigReader.get("brand").equals("vans")) {
+            getVansHeaderPage().navigateFromProfileTo("order history");
+            getGetVansCheckoutPage().clickOnViewOrderDetails();
+        }else if(ConfigReader.get("brand").equals("tnf")){
+            getVansHeaderPage().tnf_Profile_MyAccount_Click();
+            getVansHeaderPage().tnf_MyOrder_MyAccount_Click();
+        }
     }
 
 }

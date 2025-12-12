@@ -1,6 +1,7 @@
 package stepdefinitions.VANS.US;
 
 import com.microsoft.playwright.Page;
+import config.ConfigReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.VANS.US.vans_FavoritesPage;
@@ -51,11 +52,18 @@ private vans_FavoritesPage vansFavoritesPage;
 
     @And("User add product to cart from favourites page")
     public void userAddProductToCartFromFavouritesPage() {
-        getFavoritesPage().vans_AddToQuickShop_FavoritesPage_Click();
-        getFavoritesPage().vans_QuickShopSizeOptions_FavoritesPage_Click();
-        getFavoritesPage().vans_QuickShopAddToCartButton_FavoritesPage_Click();
-        getFavoritesPage().vans_QuickShopIncQuantity_FavoritesPage_Click();
-        getFavoritesPage().vans_QuickShopViewCartButton_FavoritesPage_Click();
+        if (ConfigReader.get("brand").equals("vans")) {
+            getFavoritesPage().vans_AddToQuickShop_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopSizeOptions_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopAddToCartButton_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopIncQuantity_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopViewCartButton_FavoritesPage_Click();
+        } else if (ConfigReader.get("brand").equals("tnf")) {
+            getFavoritesPage().vans_AddToQuickShop_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopAddToCartButton_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopIncQuantity_FavoritesPage_Click();
+            getFavoritesPage().vans_QuickShopViewCartButton_FavoritesPage_Click();
+        }
     }
 }
 

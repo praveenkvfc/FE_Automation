@@ -1,7 +1,9 @@
 
 package stepdefinitions.VANS.US;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitForSelectorState;
 import config.ConfigReader;
 import io.cucumber.java.en.*;
 import pages.TBL.US.CreateAccount_Page;
@@ -12,6 +14,8 @@ import utils.RandomDataGenerator;
 import utils.PlaywrightFactory;
 
 import static org.testng.Assert.assertTrue;
+import static utils.Constants.DEFAULT_WAIT;
+import static utils.RandomDataGenerator.generateRandomEmail;
 import static utils.RandomDataGenerator.generateRandomName;
 
 public class AccountCreationSteps {
@@ -28,6 +32,7 @@ public class AccountCreationSteps {
     private final vans_SignInSignUp_Page vansSignInSignUpPage = new vans_SignInSignUp_Page(page);
     private final vans_homePage vansHomePage = new vans_homePage(page);
 
+    //QA-Kajal kabade
     @Given("the user is on the {string} page")
     public void userIsOnPage(String pageName) {
         createAccountPage.launchApplication(ConfigReader.get("url"));
@@ -36,9 +41,12 @@ public class AccountCreationSteps {
             return;
         }
         if (ConfigReader.get("brand").equals("tbl")) {
-            homePage.clickWelcomeIcon();
-            homePage.clickCreateAccountButton();
-        } else if (ConfigReader.get("brand").equals("vans")) {
+            if (ConfigReader.get("region").equals("us")) {
+                homePage.clickWelcomeIcon();
+                homePage.clickCreateAccountButton();
+            }
+        }
+        if (ConfigReader.get("brand").equals("vans")) {
             if (ConfigReader.get("region").equals("ca")) {
                 System.out.println("In home Page");
                 vansHomePage.click_vansProfileButton();
@@ -51,6 +59,22 @@ public class AccountCreationSteps {
                 vansHomePage.vans_homePopup_closeButton();
                 vansHomePage.click_vansProfileButton();
             }
+        }
+        if (ConfigReader.get("brand").equals("tnf")) {
+//            if (ConfigReader.get("region").equals("us")) {
+                homePage.clickSignINLink();
+                homePage.tnf_createAccountButton();
+            String firstname = generateRandomName();
+            String lastname = generateRandomName();
+            vansSignInSignUpPage.vans_enter_FirstName(firstname);
+            vansSignInSignUpPage.vans_enter_LastName(lastname);
+            vansSignInSignUpPage.Settnf_signup_email(generateRandomEmail(firstname,
+                    lastname));
+            createAccountPage.enter_tnf_zipcode();
+            createAccountPage.enterMobileNumber(mobileNumber);
+            createAccountPage.enterBirthDate(dateOfBirth);
+            createAccountPage.enterPassword(inputPassword);
+//            }
         }
     }
 
@@ -112,9 +136,14 @@ public class AccountCreationSteps {
             } else if (ConfigReader.get("region").equals("ca")) {
                 actualMessage = vansSignInSignUpPage.getCA_successMessage();
             }
-            System.out.println("Actual message: " + actualMessage);
-            assertTrue(actualMessage.contains(expectedMessage), "Expected: " + expectedMessage + ", but got: " + actualMessage);
+        }else if (ConfigReader.get("brand").equals("tnf")) {
+            if (ConfigReader.get("region").equals("us")) {
+                actualMessage = vansSignInSignUpPage.getTnf_US_successMessage();
+            }
         }
+
+        System.out.println("Actual message: " + actualMessage);
+        assertTrue(actualMessage.contains(expectedMessage), "Expected: " + expectedMessage + ", but got: " + actualMessage);
     }
 
 

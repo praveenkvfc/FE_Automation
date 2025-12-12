@@ -5,7 +5,7 @@ Feature: Create a new user account and place order successfully
   and I am able to place order successfully using Klarna payment
   Background:
     Given the user is on the "Create an Account" page
-  @Klarna_Flow
+  @Klarna_CA_Flow
   Scenario: Account creation and place order using credit card Successfully
     When the user enters the email for vans
     And the user provides the password for vans to Signup or SignIn

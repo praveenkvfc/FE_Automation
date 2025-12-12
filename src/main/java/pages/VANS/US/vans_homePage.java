@@ -1,5 +1,6 @@
 package pages.VANS.US;
 
+import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
@@ -93,13 +94,13 @@ public class vans_homePage {
     }
 
     public void click_vansProfileButton() {
+        page.waitForTimeout(SHORT_WAIT);
         Vans_Profile_icon().waitFor(new Locator.WaitForOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(DEFAULT_WAIT)
         );
         Vans_Profile_icon().click();
         System.out.println("Clicked profile button in home");
-        page.waitForTimeout(DEFAULT_WAIT);
     }
 
     public void vans_homePopup_closeButton() {

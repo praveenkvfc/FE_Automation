@@ -74,4 +74,55 @@ public class vans_HeaderPage {
                 throw new IllegalArgumentException("Unsupported navigation target: " + pageName);
         }
     }
+
+    // QA- Kajal kabade
+    private Locator tnf_MyAccount() {
+        return page.locator("xpath=(//a[text()='My Account '])[1]");
+    }
+
+    public void tnf_Profile_MyAccount_Click() {
+        Locator profileButton = tnf_MyAccount();
+        profileButton.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(5000)
+        );
+        profileButton.click(new Locator.ClickOptions().setForce(true));
+    }
+
+    // Favorites link
+    private Locator tnf_Favorites_MyAccount() {
+        return page.locator("xpath=//a[text()='Favorites']");
+    }
+
+    public void tnf_Favorites_MyAccount_Click() {
+        Locator favoritesLink = tnf_Favorites_MyAccount();
+        favoritesLink.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(5000)
+        );
+        favoritesLink.click(new Locator.ClickOptions().setForce(true));
+    }
+
+    private Locator tnf_MyOrder_MyAccount() {
+        return page.locator("xpath=//a[text()='My Orders']");
+    }
+
+    private Locator tnf_ViewOrderDetails() {
+        return page.locator("xpath=(//span[text()='View Order Details'])[1]");
+    }
+
+    public void tnf_MyOrder_MyAccount_Click() {
+        Locator myOrderLink = tnf_MyOrder_MyAccount();
+        myOrderLink.waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(5000)
+        );
+        myOrderLink.click(new Locator.ClickOptions().setForce(true));
+        tnf_ViewOrderDetails().waitFor(new Locator.WaitForOptions()
+                .setState(WaitForSelectorState.VISIBLE)
+                .setTimeout(5000)
+        );
+        tnf_ViewOrderDetails().click(new Locator.ClickOptions().setForce(true));
+    }
+
 }
