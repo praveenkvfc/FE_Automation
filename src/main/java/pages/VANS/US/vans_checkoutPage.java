@@ -264,8 +264,22 @@ public class vans_checkoutPage {
     }
 
     public void check_orderConfirmation() {
-        page.waitForTimeout(DEFAULT_WAIT);
-        assertThat(vans_orderConfirmationMessage()).isVisible();
+        // Wait until "processingpayment" disappears
+        Locator processingPayment = page.locator("[data-test-id='paypal-processing']");
+        processingPayment.waitFor(new Locator.WaitForOptions()
+                .setTimeout(40000)
+                .setState(WaitForSelectorState.DETACHED));
+
+        // Wait until order confirmation heading appears
+        Locator confirmationHeading = page.locator("[data-test-id='order-confirmation-heading']");
+        confirmationHeading.waitFor(new Locator.WaitForOptions()
+                .setTimeout(40000)
+                .setState(WaitForSelectorState.VISIBLE));
+
+        // Assert heading is visible
+        assertThat(confirmationHeading).isVisible();
+
+        System.out.println("Order confirmation page verified successfully!");
     }
 
     public void check_standardShippingMethod() {

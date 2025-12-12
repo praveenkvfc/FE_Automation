@@ -41,7 +41,7 @@ public class vans_paypal_paymentPage {
         return page.getByRole(AriaRole.IMG, new Page.GetByRoleOptions().setName("PayPal"));
     }
 
-    // PayPal iframe locator
+    // PayPal iframe locators
     private Locator paypalIframe() {
         return page.locator("iframe[name^=\"__zoid__paypal_buttons__\"]");
     }
